@@ -6,8 +6,8 @@ export default function Index() {
 			<div className='lg:w-2/5'>
 				<Image
 					src='/Babu.png'
-					width={470}
-					height={550}
+					width={550}
+					height={500}
 					layout='responsive'
 					className='rounded-none lg:rounded-lg shadow-2xl hidden lg:block'
 				/>
