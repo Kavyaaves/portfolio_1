@@ -15,6 +15,9 @@ module.exports = {
 			backgroundImage: (theme) => ({
 				babu: "url('/Babu.png')",
 				home: "url('/4.jpg')",
+				gallery: "url('/1.jpg')",
+				research: "url('/2.jpg')",
+				members: "url('/4.jpg')",
 				unsplash1: "url('https://www.source.unsplash.com/MP0IUfwrn0A')",
 			}),
 		},

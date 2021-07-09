@@ -65,7 +65,7 @@ function NavBar() {
 									? 'border-solid border-b-2'
 									: ''
 							}>
-							<Link href='/galery'>Gallery</Link>
+							<Link href='/gallery'>Gallery</Link>
 						</li>
 					</ul>
 				</nav>

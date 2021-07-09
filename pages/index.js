@@ -5,9 +5,9 @@ import NavBar from '../components/NavBar';
 import Home from '../components/Home';
 export default function Index() {
 	return (
-		<div className='bg-primary'>
+		<div className=''>
 			<Head>
-				<title>Starter - Home</title>
+				<title>Bakthavachalam Babu - Home</title>
 				<link rel='preconnect' href='https://fonts.gstatic.com' />
 				<link
 					rel='stylesheet'
@@ -27,13 +27,19 @@ export default function Index() {
 				<script src='https://unpkg.com/popper.js@1/dist/umd/popper.min.js'></script>
 				<script src='https://unpkg.com/tippy.js@4'></script>
 			</Head>
-			<body>
-				<div className='bg-home bg-center bg-cover overflow-y-hidden overflow-x-hidden '>
+			<body className='bg-home bg-center bg-cover bg-fixed'>
+				<div>
 					<NavBar />
 					<Home />
 				</div>
-				<Body />
+				<div className='p-5'>
+					<Body />
+				</div>
+				<br />
 			</body>
+			<footer className=''>
+				<Footer />
+			</footer>
 		</div>
 	);
 }

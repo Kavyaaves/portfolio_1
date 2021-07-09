@@ -1,28 +1,75 @@
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import Slider from 'react-slick';
 import Image from 'next/image';
+import NavBar from '../components/NavBar';
 const settings = {
-	autoplay: true,
-	autoplaySpeed: 3000,
+	dots: true,
+	infinite: true,
+	speed: 500,
+	slidesToShow: 1,
+	slidesToScroll: 1,
 	fade: true,
-	arrows: false,
+	appendDots: (dots) => (
+		<div style={{}}>
+			<ul style={{ margin: '0px', color: 'white' }}> {dots} </ul>
+		</div>
+	),
 };
 function SlickSlider() {
 	return (
-		<Slider {...settings} autoplay={true} className=''>
-			<div className='h-screen w-screen overflow-x-hidden opacity-100 '>
-				<Image src='/1.jpg' layout='fill' objectFit='cover' quality={100} />
-			</div>
-			{/* <div className='h-screen w-screen overflow-x-hidden opacity-100 '> */}
-			{/* <Image src='/3.jpg' layout='fill' objectFit='cover' quality={100} /> */}
-			{/* </div> */}
-			{/* <div className='h-screen w-screen overflow-x-hidden opacity-100 '>
-				<Image src='/2.jpg' layout='fill' objectFit='cover' quality={100} />
-			</div> */}
-			<div className='h-screen w-screen overflow-x-hidden opacity-100 '>
-				<Image src='/4.jpg' layout='fill' objectFit='cover' quality={100} />
-			</div>
-		</Slider>
+		<div className='max-w-xl max-h-full pb-5 m-auto'>
+			<Slider {...settings} className='w-4/5  m-auto'>
+				<figure className=''>
+					<Image
+						src='/1.jpg'
+						width='250rem'
+						height='auto'
+						layout='responsive'
+						objectFit='contain'
+						quality={100}
+					/>
+					<figcaption className='text-center text-yellow-500'>
+						Caption for image one. <a href='#one'>Read more</a>
+					</figcaption>
+				</figure>
+				<figure className='m-auto h-auto'>
+					<Image
+						src='/2.jpg'
+						width='250rem'
+						height='auto'
+						layout='responsive'
+						objectFit='contain'
+						quality={100}
+					/>
+					<figcaption className='text-center text-yellow-500'>
+						Heelo I am seconf omab
+					</figcaption>
+				</figure>
+				<figure className='m-auto'>
+					<Image
+						src='/3.jpg'
+						width='250rem'
+						height='auto'
+						layout='responsive'
+						objectFit='contain'
+						quality={100}
+					/>
+				</figure>
+				{/* 
+				</figure>
+
+				<div className='m-auto'>
+					<Image
+						src='/4.jpg'
+						width='250rem'
+						height='auto'
+						layout='responsive'
+						objectFit='contain'
+						quality={100}
+					/>
+				</div> */}
+			</Slider>
+		</div>
 	);
 }
 

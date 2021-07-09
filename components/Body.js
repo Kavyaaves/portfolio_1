@@ -15,7 +15,7 @@ const settings = {
 };
 function Body() {
 	return (
-		<div className='max-w-5xl m-auto'>
+		<div className='max-w-4xl m-auto bg-primary rounded-lg'>
 			<div className='text-center p-10'>
 				<h1 className='text-3xl'>Welcome to Our Algae Lab!</h1>
 				<br />
@@ -28,8 +28,8 @@ function Body() {
 			</div>
 			<br />
 			<h4 className='m-5'>Latest</h4>
-			<div className='flex flex-grow  justify-between'>
-				<div className='max-w-xl max-h-xl '>
+			<div className='flex p-5 flex-grow  justify-between'>
+				<div className='max-w-xl max-h-xl'>
 					<Image
 						src='/1.jpg'
 						width='600em'
@@ -38,58 +38,13 @@ function Body() {
 						quality={100}
 					/>
 				</div>
-				<br />
-				<div className='text-sm'>
+				<div className='ml-5 text-sm'>
 					Feresa's paper describing new species of Psaromenia and
 					Meredithia from Hawaiian mesophotic coral ecosystems is now
 					online (open access!) in the European Journal of Phycology!
 				</div>
 			</div>
 			<br />
-			<div className='max-w-xl m-auto h-auto'>
-				<Slider {...settings} className='w-4/5 lg:w-full m-auto'>
-					<div className='m-auto'>
-						<Image
-							src='/1.jpg'
-							width='250rem'
-							height='auto'
-							layout='responsive'
-							objectFit='contain'
-							quality={100}
-						/>
-					</div>
-					<div className='m-auto'>
-						<Image
-							src='/2.jpg'
-							width='250rem'
-							height='auto'
-							layout='responsive'
-							objectFit='contain'
-							quality={100}
-						/>
-					</div>
-					<div className='m-auto'>
-						<Image
-							src='/3.jpg'
-							width='250rem'
-							height='auto'
-							layout='responsive'
-							objectFit='contain'
-							quality={100}
-						/>
-					</div>
-					<div className='m-auto'>
-						<Image
-							src='/4.jpg'
-							width='250rem'
-							height='auto'
-							layout='responsive'
-							objectFit='contain'
-							quality={100}
-						/>
-					</div>
-				</Slider>
-			</div>
 		</div>
 	);
 }
