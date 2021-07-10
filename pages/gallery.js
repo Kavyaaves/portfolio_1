@@ -26,7 +26,7 @@ function gallery() {
 				<script src='https://unpkg.com/popper.js@1/dist/umd/popper.min.js'></script>
 				<script src='https://unpkg.com/tippy.js@4'></script>
 			</Head>
-			<body className='bg-gallery bg-fixed bg-center bg-cover'>
+			<body className='bg-gallery bg-fixed bg-cover bg-no-repeat'>
 				<NavBar />
 				<div className='p-2 pt-5'>
 					<div className='bg-primary max-w-2xl m-auto rounded-lg p-2'>

@@ -10,13 +10,17 @@ module.exports = {
 			...theme('colors'),
 			primary: '#06202A',
 		}),
+		color: (theme) => ({
+			...theme('colors'),
+			primary: '#06202A',
+		}),
 
 		extend: {
 			backgroundImage: (theme) => ({
 				babu: "url('/Babu.png')",
 				home: "url('/4.jpg')",
-				gallery: "url('/1.jpg')",
-				research: "url('/2.jpg')",
+				gallery: "url('/cover.jpg')",
+				research: "url('/cover.jpg')",
 				members: "url('/4.jpg')",
 				unsplash1: "url('https://www.source.unsplash.com/MP0IUfwrn0A')",
 			}),

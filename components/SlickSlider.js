@@ -17,7 +17,7 @@ const settings = {
 };
 function SlickSlider() {
 	return (
-		<div className='max-w-xl max-h-full pb-5 m-auto'>
+		<div className='max-h-full pb-5 m-auto'>
 			<Slider {...settings} className='w-4/5  m-auto'>
 				<figure className=''>
 					<Image
@@ -54,11 +54,11 @@ function SlickSlider() {
 						objectFit='contain'
 						quality={100}
 					/>
+					<figcaption className='text-center text-yellow-500'>
+						Heelo I am seconf omab
+					</figcaption>
 				</figure>
-				{/* 
-				</figure>
-
-				<div className='m-auto'>
+				<figure>
 					<Image
 						src='/4.jpg'
 						width='250rem'
@@ -67,7 +67,23 @@ function SlickSlider() {
 						objectFit='contain'
 						quality={100}
 					/>
-				</div> */}
+					<figcaption className='text-center text-yellow-500'>
+						Heelo I am seconf omab
+					</figcaption>
+				</figure>
+				<figure>
+					<Image
+						src='/cover.jpg'
+						width='250rem'
+						height='auto'
+						layout='responsive'
+						objectFit='contain'
+						quality={100}
+					/>
+					<figcaption className='text-center text-yellow-500'>
+						Micro
+					</figcaption>
+				</figure>
 			</Slider>
 		</div>
 	);
