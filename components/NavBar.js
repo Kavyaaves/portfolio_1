@@ -10,7 +10,7 @@ function NavBar() {
 		<div className='relative'>
 			<div className='sm:w-full top-2 '>
 				<nav className='max-w-2xl m-auto '>
-					<ul className='hidden sm:flex flex-grow  m-auto justify-evenly text-sm lg:text-lg font-semibold '>
+					<ul className='hidden sm:flex flex-grow  m-auto justify-evenly text-white text-sm lg:text-lg font-semibold '>
 						<li
 							className={
 								router.pathname == '/'

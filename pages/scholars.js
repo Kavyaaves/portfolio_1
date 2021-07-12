@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Footer from '../components/Footer';
 import Body from '../components/Body';
 import NavBar from '../components/NavBar';
+import Scholars from '../components/Scholars';
 
 function scholars() {
 	return (
@@ -27,12 +28,12 @@ function scholars() {
 				<script src='https://unpkg.com/popper.js@1/dist/umd/popper.min.js'></script>
 				<script src='https://unpkg.com/tippy.js@4'></script>
 			</Head>
-			<body className='bg-members bg-center bg-cover bg-fixed bg-no-repeat bg-opacity-0'>
+			<body className='bg-species bg-center bg-cover bg-fixed bg-no-repeat bg-opacity-0'>
 				<div>
 					<NavBar />
 				</div>
 				<div className='p-5'>
-					<Body />
+					<Scholars />
 				</div>
 				<br />
 			</body>

@@ -31,7 +31,7 @@ export default function Index() {
 				<script src='https://unpkg.com/popper.js@1/dist/umd/popper.min.js'></script>
 				<script src='https://unpkg.com/tippy.js@4'></script>
 			</Head>
-			<body className='bg-home bg-center bg-cover bg-no-repeat bg-fixed'>
+			<body className='bg-gallery bg-center bg-cover bg-no-repeat bg-fixed'>
 				<div>
 					<NavBar />
 					<Home />

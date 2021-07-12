@@ -5,9 +5,9 @@ export default function Index() {
 		<div className='max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto lg:my-0'>
 			<div className='lg:w-2/5 my-16'>
 				<Image
-					src='/Babu.png'
+					src='/Babu1.jpg'
 					width={550}
-					height={500}
+					height={600}
 					layout='responsive'
 					className='rounded-none lg:rounded-lg shadow-2xl hidden lg:block'
 				/>
@@ -44,6 +44,9 @@ export default function Index() {
 						</a>
 						babu@mcc.edu.in
 					</p>
+					<br />
+					<p>Former Postdoctoral Researcher at Academia Sinica</p>
+
 					<div className='mt-6 pb-5 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between'></div>
 				</div>
 			</div>
