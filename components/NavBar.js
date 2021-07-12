@@ -29,11 +29,11 @@ function NavBar() {
 						</li>
 						<li
 							className={
-								router.pathname == '/members'
+								router.pathname == '/scholars'
 									? 'border-solid border-b-2'
 									: ''
 							}>
-							<Link href='/members'>Members</Link>
+							<Link href='/scholars'>Scholars</Link>
 						</li>
 						<li
 							className={
@@ -118,12 +118,12 @@ function NavBar() {
 					</li>
 					<li
 						className={
-							router.pathname == '/members'
+							router.pathname == '/scholars'
 								? 'border-solid border-b-2 p-2'
 								: 'p-2'
 						}>
-						<Link href='/members' className='inline-table'>
-							Members
+						<Link href='/scholars' className='inline-table'>
+							Scholars
 						</Link>
 					</li>
 					<li

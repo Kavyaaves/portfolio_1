@@ -3,11 +3,11 @@ import Footer from '../components/Footer';
 import Body from '../components/Body';
 import NavBar from '../components/NavBar';
 
-function members() {
+function scholars() {
 	return (
 		<div className=''>
 			<Head>
-				<title>Bakthavachalam Babu - Members</title>
+				<title>Bakthavachalam Babu - Scholars</title>
 				<link rel='preconnect' href='https://fonts.gstatic.com' />
 				<link
 					rel='stylesheet'
@@ -43,4 +43,4 @@ function members() {
 	);
 }
 
-export default members;
+export default scholars;

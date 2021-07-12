@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Footer from '../components/Footer';
-import Body from '../components/Body';
+import Publications from '../components/Publications';
 import NavBar from '../components/NavBar';
 
 function members() {
@@ -32,7 +32,7 @@ function members() {
 					<NavBar />
 				</div>
 				<div className='p-5'>
-					<Body />
+					<Publications />
 				</div>
 				<br />
 			</body>

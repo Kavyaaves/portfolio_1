@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import SlickSlider from '../components/SlickSlider';
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 function gallery() {
 	return (
@@ -26,7 +27,7 @@ function gallery() {
 				<script src='https://unpkg.com/popper.js@1/dist/umd/popper.min.js'></script>
 				<script src='https://unpkg.com/tippy.js@4'></script>
 			</Head>
-			<body className='bg-gallery bg-fixed bg-cover bg-no-repeat'>
+			<body className='bg-gallery bg-fixed bg-cover bg-center bg-no-repeat'>
 				<NavBar />
 				<div className='p-2 pt-5'>
 					<div className='bg-primary max-w-2xl m-auto rounded-lg p-2'>
@@ -34,6 +35,10 @@ function gallery() {
 					</div>
 				</div>
 			</body>
+			<br />
+			<footer>
+				<Footer />
+			</footer>
 		</div>
 	);
 }

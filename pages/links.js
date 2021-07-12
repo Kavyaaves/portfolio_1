@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Footer from '../components/Footer';
-import Body from '../components/Body';
+import Links from '../components/Links';
 import NavBar from '../components/NavBar';
 
 function members() {
@@ -27,12 +27,12 @@ function members() {
 				<script src='https://unpkg.com/popper.js@1/dist/umd/popper.min.js'></script>
 				<script src='https://unpkg.com/tippy.js@4'></script>
 			</Head>
-			<body className='bg-members bg-center bg-cover bg-fixed bg-no-repeat'>
+			<body className='bg-members bg-center bg-cover  bg-fixed bg-no-repeat'>
 				<div>
 					<NavBar />
 				</div>
 				<div className='p-5'>
-					<Body />
+					<Links />
 				</div>
 				<br />
 			</body>
