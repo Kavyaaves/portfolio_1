@@ -90,7 +90,7 @@ function NavBar() {
 			<div
 				className={
 					isOpen
-						? 'translate-x-full transition-all ease-in p-5 duration-300 absolute w-screen top-0 z-10 block md:hidden h-screen flex-shrink-0 bg-primary'
+						? 'absolute md:relative translate-x-full transition-all ease-in p-5 duration-300 w-screen top-0 z-20 flex md:hidden h-screen left-0 flex-shrink-0 bg-primary'
 						: 'hidden'
 				}>
 				<div
