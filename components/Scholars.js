@@ -6,6 +6,7 @@ function Scholars() {
 			<h2 class='text-center text-2xl italic text-yellow-500 font-bold '>
 				<span class=''>SCHOLARS</span>
 			</h2>
+			<br />
 			<div class='md:flex md:flex-wrap'>
 				<div class='md:w-full rounded-lg overflow-hidden shadow-lg md:flex md:justify-between mb-10'>
 					<div class='md:flex-shrink-0 flex items-center justify-center'>
@@ -13,7 +14,7 @@ function Scholars() {
 							class='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Hannah.jpg'
+							src='/Hannah1.jpg'
 							alt='Grace'
 						/>
 					</div>
@@ -39,7 +40,7 @@ function Scholars() {
 							class='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Hannah.jpg'
+							src='/Hannah1.jpg'
 							alt='Hannah'
 						/>
 					</div>

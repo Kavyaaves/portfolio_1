@@ -75,10 +75,10 @@ function NavBar() {
 					</ul>
 				</nav>
 			</div>
-			<div className='md:hidden top-0 h-auto'>
+			<div className='md:hidden block top-0 h-auto'>
 				{!isOpen && (
 					<button
-						className='text-4xl cursor-pointer p-2'
+						className='text-5xl cursor-pointer ml-6 outline-none'
 						onClick={(e) => {
 							e.preventDefault();
 							setIsOpen(!isOpen);
@@ -90,7 +90,7 @@ function NavBar() {
 				{isOpen && (
 					<nav class='absolute md:relative top-0 left-0 z-20 p-6 font-semibold w-full md:w-auto h-screen bg-primary'>
 						<div
-							className='text-right cursor-pointer'
+							className='text-right text-3xl cursor-pointer'
 							onClick={(e) => {
 								e.preventDefault();
 								setIsOpen(false);
@@ -99,36 +99,36 @@ function NavBar() {
 						</div>
 						<br />
 						<ul className='sm:flex flex-grow m-auto text-center m-top-auto text-lg lg:text-xl font-light'>
-							<li
-								className={
-									router.pathname == '/'
-										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
-										: 'p-2'
-								}>
-								<Link href='/' className='inline-table'>
+							<Link href='/' className='inline-table'>
+								<li
+									className={
+										router.pathname == '/'
+											? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
+											: 'p-2'
+									}>
 									Home
-								</Link>
-							</li>
-							<li
-								className={
-									router.pathname == '/research'
-										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
-										: 'p-2'
-								}>
-								<Link href='/research' className='inline-table'>
+								</li>
+							</Link>
+							<Link href='/research' className='inline-table'>
+								<li
+									className={
+										router.pathname == '/research'
+											? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
+											: 'p-2'
+									}>
 									Research
-								</Link>
-							</li>
-							<li
-								className={
-									router.pathname == '/scholars'
-										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
-										: 'p-2'
-								}>
-								<Link href='/scholars' className='inline-table'>
+								</li>
+							</Link>
+							<Link href='/scholars' className='inline-table'>
+								<li
+									className={
+										router.pathname == '/scholars'
+											? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
+											: 'p-2'
+									}>
 									Scholars
-								</Link>
-							</li>
+								</li>
+							</Link>
 							<li
 								className={
 									router.pathname == '/publications'
@@ -181,36 +181,36 @@ function NavBar() {
 				</div>
 				<br />
 				<ul className='sm:flex flex-grow m-auto text-center m-top-auto text-lg lg:text-xl font-light'>
+				<Link href='/' className='inline-table'>
 					<li
 						className={
 							router.pathname == '/'
 								? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 								: 'p-2'
 						}>
-						<Link href='/' className='inline-table'>
 							Home
-						</Link>
-					</li>
+							</li>
+							</Link>
+					<Link href='/research' className='inline-table'>
 					<li
 						className={
 							router.pathname == '/research'
 								? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 								: 'p-2'
 						}>
-						<Link href='/research' className='inline-table'>
 							Research
-						</Link>
-					</li>
+							</li>
+							</Link>
+					<Link href='/scholars' className='inline-table'>
 					<li
 						className={
 							router.pathname == '/scholars'
 								? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 								: 'p-2'
 						}>
-						<Link href='/scholars' className='inline-table'>
 							Scholars
-						</Link>
-					</li>
+							</li>
+							</Link>
 					<li
 						className={
 							router.pathname == '/publications'
