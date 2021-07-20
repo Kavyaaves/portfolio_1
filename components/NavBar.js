@@ -87,7 +87,83 @@ function NavBar() {
 					</button>
 				)}
 			</div>
-			<div
+			{isOpen && (
+				<nav class='absolute md:relative md:hidden top-0 left-0 z-20 p-6 font-semibold w-full md:w-auto h-screen bg-primary'>
+					<div
+						className='text-right cursor-pointer'
+						onClick={() => {
+							setIsOpen(false);
+						}}>
+						&#10005;
+					</div>
+					<br />
+					<ul className='sm:flex flex-grow m-auto text-center m-top-auto text-lg lg:text-xl font-light'>
+						<li
+							className={
+								router.pathname == '/'
+									? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
+									: 'p-2'
+							}>
+							<Link href='/' className='inline-table'>
+								Home
+							</Link>
+						</li>
+						<li
+							className={
+								router.pathname == '/research'
+									? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
+									: 'p-2'
+							}>
+							<Link href='/research' className='inline-table'>
+								Research
+							</Link>
+						</li>
+						<li
+							className={
+								router.pathname == '/scholars'
+									? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
+									: 'p-2'
+							}>
+							<Link href='/scholars' className='inline-table'>
+								Scholars
+							</Link>
+						</li>
+						<li
+							className={
+								router.pathname == '/publications'
+									? 'border-solid border-white p-2'
+									: 'p-2'
+							}>
+							<Link href='/publications'>Publications</Link>
+						</li>
+						<li
+							className={
+								router.pathname == '/links'
+									? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
+									: 'p-2'
+							}>
+							<Link href='/links'>Links</Link>
+						</li>
+						<li
+							className={
+								router.pathname == '/contact'
+									? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
+									: 'p-2'
+							}>
+							<Link href='/contact'>Contact</Link>
+						</li>
+						<li
+							className={
+								router.pathname == '/gallery'
+									? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
+									: 'p-2'
+							}>
+							<Link href='/gallery'>Gallery</Link>
+						</li>
+					</ul>
+				</nav>
+			)}
+			{/* <div
 				className={
 					isOpen
 						? 'absolute md:relative translate-x-full transition-all ease-in p-5 duration-300 w-full top-0 z-20 flex md:hidden h-full left-0 flex-shrink-0 bg-primary'
@@ -165,7 +241,7 @@ function NavBar() {
 						<Link href='/gallery'>Gallery</Link>
 					</li>
 				</ul>
-			</div>
+			</div> */}
 		</div>
 	);
 }
