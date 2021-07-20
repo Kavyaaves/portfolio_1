@@ -12,10 +12,10 @@ function NavBar() {
 				<nav
 					className={
 						router.pathname == '/'
-							? 'bg-gray-500 max-w-2xl m-auto p-2  rounded-t-none rounded-lg text-white'
-							: 'bg-primary max-w-2xl m-auto p-2  rounded-t-none rounded-lg text-white'
+							? 'bg-gray-500 max-w-2xl m-auto  rounded-t-none rounded-lg text-white'
+							: 'bg-primary max-w-2xl m-auto  rounded-t-none rounded-lg text-white'
 					}>
-					<ul className='hidden sm:flex flex-grow  m-auto justify-evenly text-white text-sm lg:text-lg font-semibold '>
+					<ul className='hidden sm:flex flex-grow p-2 m-auto justify-evenly text-white text-sm lg:text-lg font-semibold '>
 						<li
 							className={
 								router.pathname == '/'
@@ -79,17 +79,18 @@ function NavBar() {
 				{!isOpen && (
 					<button
 						className='text-4xl p-2 focus:hidden'
-						onClick={() => {
-							isOpen ? setIsOpen(false) : setIsOpen(true);
+						onClick={(e) => {
+							e.preventDefault();
+							setIsOpen(!isOpen);
 						}}>
 						&equiv;
 					</button>
 				)}
 			</div>
-			<aside
+			<div
 				className={
 					isOpen
-						? 'translate-x-full transition-all ease-in p-5 duration-100 absolute w-screen  top-0 z-10 sm:hidden h-screen flex-shrink-0 bg-primary'
+						? 'translate-x-full transition-all ease-in p-5 duration-300 absolute w-screen  top-0 z-10 md:hidden h-screen flex-shrink-0 bg-primary'
 						: 'hidden'
 				}>
 				<div
@@ -164,7 +165,7 @@ function NavBar() {
 						<Link href='/gallery'>Gallery</Link>
 					</li>
 				</ul>
-			</aside>
+			</div>
 		</div>
 	);
 }
