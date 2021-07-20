@@ -17,7 +17,7 @@ const settings = {
 };
 function SlickSlider() {
 	return (
-		<div className='max-h-full pb-5 m-auto'>
+		<div className='max-h-screen pb-5 m-auto'>
 			<Slider {...settings} className='w-4/5  m-auto'>
 				<figure className=''>
 					<Image
