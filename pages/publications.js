@@ -7,7 +7,7 @@ function members() {
 	return (
 		<div className=''>
 			<Head>
-				<title>Bakthavachalam Babu - Members</title>
+				<title>Bakthavachalam Babu - Publications</title>
 				<link rel='preconnect' href='https://fonts.gstatic.com' />
 				<link
 					rel='stylesheet'

@@ -3,6 +3,9 @@ import Image from 'next/image';
 function Scholars() {
 	return (
 		<div className='max-w-4xl md:p-10 p-5 min-h-auto m-auto bg-primary rounded-lg'>
+			<h2 class='text-center text-2xl italic text-yellow-500 font-bold '>
+				<span class=''>SCHOLARS</span>
+			</h2>
 			<div class='md:flex md:flex-wrap'>
 				<div class='md:w-full rounded-lg overflow-hidden shadow-lg md:flex md:justify-between mb-10'>
 					<div class='md:flex-shrink-0 flex items-center justify-center'>
