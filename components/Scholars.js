@@ -14,7 +14,7 @@ function Scholars() {
 							class='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Hannah1.jpg'
+							src='/Grace.jpg'
 							alt='Grace'
 						/>
 					</div>
@@ -95,7 +95,7 @@ function Scholars() {
 							class='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Aiswarya.jpg'
+							src='/Arokia Monisha .jpg'
 							alt='Arokia Monisha'
 						/>
 					</div>
@@ -123,8 +123,8 @@ function Scholars() {
 							class='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Aiswarya.jpg'
-							alt='Mr. Sonsuri Rongpi'
+							src='/Sonsuri.jpg'
+							alt='Sonsuri Rongpi'
 						/>
 					</div>
 					<div class='flex flex-col flex-grow px-8 py-10 bg-color-333'>
@@ -152,7 +152,7 @@ function Scholars() {
 							class='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Aiswarya.jpg'
+							src='/Vasantha Kumar.jpg'
 							alt='Vasantha Kumar'
 						/>
 					</div>
@@ -210,7 +210,7 @@ function Scholars() {
 							class='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Karthika.jpg'
+							src='/Asmin.jpg'
 							alt='Asmin Bibi'
 						/>
 					</div>
@@ -263,7 +263,7 @@ function Scholars() {
 						/>
 						<div class='md:hidden flex items-center ml-10 justify-center'>
 							<Image
-								class=''
+								class=' rounded-lg'
 								width={200}
 								height={300}
 								src='/Kokila.jpg'
@@ -348,8 +348,8 @@ function Scholars() {
 							class='rounded-lg'
 							width={200}
 							height={300}
-							src='/Kokila.jpg'
-							alt='A Quiet Place movie poster'
+							src='/Sankesh.jpg'
+							alt='Sankesh'
 						/>
 					</div>
 					<div class='flex flex-col flex-grow px-8 py-10 bg-color-333'>
@@ -383,7 +383,7 @@ function Scholars() {
 						/>
 						<div class='md:hidden flex items-center ml-10 justify-center'>
 							<Image
-								class=''
+								class='rounded-lg'
 								width={200}
 								height={300}
 								src='/Pratima Gurung.jpg'
@@ -485,15 +485,15 @@ function Scholars() {
 							class='rounded-lg'
 							width={200}
 							height={300}
-							src='/Kokila.jpg'
-							alt='A Quiet Place movie poster'
+							src='/Sandhya.jpg'
+							alt='Sandhya'
 						/>
 						<Image
 							class='rounded-lg'
 							width={200}
 							height={300}
 							src='/Kokila.jpg'
-							alt='A Quiet Place movie poster'
+							alt='Saranya'
 						/>
 					</div>
 
@@ -525,7 +525,7 @@ function Scholars() {
 							class='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Nancy.jpg'
+							src='/Amal.jpg'
 							alt='Mr. Amudham Radha Amal Raj'
 						/>
 					</div>
