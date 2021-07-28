@@ -1,13 +1,13 @@
 import Head from 'next/head';
 import Footer from '../components/Footer';
-import Body from '../components/Body';
+import Research from '../components/Research';
 import NavBar from '../components/NavBar';
 
-function members() {
+export default function studentCorner() {
 	return (
 		<div className=''>
 			<Head>
-				<title>Bakthavachalam Babu - Members</title>
+				<title>Bakthavachalam Babu - Student's Corner</title>
 				<link rel='preconnect' href='https://fonts.gstatic.com' />
 				<link
 					rel='stylesheet'
@@ -27,12 +27,12 @@ function members() {
 				<script src='https://unpkg.com/popper.js@1/dist/umd/popper.min.js'></script>
 				<script src='https://unpkg.com/tippy.js@4'></script>
 			</Head>
-			<body className='bg-members bg-center bg-cover bg-fixed bg-no-repeat'>
+			<body className='bg-research bg-cover bg-fixed bg-no-repeat'>
 				<div>
 					<NavBar />
 				</div>
 				<div className='p-5'>
-					<Body />
+					<Research />
 				</div>
 				<br />
 			</body>
@@ -42,5 +42,3 @@ function members() {
 		</div>
 	);
 }
-
-export default members;

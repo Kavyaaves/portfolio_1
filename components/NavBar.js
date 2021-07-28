@@ -57,11 +57,11 @@ function NavBar() {
 						</li>
 						<li
 							className={
-								router.pathname == '/contact'
+								router.pathname == '/student-corner'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
 									: ''
 							}>
-							<Link href='/contact'>Contact</Link>
+							<Link href='/student-corner'>Student Corner</Link>
 						</li>
 						<li
 							className={
@@ -153,11 +153,13 @@ function NavBar() {
 							</li>
 							<li
 								className={
-									router.pathname == '/contact'
+									router.pathname == '/student-corner'
 										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 										: 'p-2'
 								}>
-								<Link href='/contact'>Contact</Link>
+								<Link href='/student-corner'>
+									Student Corner
+								</Link>
 							</li>
 							<li
 								className={
