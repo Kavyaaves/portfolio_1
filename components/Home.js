@@ -19,7 +19,7 @@ export default function Home() {
 						Bakthavachalam Babu
 					</h1>
 					<h5 className=' text-sm font-bold pt-1'>
-						M. Phil., Ph. D (Botany)
+						M. Sc., M. Phil., Ph. D (Botany)
 					</h5>
 					<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-gray-500 opacity-'></div>
 					<p className='pt-4 text-base font-bold flex items-center justify-center lg:justify-start'>

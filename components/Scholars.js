@@ -14,7 +14,7 @@ function Scholars() {
 							class='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Grace.jpg'
+							src='/Grace.JPG'
 							alt='Grace'
 						/>
 					</div>

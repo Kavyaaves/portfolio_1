@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 function NavBar() {
 	const [isOpen, setIsOpen] = useState(false);
-	console.log(isOpen);
 	const router = useRouter();
 
 	return (
@@ -80,7 +79,7 @@ function NavBar() {
 					<>
 						<br />
 						<button
-							className='text-5xl border-none p-4 h-10 rounded-lg bg-primary cursor-pointer ml-6 focus:outline-none hover:animate-bounce'
+							className='text-5xl border-none p-4 h-10 rounded-lg bg-primary cursor-pointer ml-6 focus:outline-none hover:bg-yellow-600'
 							onClick={(e) => {
 								e.preventDefault();
 								setIsOpen(!isOpen);
@@ -102,14 +101,14 @@ function NavBar() {
 
 				{isOpen && (
 					<nav class='absolute md:relative top-0 left-0 z-20 p-6 font-semibold w-full md:w-auto h-screen bg-primary'>
-						<div
+						<button
 							className='text-right text-3xl cursor-pointer'
 							onClick={(e) => {
 								e.preventDefault();
 								setIsOpen(false);
 							}}>
 							&#10005;
-						</div>
+						</button>
 						<br />
 						<ul className='sm:flex flex-grow m-auto text-center m-top-auto text-lg lg:text-xl font-light'>
 							<li

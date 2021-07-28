@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Footer from '../components/Footer';
-import Body from '../components/Body';
+import Research from '../components/Research';
 import NavBar from '../components/NavBar';
 
 function research() {
@@ -32,7 +32,7 @@ function research() {
 					<NavBar />
 				</div>
 				<div className='p-5'>
-					<Body />
+					<Research />
 				</div>
 				<br />
 			</body>
