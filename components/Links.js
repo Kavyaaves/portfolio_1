@@ -109,7 +109,7 @@ function Links() {
 					target='_blank'
 					className='p-5 justify-center flex items-center'>
 					<Image
-						src='/Seaweed South Africa.png'
+						src='/Seaweed South africa.png'
 						width={900}
 						height={300}
 					/>

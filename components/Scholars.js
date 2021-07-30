@@ -97,7 +97,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Grace.JPG'
+							src='/Grace.jpg'
 							alt='Grace'
 						/>
 					</div>
@@ -521,7 +521,7 @@ function Scholars() {
 							className='rounded-lg'
 							width={200}
 							height={300}
-							src='/Kokila.jpg'
+							src='/SARANYA.jpg'
 							alt='Saranya'
 						/>
 					</div>
