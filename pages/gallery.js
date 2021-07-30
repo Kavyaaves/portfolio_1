@@ -2,8 +2,7 @@ import Head from 'next/head';
 import Tabs from '../components/Tabs';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
-import Gallery from '../components/Gallery';
-
+import SlickSlider from '../components/SlickSlider';
 function gallery() {
 
 
@@ -34,7 +33,7 @@ function gallery() {
 				<NavBar />
 				<div className='p-2 pt-5 max-w-4xl mx-auto'>
 					<div className='bg-primary  rounded-lg p-2'>
-						<Gallery />
+						<SlickSlider />
 					</div>
 				</div>
 			</body>
