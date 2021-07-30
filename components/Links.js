@@ -100,7 +100,7 @@ function Links() {
 					href='http://symbiont.ansp.org/dntf/index.php'
 					target='_blank'
 					className='p-5 justify-center flex items-center'>
-					<Image src='/Diatom New.png' width={500} height={60} />
+					<Image src='/Diatom New.PNG' width={500} height={60} />
 				</a>
 			</div>
 			<div className='md:grid md:grid-rows-1 md:grid-flow-col justify-center'>
@@ -109,7 +109,7 @@ function Links() {
 					target='_blank'
 					className='p-5 justify-center flex items-center'>
 					<Image
-						src='/Seaweed South africa.png'
+						src='/Seaweed South africa.PNG'
 						width={900}
 						height={300}
 					/>

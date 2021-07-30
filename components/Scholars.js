@@ -245,7 +245,7 @@ function Scholars() {
 						<h3 className='font-bold text-xl text-gray-200'>
 							Ms. Asmin Bibi. K
 						</h3>
-						<span className='text-base  lg:mb-4'>M. Sc.</span>
+						<span className='text-base lg:mb-4'>M. Sc.</span>
 
 						<span className='text-base  lg:mb-4'>
 							Batch: 2018 - 2019
