@@ -94,14 +94,12 @@ const Tabs = ({ color }) => {
 											openTab === 2 ? 'block' : 'hidden'
 										}
 										id='link2'>
-										<SlickSlider images={marineImages} />
 									</div>
 									<div
 										className={
 											openTab === 3 ? 'block' : 'hidden'
 										}
 										id='link3'>
-										<SlickSlider images={marineImages} />
 									</div>
 								</div>
 							</div>
