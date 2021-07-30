@@ -1,6 +1,11 @@
 import Image from 'next/image';
 
+
 export default function Home() {
+
+	
+
+
 	return (
 		<div className='max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto lg:my-0'>
 			<div className='lg:w-2/5 my-16'>
@@ -33,10 +38,10 @@ export default function Home() {
 						<br />
 						Madras Christian College
 					</p>
-					<p class='pt-2 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
+					<p className='pt-2 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
 						<a className='link' href='#' data-tippy-content=''>
 							<svg
-								class='h-5 fill-current text-gray-500 pr-4'
+								className='h-5 fill-current text-gray-500 pr-4'
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 24 24'>
 								<path d='M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z' />
@@ -49,6 +54,9 @@ export default function Home() {
 
 					<div className='mt-6 pb-5 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between'></div>
 				</div>
+			
+
+
 			</div>
 		</div>
 	);

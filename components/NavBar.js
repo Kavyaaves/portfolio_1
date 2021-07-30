@@ -100,7 +100,7 @@ function NavBar() {
 				)}
 
 				{isOpen && (
-					<nav class='absolute md:relative top-0 left-0 z-20 p-6 font-semibold w-full md:w-auto h-screen bg-primary'>
+					<nav className='absolute md:relative top-0 left-0 z-20 p-6 font-semibold w-full md:w-auto h-screen bg-primary'>
 						<button
 							className='text-right text-3xl cursor-pointer'
 							onClick={(e) => {
