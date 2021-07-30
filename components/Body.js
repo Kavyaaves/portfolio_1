@@ -1,28 +1,61 @@
+import React, { useEffect, useState } from "react";
+
+
 function Body() {
+	const [isVisible, setIsVisible] = useState(false);
+
+	// Top: 0 takes us all the way back to the top of the page
+	// Behavior: smooth keeps it smooth!
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth"
+		});
+	};
+	useEffect(() => {
+		// Button is displayed after scrolling for 500 pixels
+		const toggleVisibility = () => {
+			if (window.pageYOffset > 500) {
+				setIsVisible(true);
+			} else {
+				setIsVisible(false);
+			}
+		};
+
+		window.addEventListener("scroll", toggleVisibility);
+
+		return () => window.removeEventListener("scroll", toggleVisibility);
+	}, []);
 	return (
 		<div className='max-w-4xl m-auto bg-primary rounded-lg'>
 			<br />
-			<h2 class='text-center text-2xl italic text-yellow-500 font-bold '>
-				<span class=''>ABOUT ME</span>
+			{isVisible && (
+				<button onClick={scrollToTop} className=" outline-none fixed right-0 bottom-0 text-center flex rounded-full w-16 m-10 h-16 bg-primary text-yellow-500 items-center justify-center">
+					<div classname='inline-flex m-10'><svg xmlns="http://www.w3.org/2000/svg" fill="#FFBF00" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></div>
+				</button>
+			)}
+
+			<h2 className='text-center text-2xl italic text-yellow-500 font-bold '>
+				<span className=''>ABOUT ME</span>
 			</h2>
 			<div className='p-10'>
-				<div class='container bg-gray-200 mx-auto w-full h-full'>
-					<div class='relative wrap overflow-hidden p-10 h-full'>
+				<div className='container bg-gray-200 mx-auto w-full h-full'>
+					<div className='relative wrap overflow-hidden p-10 h-full'>
 						<div
-							class='md:border-2-2 md:absolute border-opacity-20 md:border-gray-700 h-full border'
+							className='md:border-2-2 md:absolute border-opacity-20 md:border-gray-700 h-full border'
 							style={{ left: '50%' }}></div>
-						<div class='flex justify-between items-center md:flex-row-reverse w-full left-timeline'>
-							<div class='order-1 md:w-5/12 '></div>
-							<div class='z-20 p-3  flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
-								<h1 class='mx-auto font-semibold text-lg text-white'>
+						<div className='flex justify-between items-center md:flex-row-reverse w-full left-timeline'>
+							<div className='order-1 md:w-5/12 '></div>
+							<div className='z-20 p-3  flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
+								<h1 className='mx-auto font-semibold text-lg text-white'>
 									1
 								</h1>
 							</div>
-							<div class='order-2 bg-gray-400 rounded-lg shadow-xl md:w-5/12 w-full px-6 py-4'>
-								<h3 class='mb-3 font-bold text-gray-800 text-xl'>
+							<div className='order-2 bg-gray-400 rounded-lg shadow-xl md:w-5/12 w-full px-6 py-4'>
+								<h3 className='mb-3 font-bold text-gray-800 text-xl'>
 									Graduation
 								</h3>
-								<p class='text-base leading-snug font-semibold text-gray-800 text-opacity-100'>
+								<p className='text-base leading-snug font-semibold text-gray-800 text-opacity-100'>
 									I have obtained my Graduation degree in
 									Botany (1993) and Post-graduation degree
 									(M.Sc. Botany) in 1995 from the Department
@@ -38,13 +71,13 @@ function Body() {
 							</div>
 						</div>
 
-						<div class='flex justify-between md:-my-10 items-center w-full md:flex-row-reverse left-timeline'>
-							<div class='order-2 md:w-5/12 w-0'></div>
-							<div class='order-1 bg-yellow-400 rounded-lg shadow-xl md:w-5/12 w-full px-6 py-4'>
-								<h3 class='mb-3 font-bold text-gray-800 text-xl'>
+						<div className='flex justify-between md:-my-10 items-center w-full md:flex-row-reverse left-timeline'>
+							<div className='order-2 md:w-5/12 w-0'></div>
+							<div className='order-1 bg-yellow-400 rounded-lg shadow-xl md:w-5/12 w-full px-6 py-4'>
+								<h3 className='mb-3 font-bold text-gray-800 text-xl'>
 									Freshwater Rhodophyceae of Tamil Nadu
 								</h3>
-								<p class='text-base leading-snug font-semibold text-gray-800 text-opacity-100'>
+								<p className='text-base leading-snug font-semibold text-gray-800 text-opacity-100'>
 									My M.Phil dissertation entitled “Freshwater
 									Rhodophyceae of Tamil Nadu” enabled me to
 									obtain a sound knowledge on various species
@@ -52,25 +85,25 @@ function Body() {
 									freshwater habitats of Tamil Nadu.
 								</p>
 							</div>
-							<div class='z-20 p-3 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
-								<h1 class='mx-auto text-white font-semibold text-lg'>
+							<div className='z-20 p-3 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
+								<h1 className='mx-auto text-white font-semibold text-lg'>
 									2
 								</h1>
 							</div>
 						</div>
 
-						<div class='flex justify-between md:flex-row-reverse md:-my-10 items-center w-full left-timeline'>
-							<div class='order-1 md:w-5/12'></div>
-							<div class='z-20 p-3 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
-								<h1 class='mx-auto font-semibold text-lg text-white'>
+						<div className='flex justify-between md:flex-row-reverse md:-my-10 items-center w-full left-timeline'>
+							<div className='order-1 md:w-5/12'></div>
+							<div className='z-20 p-3 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
+								<h1 className='mx-auto font-semibold text-lg text-white'>
 									3
 								</h1>
 							</div>
-							<div class='order-2 bg-gray-400 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4'>
-								<h3 class='mb-3 font-bold text-gray-800 text-xl'>
+							<div className='order-2 bg-gray-400 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4'>
+								<h3 className='mb-3 font-bold text-gray-800 text-xl'>
 									Project Fellow
 								</h3>
-								<p class='text-base leading-snug font-semibold text-gray-800 text-opacity-100'>
+								<p className='text-base leading-snug font-semibold text-gray-800 text-opacity-100'>
 									Later, in 1997 I joined as a Project Fellow
 									in a UGC Project entitled in
 									“Ultrastructural studieds on Fucales,
@@ -80,14 +113,14 @@ function Body() {
 							</div>
 						</div>
 
-						<div class='flex justify-between items-center md:-my-10 md:flex-row-reverse w-full left-timeline'>
-							<div class='order-2 md:w-5/12 w-0'></div>
+						<div className='flex justify-between items-center md:-my-10 md:flex-row-reverse w-full left-timeline'>
+							<div className='order-2 md:w-5/12 w-0'></div>
 
-							<div class='order-1 bg-yellow-400 rounded-lg shadow-xl md:w-5/12 w-full px-6 py-4'>
-								<h3 class='mb-3 font-bold text-gray-800 text-xl'>
+							<div className='order-1 bg-yellow-400 rounded-lg shadow-xl md:w-5/12 w-full px-6 py-4'>
+								<h3 className='mb-3 font-bold text-gray-800 text-xl'>
 									Ph. D Thesis
 								</h3>
-								<p class='text-base font-medium leading-snug text-gray-800 text-opacity-100'>
+								<p className='text-base font-medium leading-snug text-gray-800 text-opacity-100'>
 									My Ph. D. thesis entitled “Histochemical,
 									Ultrasturctural and Biochemical studies on
 									Sargassum wightii Greve., Turbinaria ornata
@@ -99,24 +132,24 @@ function Body() {
 									(Algology) in January 2002.
 								</p>
 							</div>
-							<div class='z-20 p-3 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
-								<h1 class='mx-auto text-white font-semibold text-lg'>
+							<div className='z-20 p-3 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
+								<h1 className='mx-auto text-white font-semibold text-lg'>
 									4
 								</h1>
 							</div>
 						</div>
-						<div class='flex justify-between items-center md:-my-10 md:flex-row-reverse w-full left-timeline'>
-							<div class='order-1 md:w-5/12'></div>
-							<div class='z-20 p-3 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
-								<h1 class='mx-auto font-semibold text-lg text-white'>
+						<div className='flex justify-between items-center md:-my-10 md:flex-row-reverse w-full left-timeline'>
+							<div className='order-1 md:w-5/12'></div>
+							<div className='z-20 p-3 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
+								<h1 className='mx-auto font-semibold text-lg text-white'>
 									5
 								</h1>
 							</div>
-							<div class='order-2 bg-gray-400 rounded-lg shadow-xl md:w-5/12 w-full px-6 py-4'>
-								<h3 class='mb-3 font-bold text-gray-800 text-xl'>
+							<div className='order-2 bg-gray-400 rounded-lg shadow-xl md:w-5/12 w-full px-6 py-4'>
+								<h3 className='mb-3 font-bold text-gray-800 text-xl'>
 									Post Doctoral Researcher
 								</h3>
-								<p class='text-base leading-snug font-semibold text-gray-900 text-opacity-100'>
+								<p className='text-base leading-snug font-semibold text-gray-900 text-opacity-100'>
 									Further I continued my research on algae as
 									a Post-Doctoral Researcher under the
 									guidance of Dr. Jiunn-Tzong Wu (Research
@@ -127,14 +160,14 @@ function Body() {
 							</div>
 						</div>
 
-						<div class='flex justify-between  items-center md:-my-10 md:flex-row-reverse w-full left-timeline'>
-							<div class='order-2 md:w-5/12 w-0'></div>
+						<div className='flex justify-between  items-center md:-my-10 md:flex-row-reverse w-full left-timeline'>
+							<div className='order-2 md:w-5/12 w-0'></div>
 
-							<div class='order-1 bg-yellow-400 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4'>
-								<h3 class='mb-3 font-bold text-gray-800 text-xl'>
+							<div className='order-1 bg-yellow-400 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4'>
+								<h3 className='mb-3 font-bold text-gray-800 text-xl'>
 									Books and Publications
 								</h3>
-								<p class='text-base font-semibold leading-snug text-gray-800 text-opacity-100'>
+								<p className='text-base font-semibold leading-snug text-gray-800 text-opacity-100'>
 									During this Period of Post-Doctoral
 									Research, I extended my knowledge in the
 									fields of Bioremediation, Isolation of
@@ -150,24 +183,24 @@ function Body() {
 									both National and International conferences.
 								</p>
 							</div>
-							<div class='z-20 p-3 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
-								<h1 class='mx-auto text-white font-semibold text-lg'>
+							<div className='z-20 p-3 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
+								<h1 className='mx-auto text-white font-semibold text-lg'>
 									6
 								</h1>
 							</div>
 						</div>
-						<div class='flex justify-between md:flex-row-reverse md:-my-10 items-center w-full left-timeline'>
-							<div class='order-1 md:w-5/12'></div>
-							<div class='z-20 p-3 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
-								<h1 class='mx-auto font-semibold text-lg text-white'>
+						<div className='flex justify-between md:flex-row-reverse md:-my-10 items-center w-full left-timeline'>
+							<div className='order-1 md:w-5/12'></div>
+							<div className='z-20 p-3 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full'>
+								<h1 className='mx-auto font-semibold text-lg text-white'>
 									7
 								</h1>
 							</div>
-							<div class='order-1 bg-gray-400 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4'>
-								<h3 class='mb-3 font-bold text-gray-800 text-xl'>
+							<div className='order-1 bg-gray-400 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4'>
+								<h3 className='mb-3 font-bold text-gray-800 text-xl'>
 									MCC Journey
 								</h3>
-								<p class='text-base leading-snug font-semibold text-gray-900 text-opacity-100'>
+								<p className='text-base leading-snug font-semibold text-gray-900 text-opacity-100'>
 									In 2013, I joined as Faculty in the
 									Department of Botany Madras Christian
 									College. Ever since I joined the department

@@ -32,6 +32,9 @@ export default function Index() {
 				<script src='https://unpkg.com/tippy.js@4'></script>
 			</Head>
 			<body className='bg-gallery bg-center bg-cover bg-no-repeat bg-fixed'>
+				<div className="scroll-to-top">
+					
+				</div>
 				<div>
 					<NavBar />
 					<Home />
