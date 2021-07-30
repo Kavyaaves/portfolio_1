@@ -83,7 +83,7 @@ function Links() {
 					target='_blank'
 					className='p-5 justify-center flex items-center'>
 					<Image
-						src='/Diatom flora of Britain.png'
+						src='/Diatom flora of Britain.PNG'
 						width={900}
 						height={300}
 					/>
