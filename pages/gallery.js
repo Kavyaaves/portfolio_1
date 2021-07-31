@@ -94,7 +94,7 @@ function gallery({ all }) {
 export default gallery;
 
 export async function getStaticProps() {
-	const results = await fetch('http://localhost:3000/api/gallery');
+	const results = await fetch('https://bakthavachalam-babu.vercel.app/api/gallery');
 	const all = await results.json()
 	console.log("getsta", all)
 	return {
