@@ -22,7 +22,7 @@ module.exports = {
 				members: "url('/Caulerpa verticillata.jpg')",
 				species: "url('/Leveillea Jungermanniodes.jpg')",
 				shore: "url('/shore1.jpg')",
-				unsplash1: "url('https://www.source.unsplash.com/MP0IUfwrn0A')",
+				falls: "url('/Adhirapalli Falls.JPG')"
 			}),
 		},
 	},
