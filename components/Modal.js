@@ -7,7 +7,7 @@ const Modal = ({ images, selectedImg, setSelectedImg }) => {
     };
 
     return (
-        <div className="block h-full overflow-auto" >
+        <div className="block h-screen overflow-auto" >
             <button
                 className='text-3xl absolute  right-10 p-2 text-right focus:outline-none'
                 onClick={handleClick}>

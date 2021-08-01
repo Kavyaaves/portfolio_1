@@ -11,7 +11,7 @@ function gallery() {
 		[{
 			id: 1,
 			name: 'Acanthophora spicifera',
-			url: '/marine/Acanthophora spicifera.JPG',
+			url: '/marine/Acanthophora spicifera.jpg',
 			caption: 'imagae 1',
 		},
 		{
@@ -32,7 +32,7 @@ function gallery() {
 			id: 4,
 
 			name: 'Botryocladia sp',
-			url: '/marine/Botryocladia sp.JPG',
+			url: '/marine/Botryocladia sp.jpg',
 			caption: 'imagae 1',
 		},
 		{
@@ -53,7 +53,7 @@ function gallery() {
 			id: 8,
 
 			name: 'Caulerpa scalpelliformis',
-			url: '/marine/Caulerpa scalpelliformis.JPG',
+			url: '/marine/Caulerpa scalpelliformis.jpg',
 			caption: 'imagae 1',
 		},
 		{

@@ -38,9 +38,9 @@ function Body() {
 			<h2 className='text-center text-2xl italic text-yellow-500 font-bold '>
 				<span className=''>ABOUT ME</span>
 			</h2>
-			<div className='p-10'>
+			<div className='md:p-10 p-5'>
 				<div className='container bg-gray-200 mx-auto w-full h-full'>
-					<div className='relative wrap overflow-hidden p-10 h-full'>
+					<div className='relative wrap overflow-hidden md:p-10 p-5 h-full'>
 						<div
 							className='md:border-2-2 md:absolute border-opacity-20 md:border-gray-700 h-full border'
 							style={{ left: '50%' }}></div>

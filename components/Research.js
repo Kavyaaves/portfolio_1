@@ -25,7 +25,7 @@ function Body() {
 						<div className='bg-gray-200  rounded-lg m-4 p-5 transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110'>
 							<h5 className="font-bold">Freshwater Diatom Flora of Tamil Nadu</h5>
 							<br />
-							<p className=''>
+							<p className='font-semibold'>
 								Studies on the freshwater diatom flora of Tamil
 								Nadu has been initiated and is under progress.
 							</p>
@@ -33,7 +33,7 @@ function Body() {
 						<div className='bg-gray-200  rounded-lg m-4 p-5 transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110'>
 							<h5 className="font-bold">Taxonomy of Marine and Fresh Water Algae</h5>
 							<br />
-							<p className=''>
+							<p className='font-semibold'>
 								Studies on the Diversity of Freshwater and
 								Marine algal flora of Tamil Nadu has been
 								initiated.
@@ -43,7 +43,7 @@ function Body() {
 							<h5 className="font-bold">Water Quality Assessment</h5>
 							<br />
 							<br />
-							<p className=''>
+							<p className='font-semibold'>
 								Studies on Water Pollution and Water Quality
 								Assessment using freshwater Diatoms as a
 								Pollutions Indicator has been carried out in
@@ -55,7 +55,7 @@ function Body() {
 						<div className='bg-gray-200  rounded-lg m-4  p-5 transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110'>
 							<h5 className="font-bold">Biodegradation of Environmental Pollutants</h5>
 							<br />
-							<p className=''>
+							<p className='font-semibold'>
 								Biodegradation pathway of phthalate esters (DBP,
 								DPP, DEP and DMP) was carried out using
 								different strains of freshwater algae.
@@ -67,7 +67,7 @@ function Body() {
 								Compounds from Algae
 							</h5>
 							<br />
-							<p className=''>
+							<p className='font-semibold'>
 								The bioactive compounds from microalgae have
 								been investigated for antioxidant, antimicrobial
 								and anticancer activities
@@ -76,7 +76,7 @@ function Body() {
 						<div className='bg-gray-200  rounded-lg m-4 p-5 transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110'>
 							<h5 className="font-bold">Phycosynthesis of Nanoparticle</h5>
 							<br />
-							<p className=''>
+							<p className='font-semibold'>
 								Studies on the synthesis of Silver and Gold
 								nanoparticles using various marine and
 								freshwater algae have been carried out to
