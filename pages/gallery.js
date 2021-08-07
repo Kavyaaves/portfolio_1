@@ -209,8 +209,8 @@ function gallery() {
 					</button>
 				)}
 
-			</body >
 			<br />
+			</body >
 
 			<footer>
 				<Footer />

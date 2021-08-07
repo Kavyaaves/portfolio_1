@@ -2,39 +2,10 @@ import React, { useEffect, useState } from "react";
 
 
 function Body() {
-	const [isVisible, setIsVisible] = useState(false);
 
-	// Top: 0 takes us all the way back to the top of the page
-	// Behavior: smooth keeps it smooth!
-	const scrollToTop = () => {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth"
-		});
-	};
-	useEffect(() => {
-		// Button is displayed after scrolling for 500 pixels
-		const toggleVisibility = () => {
-			if (window.pageYOffset > 500) {
-				setIsVisible(true);
-			} else {
-				setIsVisible(false);
-			}
-		};
-
-		window.addEventListener("scroll", toggleVisibility);
-
-		return () => window.removeEventListener("scroll", toggleVisibility);
-	}, []);
 	return (
 		<div className='max-w-4xl m-auto bg-primary rounded-lg'>
 			<br />
-			{isVisible && (
-				<button onClick={scrollToTop} className="focus:outline-none fixed right-0 bottom-0 text-center flex rounded-full w-16 m-10 h-16 bg-primary text-yellow-500 items-center justify-center">
-					<div classname='inline-flex m-10'><svg xmlns="http://www.w3.org/2000/svg" fill="#FFBF00" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></div>
-				</button>
-			)}
-
 			<h2 className='text-center text-2xl italic text-yellow-500 font-bold '>
 				<span className=''>ABOUT ME</span>
 			</h2>

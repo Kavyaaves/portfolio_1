@@ -44,7 +44,7 @@ const Tabs = ({ allImages, setSelectedImg }) => {
 								data-toggle='tab'
 								href='#link2'
 								role='tablist'>
-								Marine Water Algae
+								Marine Algae
 							</a>
 						</li>
 						{/* <li className='-mb-px border-yellow-400  border-solid  border-t-0 border-b-2 last:mr-0 flex-auto text-center'>

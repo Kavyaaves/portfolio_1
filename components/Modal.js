@@ -20,8 +20,8 @@ const Modal = ({ images, selectedImg, setSelectedImg }) => {
                     priority
                     src={selectedImg.url}
                     alt={selectedImg.name}
-                    width={600}
-                    height={550}
+                    width={selectedImg?.lgw ? selectedImg?.lgw : 600}
+                    height={selectedImg?.lgh ? selectedImg?.lgh : 550}
                     quality={100}
                 />
             </div>

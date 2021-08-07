@@ -9,7 +9,6 @@ function ImageGrid({ images, setSelectedImg }) {
                 return (<div key={i} className='md:grid md:grid-rows-1 md:grid-flow-col md:gap-3 md:justify-between'>
 
                     {image && image.map((img, i) => {
-                        { console.log(img) }
                         return (
                             // <Link >
                             //     <a>

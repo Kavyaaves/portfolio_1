@@ -22,7 +22,8 @@ module.exports = {
 				members: "url('/Caulerpa verticillata.jpg')",
 				species: "url('/Leveillea Jungermanniodes.jpg')",
 				shore: "url('/shore1.jpg')",
-				falls: "url('/Adhirapalli Falls.JPG')"
+				falls: "url('/Adhirapalli Falls.JPG')",
+				andaman: "url('/Andaman.JPG')",
 			}),
 		},
 	},
