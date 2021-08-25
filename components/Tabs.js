@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import ImageGrid from './ImageGrid';
 import SlickSlider from './SlickSlider';
-
-const Tabs = ({ allImages, setSelectedImg }) => {
+import prisma from '../utils/db';
+import Log from './Log'
+const Tabs = ({ marine }) => {
 	const [openTab, setOpenTab] = useState(1);
+
 	return (
 		<>
 			<div className='flex flex-wrap md:p-5'>
@@ -17,7 +19,7 @@ const Tabs = ({ allImages, setSelectedImg }) => {
 									'text-base p-3 font-semibold md:uppercase px-5 py-3 shadow-lg  block leading-normal ' +
 									(openTab === 1
 										? 'text-gray-900 rounded-t-lg bg-yellow-500'
-										: 'text-yellow-600 bg-primary')
+										: 'text-yellow-600')
 								}
 								onClick={(e) => {
 									e.preventDefault();
@@ -35,7 +37,7 @@ const Tabs = ({ allImages, setSelectedImg }) => {
 									'text-base font-semibold md:uppercase p-3 shadow-lg block leading-normal ' +
 									(openTab === 2
 										? 'text-gray-900 rounded-t-lg bg-yellow-500'
-										: 'text-yellow-600 bg-primary ')
+										: 'text-yellow-600 ')
 								}
 								onClick={(e) => {
 									e.preventDefault();
@@ -75,14 +77,15 @@ const Tabs = ({ allImages, setSelectedImg }) => {
 										openTab === 1 ? 'block' : 'hidden'
 									}
 									id='link1'>
-									<ImageGrid images={allImages?.marine} setSelectedImg={setSelectedImg} />
+									{/* <ImageGrid images={allImages?.marine} setSelectedImg={setSelectedImg} /> */}
 								</div>
 								<div
 									className={
 										openTab === 2 ? 'block' : 'hidden'
 									}
 									id='link2'>
-									<ImageGrid images={allImages?.freshWater} setSelectedImg={setSelectedImg} />
+									<Log data={marine} />
+									{/* <ImageGrid images={allImages?.freshWater} setSelectedImg={setSelectedImg} /> */}
 
 								</div>
 								{/* <div
@@ -101,6 +104,5 @@ const Tabs = ({ allImages, setSelectedImg }) => {
 };
 
 export default Tabs
-
 
 

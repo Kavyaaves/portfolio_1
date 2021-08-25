@@ -6,13 +6,13 @@ function NavBar() {
 	const router = useRouter();
 
 	return (
-		<div className='relative '>
-			<div className='w-full top-2 '>
+		<div className='relative'>
+			<div className='w-full top-2'>
 				<nav
 					className={
 						router.pathname == '/'
-							? 'bg-gray-500 max-w-2xl m-auto  rounded-t-none rounded-lg text-white'
-							: 'bg-primary max-w-2xl m-auto  rounded-t-none rounded-lg text-white'
+							? 'bg-gray-500 max-w-4xl m-auto  rounded-t-none rounded-lg text-white'
+							: 'bg-primary max-w-4xl m-auto  rounded-t-none rounded-lg text-white'
 					}>
 					<ul className='hidden sm:flex flex-grow p-2 m-auto justify-evenly text-white text-sm lg:text-lg font-semibold '>
 						<li
@@ -65,11 +65,19 @@ function NavBar() {
 						</li>
 						<li
 							className={
-								router.pathname == '/gallery'
+								router.pathname == '/marine-algae'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
 									: ''
 							}>
-							<Link href='/gallery'>Gallery</Link>
+							<Link href='/marine-algae'>Marine Algae</Link>
+						</li>
+						<li
+							className={
+								router.pathname == '/freshwater-algae'
+									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
+									: ''
+							}>
+							<Link href='/freshwater-algae'>FreshWater Algae</Link>
 						</li>
 					</ul>
 				</nav>
@@ -163,11 +171,19 @@ function NavBar() {
 							</li>
 							<li
 								className={
-									router.pathname == '/gallery'
+									router.pathname == '/freshwater-algae'
 										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 										: 'p-2'
 								}>
-								<Link href='/gallery'>Gallery</Link>
+								<Link href='/gallery'>FreshWater Algae</Link>
+							</li>
+							<li
+								className={
+									router.pathname == '/marine-algae'
+										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
+										: 'p-2'
+								}>
+								<Link href='/gallery'>Marine Algae</Link>
 							</li>
 						</ul>
 					</nav>

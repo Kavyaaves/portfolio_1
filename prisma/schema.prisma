@@ -1,0 +1,80 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Marine {
+  id           Int    @id @default(autoincrement())
+  name         String
+  title        String
+  desc         String
+  img1         String
+  img2         String
+  img3         String
+  img4         String
+  img5         String
+  para1        String
+  para2        String
+  para3        String
+  para4        String
+  para5        String
+  division     String
+  class        String
+  order        String
+  family       String
+  basionym     String
+  synonym      String @default("")
+  ecology      String @default("")
+  distribution String @default("")
+  habitat      String
+  orientation1 String @default("5x7")
+  orientation2 String @default("5x7")
+  orientation3 String @default("5x7")
+  orientation4 String @default("5x7")
+  orientation5 String @default("5x7")
+  img1Caption  String
+  img2Caption  String
+  img3Caption  String
+  img4Caption  String
+  img5Caption  String
+}
+
+model Freshwater {
+  id           Int    @id @default(autoincrement())
+  name         String
+  title        String
+  desc         String
+  img1         String
+  img2         String
+  img3         String
+  img4         String
+  img5         String
+  para1        String
+  para2        String
+  para3        String
+  para4        String
+  para5        String
+  division     String
+  class        String
+  order        String
+  family       String
+  basionym     String
+  habitat      String
+  orientation1 String @default("5x7")
+  orientation2 String @default("5x7")
+  orientation3 String @default("5x7")
+  orientation4 String @default("5x7")
+  orientation5 String @default("5x7")
+  img1Caption  String
+  img2Caption  String
+  img3Caption  String
+  img4Caption  String
+  img5Caption  String
+}
