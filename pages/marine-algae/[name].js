@@ -87,7 +87,7 @@ function marineAlgaeDetail({ data }) {
 
 export default marineAlgaeDetail;
 
-export const getServerSideProps = async (context) => {
+export const getInitialProps = async (context) => {
     const data = await prisma.marine.findMany({ where: { "name": context.params.name } });
     return {
         props: { data: data[0] || null }
