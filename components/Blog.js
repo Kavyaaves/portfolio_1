@@ -4,6 +4,7 @@ import parse from 'html-react-parser'
 
 
 const Blog = ({ data }) => {
+    console.log(data)
     return (
         <div className="p-5 select-none">
             <h2 className='text-center text-2xl text-yellow-500 font-bold '>
@@ -30,56 +31,110 @@ const Blog = ({ data }) => {
                 </div>
 
             </div>
-            {data.basionym &&
+            {data.basionym != "" &&
                 <div className="flex gap-10">
                     <span className="font-bold text-lg">Basionym</span>
                     <span className="">{parse(data.basionym)}</span>
                 </div>}
-
+            {data.synonym != "" &&
+                <div className="flex gap-10">
+                    <span className="font-bold text-lg">Synonym</span>
+                    <span className="">{parse(data.synonym)}</span>
+                </div>}
             <div className="w-full items-center justify-evenly flex p-5">
-                <Image className="self-center" src={data.img1} layout="intrinsic" width={700} height={500} />
+                <Image className="self-center" src={data.img1} layout="intrinsic" width={data.orientation1 == "5x7" ? 500 : 700} height={data.orientation1 == "5x7" ? 700 : 500} />
+                <p>{data.imgCaption1}</p>
             </div>
-            <p>{data.para1}</p>
-            <br />
-            <p>{data.para2}</p>
-            <br />
-            <p>{data.para3}</p>
-            <br />
-            <p>{data.para4}</p>
+            {data.para1 !== "" &&
+                <>
+                    <p>{data.para1}</p>
+                    <br />
+                </>
+            }
+            {data.para2 !== "" &&
+                <>
+                    <p>{data.para2}</p>
+                    <br />
+                </>
+            }
+            {data.para3 !== "" &&
+                <>
+                    <p>{data.para3}</p>
+                    <br />
+                </>
+            }
+            {data.para4 !== "" &&
+                <>
+                    <p>{data.para4}</p>
+                    <br />
+                </>
+            }
+            {data.para5 !== "" &&
+                <>
+                    <p>{data.para5}</p>
+                    <br />
+                </>
+            }
+            {data.ecology != "" &&
+                <>
+                    <div className="">
+                        <p className=" font-bold text-lg">Ecology</p>
+                        <p>{data.ecology}</p>
 
-            <br />
-            {data.img2 && <div className="w-full items-center justify-evenly flex p-5">
-                <Image className="self-center" src={data.img2} layout="intrinsic" width={400} height={600} />
-            </div>
+                    </div>
+                    <br />
+                </>
             }
-            <br />
-            {data.img3 && <div className="w-full items-center justify-evenly flex p-5">
-                <Image className="self-center" src={data.img3} layout="intrinsic" width={500} height={700} />
-            </div>}
-            <br />
 
-            {data.img4 && <div className="w-full items-center justify-evenly flex p-5">
-                <Image className="self-center" src={data.img4} layout="intrinsic" width={500} height={700} />
-            </div>
-            }
-            <br />
-
-            {data.img5 && <div className="w-full items-center justify-evenly flex p-5">
-                <Image className="self-center" src={data.img5} layout="intrinsic" width={400} height={500} />
-            </div>
-            }
-            <br />
-            {data.ecology &&
-                <div className="flex gap-14 "><span className=" font-bold text-lg">Ecology</span>
-                    <span>{data.ecology}</span></div>
-            }
-            <br />
             {data.distribution &&
-                <div>
+                <div className="" >
                     <p className="font-bold text-lg">Distribution in India </p>
                     <p>{parse(data.distribution)}</p>
                 </div>
             }
+            {data.img2 &&
+                <>
+                    <div className="w-full items-center justify-evenly flex p-5">
+                        <Image className="self-center" src={data.img2} layout="intrinsic" width={data.orientation2 == "5x7" ? 500 : 700} height={data.orientation2 == "5x7" ? 700 : 500} />
+                        <p>{data.imgCaption2}</p>
+                    </div>
+                    <br />
+                </>
+            }
+            {data.img3 &&
+                <>
+                    <div className="w-full items-center justify-evenly flex p-5">
+                        <Image className="self-center" src={data.img3} layout="intrinsic" width={data.orientation3 == "5x7" ? 500 : 700} height={data.orientation3 == "5x7" ? 700 : 500} />
+                        <p>{data.imgCaption3}</p>
+                    </div>
+                    <br />
+                </>
+            }
+
+            {data.img4 &&
+                <>
+                    <div className="w-full items-center justify-evenly flex p-5">
+                        <Image className="self-center" src={data.img4} layout="intrinsic" width={data.orientation4 == "5x7" ? 500 : 700} height={data.orientation4 == "5x7" ? 700 : 500} />
+                        <p>{data.imgCaption4}</p>
+                    </div>
+                    <br />
+
+                </>
+            }
+
+
+            {data.img5 &&
+                <>
+                    <div className="w-full items-center justify-evenly flex p-5">
+
+                        <Image className="self-center" src={data.img5} layout="intrinsic" width={data.orientation5 == "5x7" ? 500 : 700} height={data.orientation5 == "5x7" ? 700 : 500} />
+                        <p>{data.imgCaption5}</p>
+
+                    </div>
+                    <br />
+                </>
+            }
+
         </div>
     )
 }

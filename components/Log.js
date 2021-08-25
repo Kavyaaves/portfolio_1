@@ -24,7 +24,7 @@ function Log({ data }) {
                 </div>
                 <div className="md:w-1/2">
                     <p className="text-lg text-yellow-500 p-5 pl-0">Brown Algae</p>
-                    {data.red.map((d, i) => {
+                    {data.brown.map((d, i) => {
                         return (
                             <ul>
                                 <li className="text-base text-white list-disc hover:underline">
@@ -34,6 +34,18 @@ function Log({ data }) {
                         )
                     })}
                 </div>
+            </div>
+            <div className="md:w-1/2">
+                <p className="text-lg text-yellow-500 p-5 pl-0">Green Algae</p>
+                {data.green.map((d, i) => {
+                    return (
+                        <ul>
+                            <li className="text-base text-white list-disc hover:underline">
+                                <Link href="">{d.name}</Link>
+                            </li>
+                        </ul>
+                    )
+                })}
             </div>
         </div>
     )
