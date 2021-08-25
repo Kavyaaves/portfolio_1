@@ -1,7 +1,6 @@
 import Link from "next/link"
 
 function Log({ data }) {
-    console.log(data)
     return (
         <div>
             <h2 className='text-center text-2xl italic text-yellow-500 font-bold '>
@@ -24,7 +23,7 @@ function Log({ data }) {
                 </div>
                 <div className="md:w-1/2">
                     <p className="text-lg text-yellow-500 p-5 pl-0">Brown Algae</p>
-                    {data.brown.map((d, i) => {
+                    {/* {data.brown.map((d, i) => {
                         return (
                             <ul>
                                 <li className="text-base text-white list-disc hover:underline">
@@ -32,12 +31,12 @@ function Log({ data }) {
                                 </li>
                             </ul>
                         )
-                    })}
+                    })} */}
                 </div>
             </div>
             <div className="md:w-1/2">
                 <p className="text-lg text-yellow-500 p-5 pl-0">Green Algae</p>
-                {data.green.map((d, i) => {
+                {/* {data.green.map((d, i) => {
                     return (
                         <ul>
                             <li className="text-base text-white list-disc hover:underline">
@@ -45,7 +44,7 @@ function Log({ data }) {
                             </li>
                         </ul>
                     )
-                })}
+                })} */}
             </div>
         </div>
     )

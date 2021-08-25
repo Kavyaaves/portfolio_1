@@ -65,7 +65,7 @@ function marineAlgaeDetail({ data }) {
                 <div className='p-2  pt-5 max-w-4xl relative mx-auto'>
                     <div className='bg-primary relative rounded-lg p-10 w-full h-full'>
                         {/* <Log data={marine} /> */}
-                        <Blog data={data} />
+                        {data ? <Blog data={data} /> : ""}
                     </div>
                 </div>
                 <br />
@@ -87,10 +87,24 @@ function marineAlgaeDetail({ data }) {
 
 export default marineAlgaeDetail;
 
-export const getInitialProps = async (context) => {
-    const data = await prisma.marine.findMany({ where: { "name": context.params.name } });
+export async function getStaticProps(ctx) {
+    const data = await prisma.marine.findMany({ where: { "name": ctx.params.name } });
+
     return {
         props: { data: data[0] || null }
+    };
+}
+export async function getStaticPaths() {
+    const data = await prisma.marine.findMany();
+    let paths = data.map(post => ({
+        params: {
+            name:
+                post.name
+        }
+    }))
+    return {
+        paths,
+        fallback: false,
     };
 }
 

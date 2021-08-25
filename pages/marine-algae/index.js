@@ -6,7 +6,6 @@ import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 import prisma from '../../utils/db';
 function marineAlgae({ marine }) {
-	console.log(marine)
 	const [isVisible, setIsVisible] = useState(false);
 
 	const scrollToTop = () => {
