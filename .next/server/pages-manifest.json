@@ -1,8 +1,0 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/marine-algae/[name]": "pages/marine-algae/[name].js",
-  "/marine-algae": "pages/marine-algae.js"
-}
