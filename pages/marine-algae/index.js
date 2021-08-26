@@ -29,7 +29,7 @@ function marineAlgae({ marine }) {
 		return () => window.removeEventListener("scroll", toggleVisibility);
 	}, []);
 	return (
-		<div className='w-screen h-screen overflow-hidden'>
+		<div className='w-screen h-screen'>
 			<Head>
 				<title>Bakthavachalam Babu - Marine Algae</title>
 				<link rel='preconnect' href='https://fonts.gstatic.com' />

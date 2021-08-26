@@ -79,7 +79,7 @@ const Blog = ({ data }) => {
                 <>
                     <div className="">
                         <p className=" font-bold text-lg">Ecology</p>
-                        <p>{data.ecology}</p>
+                        <p>{parse(data.ecology)}</p>
 
                     </div>
                     <br />
