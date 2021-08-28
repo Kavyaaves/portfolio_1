@@ -20,6 +20,7 @@ model Marine {
   img3         String
   img4         String
   img5         String
+  img6         String @default("")
   para1        String
   para2        String
   para3        String
@@ -39,11 +40,14 @@ model Marine {
   orientation3 String @default("5x7")
   orientation4 String @default("5x7")
   orientation5 String @default("5x7")
+  orientation6 String @default("5x7")
   img1Caption  String
   img2Caption  String
   img3Caption  String
   img4Caption  String
   img5Caption  String
+  img6Caption  String @default("")
+
 }
 
 model Freshwater {

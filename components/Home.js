@@ -1,6 +1,5 @@
 import Image from 'next/image';
 
-
 export default function Home() {
 	return (
 		<div className='max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto lg:my-0'>
@@ -13,7 +12,7 @@ export default function Home() {
 					className='rounded-none lg:rounded-lg shadow-2xl hidden lg:block'
 				/>
 			</div>
-			<div className='w-full text-gray-900 lg:w-3/5 rounded-lg lg:rounded-r-lg lg:rounded-l-none shadow-2xl bg-white mx-6 md:opacity-90 sm:opacity-100 lg:mx-0'>
+			<div className='w-full text-gray-900 lg:w-3/5 rounded-lg lg:rounded-r-lg lg:rounded-l-none shadow-2xl bg-gray-200 mx-6  sm:opacity-100 lg:mx-0'>
 				<div className='p-4 md:p-12 text-center lg:text-left'>
 					<div className='block lg:hidden rounded-full shadow-xl mx-auto -mt-32 h-48 w-48 bg-cover bg-center bg-babu'></div>
 					<h1 className='lg:text-3xl text-xl font-bold pt-8 lg:pt-0'>
@@ -47,12 +46,8 @@ export default function Home() {
 					</p>
 					<br />
 					<p>Former Postdoctoral Researcher at Academia Sinica</p>
-
 					<div className='mt-6 pb-5 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between'></div>
 				</div>
-
-
-
 			</div>
 		</div>
 	);

@@ -1,12 +1,13 @@
-import react from 'react';
+import { useState, useEffect } from 'react';
 import Image from "next/image"
 import parse from 'html-react-parser'
 
 
 const Blog = ({ data }) => {
-    console.log(data)
+
     return (
-        <div className="p-5 select-none">
+        <div className="md:p-5 select-none">
+
             <h2 className='text-center text-2xl text-yellow-500 font-bold '>
                 <span className=''>{parse(data.title)}</span>
             </h2>
@@ -129,6 +130,17 @@ const Blog = ({ data }) => {
 
                         <Image className="self-center" src={data.img5} layout="intrinsic" width={data.orientation5 == "5x7" ? 500 : 700} height={data.orientation5 == "5x7" ? 700 : 500} />
                         <p>{data.imgCaption5}</p>
+
+                    </div>
+                    <br />
+                </>
+            }
+            {data.img6 &&
+                <>
+                    <div className="w-full items-center justify-evenly flex p-5">
+
+                        <Image className="self-center" src={data.img6} layout="intrinsic" width={data.orientation6 == "5x7" ? 500 : 700} height={data.orientation6 == "5x7" ? 700 : 500} />
+                        <p>{data.imgCaption6}</p>
 
                     </div>
                     <br />

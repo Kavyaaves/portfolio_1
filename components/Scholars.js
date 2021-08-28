@@ -1,8 +1,37 @@
 import Image from 'next/image';
-
+import { useState, useEffect } from 'react'
 function Scholars() {
+	const [isVisible, setIsVisible] = useState(false);
+
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth"
+		});
+	};
+
+	useEffect(() => {
+		// Button is displayed after scrolling for 500 pixels
+		const toggleVisibility = () => {
+			if (window.pageYOffset > 500) {
+				setIsVisible(true);
+			} else {
+				setIsVisible(false);
+			}
+		};
+		setIsVisible(true)
+
+		window.addEventListener("scroll", toggleVisibility);
+
+		return () => window.removeEventListener("scroll", toggleVisibility);
+	}, []);
 	return (
 		<div className='max-w-4xl md:p-10 p-5 min-h-auto m-auto bg-primary rounded-lg'>
+			{isVisible && (
+				<button onClick={scrollToTop} className="focus:outline-none fixed right-0 bottom-0 text-center flex rounded-full w-16 m-10 h-16 text-blue-700 bg-yellow-600 md:bg-primary md:text-yellow-500 items-center justify-center">
+					<div classname='inline-flex m-10'><svg xmlns="http://www.w3.org/2000/svg" fill="#FFBF00" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></div>
+				</button>
+			)}
 			<h2 className='text-center text-2xl italic text-yellow-500 font-bold '>
 				<span className=''>SCHOLARS</span>
 			</h2>

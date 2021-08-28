@@ -29,7 +29,7 @@ function marineAlgae({ marine }) {
 		return () => window.removeEventListener("scroll", toggleVisibility);
 	}, []);
 	return (
-		<div className='w-screen h-screen'>
+		<div className='w-screen h-screen overflow-x-hidden'>
 			<Head>
 				<title>Bakthavachalam Babu - Marine Algae</title>
 				<link rel='preconnect' href='https://fonts.gstatic.com' />
@@ -51,12 +51,6 @@ function marineAlgae({ marine }) {
 				<script src='https://unpkg.com/popper.js@1/dist/umd/popper.min.js'></script>
 				<script src='https://unpkg.com/tippy.js@4'></script>
 			</Head>
-
-			{/* {selectedImg &&
-				<div className="overflow-hidden absolute z-20 w-full h-full top-0 bottom-0 bg-primary">
-					<Modal setSelectedImg={setSelectedImg} selectedImg={selectedImg} images={allImages} />
-				</div>
-			} */}
 
 			<body className='bg-falls bg-fixed bg-cover bg-center bg-no-repeat' >
 				<NavBar />

@@ -6,46 +6,48 @@ function Log({ data }) {
             <h2 className='text-center text-2xl italic text-yellow-500 font-bold '>
                 <span className=''>MARINE ALGAE</span>
             </h2>
-            <br />
-            <div className="w-full md:flex p-10 items-center">
-
-                <div className="md:w-1/2">
-                    <p className="text-lg text-yellow-500 p-5 pl-0">Red Algae</p>
+            <div className="w-full md:flex px-8">
+                <div className="md:w-1/3 ">
+                    <p className="text-lg text-yellow-500 p-5 pl-0 font-semibold">Red Algae</p>
                     {data.red.map((d, i) => {
                         return (
-                            <ul>
-                                <li className="text-base text-white list-disc hover:underline">
-                                    <Link href={"/marine-algae/" + d.name}>{d.name}</Link>
+                            <ul key={i}>
+                                <li className="text-base text-white list-disc">
+                                    <Link href={"/marine-algae/" + d.name} scroll={true} shallow={true} >
+                                        <span className="hover:underline cursor-pointer">{d.name}</span></Link>
                                 </li>
                             </ul>
                         )
                     })}
                 </div>
-                <div className="md:w-1/2">
-                    <p className="text-lg text-yellow-500 p-5 pl-0">Brown Algae</p>
-                    {/* {data.brown.map((d, i) => {
+                <div className="md:w-1/3">
+                    <p className="text-lg text-yellow-500 p-5 pl-0 font-semibold">Brown Algae</p>
+                    {data.brown.map((d, i) => {
                         return (
-                            <ul>
+                            <ul key={i}>
+                                <li className="text-base text-white list-disc">
+                                    <Link href={"/marine-algae/" + d.name} scroll={true}>
+                                        <span className="hover:underline cursor-pointer">{d.name}</span></Link>
+                                </li>
+                            </ul>
+                        )
+                    })}
+                </div>
+                <div className="md:w-1/3">
+                    <p className="text-lg text-yellow-500 p-5 pl-0 font-semibold">Green Algae</p>
+                    {data.brown.map((d, i) => {
+                        return (
+                            <ul key={i}>
                                 <li className="text-base text-white list-disc hover:underline">
                                     <Link href="">{d.name}</Link>
                                 </li>
                             </ul>
                         )
-                    })} */}
+                    })}
                 </div>
             </div>
-            <div className="md:w-1/2">
-                <p className="text-lg text-yellow-500 p-5 pl-0">Green Algae</p>
-                {/* {data.green.map((d, i) => {
-                    return (
-                        <ul>
-                            <li className="text-base text-white list-disc hover:underline">
-                                <Link href="">{d.name}</Link>
-                            </li>
-                        </ul>
-                    )
-                })} */}
-            </div>
+            <br />
+
         </div>
     )
 }

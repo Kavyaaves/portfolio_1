@@ -25,43 +25,11 @@ function NavBar() {
 						</li>
 						<li
 							className={
-								router.pathname == '/research'
+								router.pathname == '/freshwater-algae'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
 									: ''
 							}>
-							<Link href='/research'>Research</Link>
-						</li>
-						<li
-							className={
-								router.pathname == '/scholars'
-									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
-									: ''
-							}>
-							<Link href='/scholars'>Scholars</Link>
-						</li>
-						<li
-							className={
-								router.pathname == '/publications'
-									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
-									: ''
-							}>
-							<Link href='/publications'>Publications</Link>
-						</li>
-						<li
-							className={
-								router.pathname == '/links'
-									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
-									: ''
-							}>
-							<Link href='/links'>Links</Link>
-						</li>
-						<li
-							className={
-								router.pathname == '/student-corner'
-									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
-									: ''
-							}>
-							<Link href='/student-corner'>Student Corner</Link>
+							<Link href='/freshwater-algae'>Freshwater Algae</Link>
 						</li>
 						<li
 							className={
@@ -73,11 +41,43 @@ function NavBar() {
 						</li>
 						<li
 							className={
-								router.pathname == '/freshwater-algae'
+								router.pathname == '/research'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
 									: ''
 							}>
-							<Link href='/freshwater-algae'>FreshWater Algae</Link>
+							<Link href='/research'>Research</Link>
+						</li>
+						<li
+							className={
+								router.pathname == '/publications'
+									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
+									: ''
+							}>
+							<Link href='/publications'>Publications</Link>
+						</li>
+						<li
+							className={
+								router.pathname == '/scholars'
+									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
+									: ''
+							}>
+							<Link href='/scholars'>Scholars</Link>
+						</li>
+						<li
+							className={
+								router.pathname == '/student-corner'
+									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
+									: ''
+							}>
+							<Link href='/student-corner'>Student Corner</Link>
+						</li>
+						<li
+							className={
+								router.pathname == '/links'
+									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
+									: ''
+							}>
+							<Link href='/links'>Links</Link>
 						</li>
 					</ul>
 				</nav>
@@ -175,7 +175,7 @@ function NavBar() {
 										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 										: 'p-2'
 								}>
-								<Link href='/gallery'>FreshWater Algae</Link>
+								<Link href='/freshwater-algae'>FreshWater Algae</Link>
 							</li>
 							<li
 								className={
@@ -183,7 +183,7 @@ function NavBar() {
 										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 										: 'p-2'
 								}>
-								<Link href='/gallery'>Marine Algae</Link>
+								<Link href='/marine-algae'>Marine Algae</Link>
 							</li>
 						</ul>
 					</nav>
