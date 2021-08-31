@@ -4,7 +4,6 @@ import parse from 'html-react-parser'
 
 
 const Blog = ({ data }) => {
-
     return (
         <div className="md:p-5 select-none">
 
@@ -18,13 +17,14 @@ const Blog = ({ data }) => {
                     <p>{parse(data?.division)}</p>
 
                 </div>
-                <div className="text-left gap-14 flex">
-                    <p className=" font-bold text-lg">Order</p>
-                    <p>{data?.order}</p>
-                </div>
+
                 <div className="text-left gap-14 flex">
                     <p className=" font-bold text-lg">Class</p>
                     <p>{data?.class}</p>
+                </div>
+                <div className="text-left gap-14 flex">
+                    <p className=" font-bold text-lg">Order</p>
+                    <p>{data?.order}</p>
                 </div>
                 <div className="text-left gap-12 flex">
                     <p className=" font-bold text-lg">Family</p>
@@ -42,10 +42,16 @@ const Blog = ({ data }) => {
                     <span className="font-bold text-lg">Synonym</span>
                     <span className="">{parse(data.synonym)}</span>
                 </div>}
-            <div className="w-full items-center justify-evenly flex p-5">
-                <Image className="self-center" src={data.img1} layout="intrinsic" width={data.orientation1 == "5x7" ? 500 : 700} height={data.orientation1 == "5x7" ? 700 : 500} />
-                <p>{data.imgCaption1}</p>
-            </div>
+            <br />
+            {data.img1 &&
+
+                <>
+                    <div className="w-full items-center justify-evenly flex p-5">
+                        <Image className="self-center" src={data.img1} layout="intrinsic" width={data.orientation1 == "5x7" ? 500 : 700} height={data.orientation1 == "5x7" ? 700 : 500} />
+                    </div>
+                    <p>{data.img1Caption}</p>
+                    <br />
+                </>}
             {data.para1 !== "" &&
                 <>
                     <p>{data.para1}</p>
@@ -97,8 +103,9 @@ const Blog = ({ data }) => {
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
                         <Image className="self-center" src={data.img2} layout="intrinsic" width={data.orientation2 == "5x7" ? 500 : 700} height={data.orientation2 == "5x7" ? 700 : 500} />
-                        <p>{data.imgCaption2}</p>
                     </div>
+                    <p>{data.img2Caption}</p>
+
                     <br />
                 </>
             }
@@ -106,8 +113,8 @@ const Blog = ({ data }) => {
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
                         <Image className="self-center" src={data.img3} layout="intrinsic" width={data.orientation3 == "5x7" ? 500 : 700} height={data.orientation3 == "5x7" ? 700 : 500} />
-                        <p>{data.imgCaption3}</p>
                     </div>
+                    <p>{data.img3Caption}</p>
                     <br />
                 </>
             }
@@ -116,8 +123,8 @@ const Blog = ({ data }) => {
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
                         <Image className="self-center" src={data.img4} layout="intrinsic" width={data.orientation4 == "5x7" ? 500 : 700} height={data.orientation4 == "5x7" ? 700 : 500} />
-                        <p>{data.imgCaption4}</p>
                     </div>
+                    <p>{data.img4Caption}</p>
                     <br />
 
                 </>
@@ -129,9 +136,9 @@ const Blog = ({ data }) => {
                     <div className="w-full items-center justify-evenly flex p-5">
 
                         <Image className="self-center" src={data.img5} layout="intrinsic" width={data.orientation5 == "5x7" ? 500 : 700} height={data.orientation5 == "5x7" ? 700 : 500} />
-                        <p>{data.imgCaption5}</p>
 
                     </div>
+                    <p>{data.img5Caption}</p>
                     <br />
                 </>
             }
@@ -140,9 +147,9 @@ const Blog = ({ data }) => {
                     <div className="w-full items-center justify-evenly flex p-5">
 
                         <Image className="self-center" src={data.img6} layout="intrinsic" width={data.orientation6 == "5x7" ? 500 : 700} height={data.orientation6 == "5x7" ? 700 : 500} />
-                        <p>{data.imgCaption6}</p>
 
                     </div>
+                    <p>{data.img6Caption}</p>
                     <br />
                 </>
             }
