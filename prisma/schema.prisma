@@ -34,7 +34,6 @@ model Marine {
   synonym      String @default("")
   ecology      String @default("")
   distribution String @default("")
-  habitat      String
   orientation1 String @default("5x7")
   orientation2 String @default("5x7")
   orientation3 String @default("5x7")
@@ -70,7 +69,9 @@ model Freshwater {
   order        String
   family       String
   basionym     String
-  habitat      String
+  synonym      String @default("")
+  ecology      String @default("")
+  distribution String @default("")
   orientation1 String @default("5x7")
   orientation2 String @default("5x7")
   orientation3 String @default("5x7")
