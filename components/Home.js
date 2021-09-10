@@ -33,6 +33,7 @@ export default function Home() {
 						<br />
 						Madras Christian College
 					</p>
+
 					<p className='pt-2 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
 						<a className='link' href='#' data-tippy-content=''>
 							<svg
