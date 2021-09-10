@@ -5,7 +5,9 @@ import Log2 from '../../components/Log2';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 import prisma from '../../utils/db';
-function marineAlgae({ freshwater }) {
+
+function freshwaterAlgae({ freshwater }) {
+
     const [isVisible, setIsVisible] = useState(false);
     const scrollToTop = () => {
         window.scrollTo({
@@ -13,6 +15,7 @@ function marineAlgae({ freshwater }) {
             behavior: "smooth"
         });
     };
+
     useEffect(() => {
         // Button is displayed after scrolling for 500 pixels
         const toggleVisibility = () => {
@@ -75,12 +78,16 @@ function marineAlgae({ freshwater }) {
     );
 }
 
-export default marineAlgae;
+export default freshwaterAlgae;
 
 
 export const getStaticProps = async () => {
+
     const charophyta = await prisma.freshwater.findMany({ where: { "division": 'Charophyta' } });
     const chlorophyta = await prisma.freshwater.findMany({ where: { "division": 'Chlorophyta' } });
-    // const marineGreen = await prisma.freshwater.findMany({ where: { "division": 'Chlorophyta' } });
-    return { props: { freshwater: { charophyta, chlorophyta } } };
+    const glaucophyta = await prisma.freshwater.findMany({ where: { "division": 'Glaucophyta' } });
+    const ochrophyta = await prisma.freshwater.findMany({ where: { "division": 'Ochrophyta' } });
+    const rhodophyta = await prisma.freshwater.findMany({ where: { "division": 'Rhodophyta' } });
+
+    return { props: { freshwater: { charophyta, chlorophyta, glaucophyta, ochrophyta, rhodophyta } } };
 };
