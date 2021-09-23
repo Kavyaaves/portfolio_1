@@ -47,7 +47,7 @@ const Blog = ({ data }) => {
 
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
-                        <Image className="self-center" src={data.img1} layout="intrinsic" width={data.orientation1 == "5x7" ? 500 : 700} height={data.orientation1 == "5x7" ? 700 : 500} />
+                        <Image className="self-center" src={data.img1} layout="intrinsic" width={data.orientation1.split('x')[0] * 100} height={data.orientation1.split('x')[1] * 100} />
                     </div>
                     <p>{data.img1Caption}</p>
                     <br />
@@ -102,7 +102,7 @@ const Blog = ({ data }) => {
             {data.img2 &&
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
-                        <Image className="self-center" src={data.img2} layout="intrinsic" width={data.orientation2 == "5x7" ? 500 : 700} height={data.orientation2 == "5x7" ? 700 : 500} />
+                        <Image className="self-center" src={data.img2} layout="intrinsic" width={data.orientation1.split('x')[0] * 100} height={data.orientation1.split('x')[1] * 100} />
                     </div>
                     <p>{data.img2Caption}</p>
 
@@ -112,7 +112,7 @@ const Blog = ({ data }) => {
             {data.img3 &&
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
-                        <Image className="self-center" src={data.img3} layout="intrinsic" width={data.orientation3 == "5x7" ? 500 : 700} height={data.orientation3 == "5x7" ? 700 : 500} />
+                        <Image className="self-center" src={data.img3} layout="intrinsic" width={data.orientation1.split('x')[0] * 100} height={data.orientation1.split('x')[1] * 100} />
                     </div>
                     <p>{data.img3Caption}</p>
                     <br />
@@ -122,7 +122,7 @@ const Blog = ({ data }) => {
             {data.img4 &&
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
-                        <Image className="self-center" src={data.img4} layout="intrinsic" width={data.orientation4 == "5x7" ? 500 : 700} height={data.orientation4 == "5x7" ? 700 : 500} />
+                        <Image className="self-center" src={data.img4} layout="intrinsic" width={data.orientation1.split('x')[0] * 100} height={data.orientation1.split('x')[1] * 100} />
                     </div>
                     <p>{data.img4Caption}</p>
                     <br />
@@ -135,7 +135,7 @@ const Blog = ({ data }) => {
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
 
-                        <Image className="self-center" src={data.img5} layout="intrinsic" width={data.orientation5 == "5x7" ? 500 : 700} height={data.orientation5 == "5x7" ? 700 : 500} />
+                        <Image className="self-center" src={data.img5} layout="intrinsic" width={data.orientation1.split('x')[0] * 100} height={data.orientation1.split('x')[1] * 100} />
 
                     </div>
                     <p>{data.img5Caption}</p>
@@ -146,7 +146,7 @@ const Blog = ({ data }) => {
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
 
-                        <Image className="self-center" src={data.img6} layout="intrinsic" width={data.orientation6 == "5x7" ? 500 : 700} height={data.orientation6 == "5x7" ? 700 : 500} />
+                        <Image className="self-center" src={data.img6} layout="intrinsic" width={data.orientation1.split('x')[0] * 100} height={data.orientation1.split('x')[1] * 100} />
 
                     </div>
                     <p>{data.img6Caption}</p>
