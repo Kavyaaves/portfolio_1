@@ -110,6 +110,7 @@ const Blog = ({ data }) => {
                 </>
             }
             {data.img3 &&
+
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
                         <Image className="self-center" src={data.img3} layout="intrinsic" width={data.orientation1.split('x')[0] * 100} height={data.orientation1.split('x')[1] * 100} />
