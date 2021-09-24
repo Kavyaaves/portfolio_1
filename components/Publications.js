@@ -26,7 +26,7 @@ function Publications() {
 				<span className='bg-'>PAPERS</span>
 			</h2>
 			<div className='p-12'>
-				<ul className='list-disc'>
+				<ul className='list-none'>
 					<li className='border-white bg-gray-200 font-semibold text-gray-800 rounded-t-lg p-5 transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110 hover:rounded-b-lg'>
 						Bakthavachalam Babu and Pauline Gifty, 2020. Diversity
 						of Freshwater Diatoms from the World Heritage

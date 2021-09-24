@@ -13,8 +13,8 @@ function Log({ data }) {
                         return (
                             <ul key={i}>
                                 <li className="text-base text-white list-disc">
-                                    <Link href={"/marine-algae/" + d.name} scroll={true} shallow={true} >
-                                        <span className="hover:underline cursor-pointer">{d.name}</span></Link>
+                                    <Link href={"/marine-algae/" + d.name}  >
+                                        <span className="hover:underline cursor-pointer"><i>{d.name}</i></span></Link>
                                 </li>
                             </ul>
                         )
@@ -27,7 +27,7 @@ function Log({ data }) {
                             <ul key={i}>
                                 <li className="text-base text-white list-disc">
                                     <Link href={"/marine-algae/" + d.name} scroll={true}>
-                                        <span className="hover:underline cursor-pointer">{d.name}</span></Link>
+                                        <span className="hover:underline cursor-pointer"><i>{d.name}</i></span></Link>
                                 </li>
                             </ul>
                         )
@@ -40,7 +40,7 @@ function Log({ data }) {
                             <ul key={i}>
                                 <li className="text-base text-white list-disc">
                                     <Link href={"/marine-algae/" + d.name} scroll={true}>
-                                        <span className="hover:underline cursor-pointer">{d.name}</span></Link>
+                                        <span className="hover:underline cursor-pointer"><i>{d.name}</i></span></Link>
                                 </li>
                             </ul>
                         )

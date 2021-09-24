@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Footer from '../components/Footer';
 import Research from '../components/Research';
 import NavBar from '../components/NavBar';
+import StudentCorner from '../components/StudentCorner';
 
 export default function studentCorner() {
 	return (
@@ -32,7 +33,7 @@ export default function studentCorner() {
 					<NavBar />
 				</div>
 				<div className='p-5'>
-					<Research />
+					<StudentCorner />
 				</div>
 				<br />
 			</body>

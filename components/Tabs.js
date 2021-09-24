@@ -3,6 +3,9 @@ import ImageGrid from './ImageGrid';
 import SlickSlider from './SlickSlider';
 import prisma from '../utils/db';
 import Log from './Log'
+import Tab1 from './Tab1';
+import Tab2 from './Tab2';
+import Tab3 from './Tab3';
 const Tabs = ({ marine }) => {
 	const [openTab, setOpenTab] = useState(1);
 
@@ -16,10 +19,10 @@ const Tabs = ({ marine }) => {
 						<li className='-mb-px last:mr-0 border-yellow-400  border-solid  border-t-0 border-b-2  flex-auto text-center'>
 							<a
 								className={
-									'text-base p-3 font-semibold md:uppercase px-5 py-3 shadow-lg  block leading-normal ' +
+									'text-base font-semibold md:uppercase px-3 md:px-5 py-2 md:py-3  block leading-normal ' +
 									(openTab === 1
 										? 'text-gray-900 rounded-t-lg bg-yellow-500'
-										: 'text-yellow-600')
+										: 'text-yellow-500')
 								}
 								onClick={(e) => {
 									e.preventDefault();
@@ -28,16 +31,16 @@ const Tabs = ({ marine }) => {
 								data-toggle='tab'
 								href='#link1'
 								role='tablist'>
-								Freshwater Algae
+								Indian Algologists
 							</a>
 						</li>
 						<li className='-mb-px last:mr-0 border-yellow-400  border-solid  border-t-0 border-b-2 flex-auto text-center'>
 							<a
 								className={
-									'text-base font-semibold md:uppercase p-3 shadow-lg block leading-normal ' +
+									'text-base font-semibold md:uppercase px-3 md:px-5 py-2 md:py-3 block ' +
 									(openTab === 2
-										? 'text-gray-900 rounded-t-lg bg-yellow-500'
-										: 'text-yellow-600 ')
+										? 'text-gray-900 rounded-t-lg font-semibold bg-yellow-500'
+										: 'text-yellow-500 ')
 								}
 								onClick={(e) => {
 									e.preventDefault();
@@ -46,16 +49,16 @@ const Tabs = ({ marine }) => {
 								data-toggle='tab'
 								href='#link2'
 								role='tablist'>
-								Marine Algae
+								B.Sc Notes
 							</a>
 						</li>
-						{/* <li className='-mb-px border-yellow-400  border-solid  border-t-0 border-b-2 last:mr-0 flex-auto text-center'>
+						<li className='-mb-px border-yellow-400  border-solid  border-t-0 border-b-2 last:mr-0 flex-auto text-center'>
 							<a
 								className={
-									'text-base font-semibomd:uppercase p-3 shadow-lg rounded-t-lg block leading-normal ' +
+									'text-base font-semibold md:uppercase px-3 md:px-5 py-2 md:py-3  rounded-t-lg block leading-normal ' +
 									(openTab === 3
 										? 'text-gray-800 bg-yellow-500'
-										: 'text-yellow-600 bg-primary')
+										: 'text-yellow-500 bg-primary')
 								}
 								onClick={(e) => {
 									e.preventDefault();
@@ -64,12 +67,12 @@ const Tabs = ({ marine }) => {
 								data-toggle='tab'
 								href='#link3'
 								role='tablist'>
-								Other
+								M. Sc Notes
 							</a>
-						</li> */}
+						</li>
 					</ul>
 					<br />
-					<div className='relative flex  flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded'>
+					<div className='relative flex  flex-col min-w-0 break-words w-full mb-6 rounded'>
 						<div className='px-4 py-5 md:p-0 flex-auto'>
 							<div className='tab-content tab-space'>
 								<div
@@ -77,23 +80,22 @@ const Tabs = ({ marine }) => {
 										openTab === 1 ? 'block' : 'hidden'
 									}
 									id='link1'>
-									{/* <ImageGrid images={allImages?.marine} setSelectedImg={setSelectedImg} /> */}
+									<Tab1 />
 								</div>
 								<div
 									className={
 										openTab === 2 ? 'block' : 'hidden'
 									}
 									id='link2'>
-									<Log data={marine} />
-									{/* <ImageGrid images={allImages?.freshWater} setSelectedImg={setSelectedImg} /> */}
-
+									<Tab1 />
 								</div>
-								{/* <div
+								<div
 									className={
 										openTab === 3 ? 'block' : 'hidden'
 									}
 									id='link3'>
-								</div> */}
+									<Tab1 />
+								</div>
 							</div>
 						</div>
 					</div>

@@ -23,7 +23,7 @@ function Body() {
 				<div className=' text-center'>
 					<div className='md:grid md:grid-rows-1 text-black font-semibold md:grid-flow-col'>
 						<div className='bg-gray-200  rounded-lg m-4 p-5 transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110'>
-							<h5 className="font-bold">Freshwater Diatom Flora of Tamil Nadu</h5>
+							<h5 className="font-bold text-lg">Freshwater Diatom Flora of Tamil Nadu</h5>
 							<br />
 							<p className='font-semibold'>
 								Studies on the freshwater diatom flora of Tamil
@@ -31,19 +31,18 @@ function Body() {
 							</p>
 						</div>
 						<div className='bg-gray-200  rounded-lg m-4 p-5 transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110'>
-							<h5 className="font-bold">Taxonomy of Marine and Fresh Water Algae</h5>
+							<h5 className="font-bold text-lg">Taxonomy of Marine and Fresh Water Algae</h5>
 							<br />
-							<p className='font-semibold'>
+							<p className='font-semibold text-base'>
 								Studies on the Diversity of Freshwater and
 								Marine algal flora of Tamil Nadu has been
 								initiated.
 							</p>
 						</div>
 						<div className='bg-gray-200  rounded-lg m-4  p-5 transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110'>
-							<h5 className="font-bold">Water Quality Assessment</h5>
+							<h5 className="font-bold text-lg">Water Quality Assessment</h5>
 							<br />
-							<br />
-							<p className='font-semibold'>
+							<p className='font-semibold text-base'>
 								Studies on Water Pollution and Water Quality
 								Assessment using freshwater Diatoms as a
 								Pollutions Indicator has been carried out in
@@ -53,30 +52,30 @@ function Body() {
 					</div>
 					<div className='md:grid md:grid-rows-1 md:grid-flow-col  text-black font-semibold'>
 						<div className='bg-gray-200  rounded-lg m-4  p-5 transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110'>
-							<h5 className="font-bold">Biodegradation of Environmental Pollutants</h5>
+							<h5 className="font-bold text-lg">Biodegradation of Environmental Pollutants</h5>
 							<br />
-							<p className='font-semibold'>
+							<p className='font-semibold text-base'>
 								Biodegradation pathway of phthalate esters (DBP,
 								DPP, DEP and DMP) was carried out using
 								different strains of freshwater algae.
 							</p>
 						</div>
-						<div className='bg-gray-200  rounded-lg m-4  p-5 transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110'>
-							<h5 className="font-bold">
+						<div className='bg-gray-200  rounded-lg m-4  p-4 transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110'>
+							<h5 className="font-bold text-lg">
 								Isolation &amp; Purification of Bioactive
 								Compounds from Algae
 							</h5>
 							<br />
-							<p className='font-semibold'>
+							<p className='font-semibold text-base'>
 								The bioactive compounds from microalgae have
 								been investigated for antioxidant, antimicrobial
 								and anticancer activities
 							</p>
 						</div>
 						<div className='bg-gray-200  rounded-lg m-4 p-5 transition duration-500 ease-in-out hover:bg-yellow-500 transform hover:-translate-y-1 hover:scale-110'>
-							<h5 className="font-bold">Phycosynthesis of Nanoparticle</h5>
+							<h5 className="font-bold text-lg">Phycosynthesis of Nanoparticle</h5>
 							<br />
-							<p className='font-semibold'>
+							<p className='font-semibold text-base'>
 								Studies on the synthesis of Silver and Gold
 								nanoparticles using various marine and
 								freshwater algae have been carried out to

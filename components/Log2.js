@@ -13,8 +13,8 @@ function Log2({ data }) {
                         return (
                             <ul key={i} className="pr-8">
                                 <li className="text-base text-white  list-disc w-full">
-                                    <Link href={"/freshwater-algae/" + d.name} scroll={true} shallow={true} >
-                                        <span className="hover:underline cursor-pointer">{d.name}</span></Link>
+                                    <Link href={"/freshwater-algae/" + d.name} >
+                                        <span className="hover:underline cursor-pointer"><i>{d.name}</i></span></Link>
                                 </li>
                             </ul>
                         )
@@ -28,7 +28,7 @@ function Log2({ data }) {
                             <ul key={i}>
                                 <li className="text-base text-white  list-disc">
                                     <Link href={"/freshwater-algae/" + d.name} scroll={true} shallow={true} >
-                                        <span className="hover:underline cursor-pointer text-right">{d.name}</span></Link>
+                                        <span className="hover:underline cursor-pointer text-right"><i>{d.name}</i></span></Link>
                                 </li>
                             </ul>
                         )
@@ -45,7 +45,7 @@ function Log2({ data }) {
                             <ul key={i} className="pr-8">
                                 <li className="text-base text-white  list-disc w-full">
                                     <Link href={"/freshwater-algae/" + d.name} scroll={true} shallow={true} >
-                                        <span className="hover:underline cursor-pointer">{d.name}</span></Link>
+                                        <span className="hover:underline cursor-pointer"><i>{d.name}</i></span></Link>
                                 </li>
                             </ul>
                         )
@@ -60,7 +60,7 @@ function Log2({ data }) {
                                 <ul key={i}>
                                     <li className="text-base text-white  list-disc">
                                         <Link href={"/freshwater-algae/" + d.name} scroll={true} shallow={true} >
-                                            <span className="hover:underline cursor-pointer text-right">{d.name}</span></Link>
+                                            <span className="hover:underline cursor-pointer text-right"><i>{d.name}</i></span></Link>
                                     </li>
                                 </ul>
                             )
@@ -78,7 +78,7 @@ function Log2({ data }) {
                             <ul key={i} className="pr-8">
                                 <li className="text-base text-white  list-disc w-full">
                                     <Link href={"/freshwater-algae/" + d.name} scroll={true} shallow={true} >
-                                        <span className="hover:underline cursor-pointer">{d.name}</span></Link>
+                                        <span className="hover:underline cursor-pointer"><i>{d.name}</i></span></Link>
                                 </li>
                             </ul>
                         )
@@ -88,7 +88,7 @@ function Log2({ data }) {
             </div>
             <br />
 
-        </div>
+        </div >
     )
 }
 

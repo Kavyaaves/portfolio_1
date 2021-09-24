@@ -80,8 +80,8 @@ export default marineAlgae;
 
 
 export const getStaticProps = async () => {
-	const marineRed = await prisma.marine.findMany({ where: { "division": 'Rhodophyta' } });
-	const marineBrown = await prisma.marine.findMany({ where: { "division": 'Ochrophyta' } });
-	const marineGreen = await prisma.marine.findMany({ where: { "division": 'Chlorophyta' } });
+	const marineRed = await prisma.marine.findMany({ where: { "division": 'Rhodophyta' }, orderBy: { "name": "asc" } });
+	const marineBrown = await prisma.marine.findMany({ where: { "division": 'Ochrophyta' }, orderBy: { "name": "asc" } });
+	const marineGreen = await prisma.marine.findMany({ where: { "division": 'Chlorophyta' }, orderBy: { "name": "asc" } });
 	return { props: { marine: { red: marineRed, brown: marineBrown, green: marineGreen } } };
 };

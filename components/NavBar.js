@@ -87,7 +87,7 @@ function NavBar() {
 					<>
 						<br />
 						<button
-							className='text-5xl border-none p-4 h-10 rounded-lg bg-primary cursor-pointer ml-6 focus:outline-none hover:bg-yellow-600'
+							className='text-5xl border-none p-4 h-10 rounded-lg bg-primary cursor-pointer ml-6 focus:outline-none hover:bg-yellow-500'
 							onClick={(e) => {
 								e.preventDefault();
 								setIsOpen(!isOpen);
