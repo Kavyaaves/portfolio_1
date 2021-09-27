@@ -80,7 +80,7 @@ const Tabs = ({ marine }) => {
 										openTab === 1 ? 'block' : 'hidden'
 									}
 									id='link1'>
-									<Tab1 />
+									<Tab1 allText={data.mopPub} />
 								</div>
 								<div
 									className={

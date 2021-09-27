@@ -10,6 +10,12 @@ generator client {
   provider = "prisma-client-js"
 }
 
+model Iyengar {
+  id   Int    @id @default(autoincrement())
+  name String
+  path String
+}
+
 model Marine {
   id           Int    @id @default(autoincrement())
   name         String

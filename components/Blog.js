@@ -12,7 +12,7 @@ const Blog = ({ data }) => {
             </h2>
             <br />
             <div className="w-full align-left">
-                <table className="table-fixed w-full">
+                <table className="table-auto w-full">
                     <thead>
                         <tr className="">
                             <th className="md:w-1/6 w-1/5"></th>
@@ -45,7 +45,7 @@ const Blog = ({ data }) => {
                         {data.synonym != "" && data.synonym.length > 100 &&
                             <tr className="w-full">
                                 <td valign="top" className="font-bold w-1/2 align-top inline-block text-lg">Synonym</td>
-                                <td className="whitespace-nowrap w-1/2">{parse(data.synonym)}</td>
+                                <td className="w-1/2">{parse(data.synonym)}</td>
                             </tr>}
                     </tbody>
                 </table>
