@@ -57,7 +57,7 @@ export default function studentCorner({ syllabus, notes }) {
 }
 
 export async function getStaticProps() {
-    const bscSyllabus = await prisma.syllabus?.findMany();
+    const bscSyllabus = await prisma.syllabus?.findMany({ where: { "category": 'BSc' } });
     const mscSyllabus = await prisma.syllabus?.findMany({ where: { "category": 'MSc' } });
 
     const notes = await prisma.notes?.findMany();

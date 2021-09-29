@@ -8,28 +8,28 @@ function Tab2({ syllabus }) {
                 {syllabus.bsc.map((d, i) => {
                     return (
                         <ul key={i}>
-                            <li className="text-base text-white list-disc">
-                                <a href={"/marine-algae/" + d.name}  >
+                            <li className="text-left text-base text-white list-disc">
+                                <a href={"/files/syllabus/" + d.name + ".pdf"} target="blank">
+                                    <span className="hover:underline cursor-pointer">{d.name}</span></a>
+                            </li>
+                        </ul>
+                    )
+                })}
+            </div >
+            <div className="md:w-1/2">
+                <p className="text-lg text-yellow-500 p-5 pl-0 font-semibold">M. Sc</p>
+                {syllabus.msc.map((d, i) => {
+                    return (
+                        <ul key={i}>
+                            <li className="text-left text-base text-white list-disc">
+                                <a href={"/files/syllabus/" + d.name + ".pdf"} target="blank">
                                     <span className="hover:underline cursor-pointer">{d.name}</span></a>
                             </li>
                         </ul>
                     )
                 })}
             </div>
-            <div className="md:w-1/2">
-                <p className="text-lg text-yellow-500 p-5 pl-0 font-semibold">M. Sc</p>
-                {syllabus.msc.map((d, i) => {
-                    return (
-                        <ul key={i}>
-                            <li className="text-base text-white list-disc">
-                                <a href={"/marine-algae/" + d.name} scroll={true}>
-                                    <span className="hover:underline cursor-pointer"><i>{d.name}</i></span></a>
-                            </li>
-                        </ul>
-                    )
-                })}
-            </div>
-        </div>
+        </div >
 
     )
 }

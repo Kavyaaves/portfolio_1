@@ -94,7 +94,7 @@ const Tabs = ({ syllabus, notes }) => {
 										openTab === 3 ? 'block' : 'hidden'
 									}
 									id='link3'>
-									<Tab1 notes={notes} />
+									<Tab3 notes={notes} />
 								</div>
 							</div>
 						</div>
