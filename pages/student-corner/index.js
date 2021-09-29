@@ -3,8 +3,9 @@ import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
 import StudentCorner from '../../components/StudentCorner';
 import Tabs from '../../components/Tabs';
+import prisma from '../../utils/db'
 
-export default function studentCorner({ data }) {
+export default function studentCorner({ syllabus, notes }) {
     return (
         <div className=''>
             <Head>
@@ -41,7 +42,7 @@ export default function studentCorner({ data }) {
                                     <span className=''>STUDENT CORNER</span>
                                 </h2>
                                 <br />
-                                <Tabs data={data} />
+                                <Tabs syllabus={syllabus} notes={notes} />
                             </div>
                         </div>
                     </div>
@@ -55,9 +56,17 @@ export default function studentCorner({ data }) {
     );
 }
 
+export async function getStaticProps() {
+    const bscSyllabus = await prisma.syllabus?.findMany();
+    const mscSyllabus = await prisma.syllabus?.findMany({ where: { "category": 'MSc' } });
 
-export const getStaticProps = async () => {
-    const mopPub = await prisma.iyengar.findMany({ orderBy: { "name": "asc" } });
-    return { props: { data: { mopPub } } };
-};
+    const notes = await prisma.notes?.findMany();
+
+    return {
+        props: {
+            syllabus: { bsc: bscSyllabus || [], msc: mscSyllabus || [] },
+            notes: notes || []
+        }
+    };
+}
 

@@ -10,6 +10,18 @@ generator client {
   provider = "prisma-client-js"
 }
 
+model Syllabus {
+  id       Int    @id @default(autoincrement())
+  name     String
+  category String
+
+}
+
+model Notes {
+  id   Int    @id @default(autoincrement())
+  name String
+}
+
 model Iyengar {
   id   Int    @id @default(autoincrement())
   name String

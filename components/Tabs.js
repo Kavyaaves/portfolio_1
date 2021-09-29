@@ -6,7 +6,7 @@ import Log from './Log'
 import Tab1 from './Tab1';
 import Tab2 from './Tab2';
 import Tab3 from './Tab3';
-const Tabs = ({ marine }) => {
+const Tabs = ({ syllabus, notes }) => {
 	const [openTab, setOpenTab] = useState(1);
 
 	return (
@@ -49,7 +49,7 @@ const Tabs = ({ marine }) => {
 								data-toggle='tab'
 								href='#link2'
 								role='tablist'>
-								B.Sc Notes
+								Syllabus
 							</a>
 						</li>
 						<li className='-mb-px border-yellow-400  border-solid  border-t-0 border-b-2 last:mr-0 flex-auto text-center'>
@@ -67,7 +67,7 @@ const Tabs = ({ marine }) => {
 								data-toggle='tab'
 								href='#link3'
 								role='tablist'>
-								M. Sc Notes
+								Notes
 							</a>
 						</li>
 					</ul>
@@ -80,21 +80,21 @@ const Tabs = ({ marine }) => {
 										openTab === 1 ? 'block' : 'hidden'
 									}
 									id='link1'>
-									<Tab1 allText={data.mopPub} />
+									<Tab1 />
 								</div>
 								<div
 									className={
 										openTab === 2 ? 'block' : 'hidden'
 									}
 									id='link2'>
-									<Tab1 />
+									<Tab2 syllabus={syllabus} />
 								</div>
 								<div
 									className={
 										openTab === 3 ? 'block' : 'hidden'
 									}
 									id='link3'>
-									<Tab1 />
+									<Tab1 notes={notes} />
 								</div>
 							</div>
 						</div>

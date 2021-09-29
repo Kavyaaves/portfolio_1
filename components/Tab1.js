@@ -26,7 +26,7 @@ function Tab1() {
                     <br />
                     <div className='flex-grow'>
                         <p className='text-base text-gray-100 leading-snug truncate-overflow hover:text-yellow-400'>
-                            <a href="/student-corner/mopiyengarpublications" >Publications</a>
+                            <a href="/student-corner/iyengarpublications" >Publications</a>
                         </p>
                     </div>
                 </div>
