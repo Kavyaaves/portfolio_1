@@ -34,7 +34,6 @@ export default function studentCorner({ syllabus, notes }) {
                     <NavBar />
                 </div>
                 <div className='p-5'>
-
                     <div className=' text-center'>
                         <div className='max-w-4xl m-auto bg-primary rounded-lg'>
                             <div className='md:p-10'>

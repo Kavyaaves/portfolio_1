@@ -5,7 +5,7 @@ export default function Home() {
 		<div className='max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto lg:my-0'>
 			<div className='lg:w-2/5 my-16'>
 				<Image
-					src='/Babu 4.jpg'
+					src='/Babu 4.webp'
 					width={850}
 					height={1200}
 					alt="B Babu"
@@ -34,7 +34,6 @@ export default function Home() {
 						<br />
 						Madras Christian College
 					</p>
-
 					<div className='pt-2 text-base font-semibold flex items-center justify-center lg:justify-start'>
 						<svg
 							className='h-5 fill-current text-gray-500 pr-6'
@@ -55,10 +54,10 @@ export default function Home() {
 						</div><a target="blank" href="https://scholar.google.co.in/citations?user=m5JoTg8AAAAJ&hl=en">Google Scholar</a>
 					</div>
 					<div className='mt-6 pb-5 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between'>
-						<span className=''>* This website is a resource for identification of Freshwater and Marine Algae</span>
+						<span className=''>*This website is a resource for identification of Freshwater and Marine Algae</span>
 					</div>
 				</div>
 			</div>
-		</div >
+		</div>
 	);
 }

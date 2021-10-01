@@ -29,6 +29,7 @@ export default function Index() {
 		<div className=''>
 			<Head>
 				<html lang="en">
+					<title>Home - Bakthavachalam Babu</title>
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<meta charSet="utf-8" />
 					<meta name="description" content='Algae database - Marine and Freshwater Algae images with description and data'></meta>
@@ -51,7 +52,6 @@ export default function Index() {
 					<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
 					<meta name="msapplication-TileColor" content="#da532c" />
 					<meta name="theme-color" content="#ffffff" />
-					<title>Home - Bakthavachalam Babu</title>
 				</html>
 			</Head>
 			<body className='bg-gallery bg-center bg-cover bg-no-repeat bg-fixed'>

@@ -23,9 +23,9 @@ function Body() {
 								</h1>
 							</div>
 							<div className='order-2 bg-gray-400 rounded-lg shadow-xl md:w-5/12 w-full px-6 py-4'>
-								<h3 className='mb-3 font-bold text-gray-800 text-xl'>
+								<p className='mb-3 font-bold text-gray-800 text-xl'>
 									Graduation
-								</h3>
+								</p>
 								<p className='text-base leading-snug font-semibold text-gray-800 text-opacity-100'>
 									Graduated in
 									Botany (1993) from Madras Christian College
@@ -43,9 +43,9 @@ function Body() {
 						<div className='flex justify-between md:-my-10 items-center w-full md:flex-row-reverse left-timeline'>
 							<div className='order-2 md:w-5/12 w-0'></div>
 							<div className='order-1 bg-yellow-400 rounded-lg shadow-xl md:w-5/12 w-full px-6 py-4'>
-								<h3 className='mb-3 font-bold text-gray-800 text-xl'>
+								<p className='mb-3 font-bold text-gray-800 text-xl'>
 									Freshwater Rhodophyceae of Tamil Nadu, 1995-1997
-								</h3>
+								</p>
 								<p className='text-base leading-snug font-semibold text-gray-800 text-opacity-100'>
 									M. Phil studies on “Freshwater Rhodophyceae of Tamil Nadu” enabled me
 									to gain a sound knowledge on various species of red algae and published
@@ -67,9 +67,9 @@ function Body() {
 								</h1>
 							</div>
 							<div className='order-2 bg-gray-400 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4'>
-								<h3 className='mb-3 font-bold text-gray-800 text-xl'>
+								<p className='mb-3 font-bold text-gray-800 text-xl'>
 									Project Fellow, 1997-2000
-								</h3>
+								</p>
 								<p className='text-base leading-snug font-semibold text-gray-800 text-opacity-100'>
 									Joined as a project fellow in the UGC Project entitled “Ultrastructural
 									studies on Fucales, Phaeophyceae from Gulf of Mannar” under the
@@ -83,9 +83,9 @@ function Body() {
 							<div className='order-2 md:w-5/12 w-0'></div>
 
 							<div className='order-1 bg-yellow-400 rounded-lg shadow-xl md:w-5/12 w-full px-6 py-4'>
-								<h3 className='mb-3 font-bold text-gray-800 text-xl'>
+								<p className='mb-3 font-bold text-gray-800 text-xl'>
 									Ph. D., January 2002
-								</h3>
+								</p>
 								<p className='text-base font-semibold leading-snug text-gray-800 text-opacity-100'>
 									Ph. D. thesis entitled “Histochemical, Ultrasturctural and Biochemical studies on
 									<i>Sargassum wightii</i> Greve., <i>Turbinaria ornata</i> J.Ag. and <i>Cystoseira trinodis</i> (Forsskal)
@@ -108,9 +108,9 @@ function Body() {
 								</h1>
 							</div>
 							<div className='order-2 bg-gray-400 rounded-lg shadow-xl md:w-5/12 w-full px-6 py-4'>
-								<h3 className='mb-3 font-bold text-gray-800 text-xl'>
+								<p className='mb-3 font-bold text-gray-800 text-xl'>
 									Post Doctoral Researcher, 2004-2013
-								</h3>
+								</p>
 								<p className='text-base leading-snug font-semibold text-gray-900 text-opacity-100'>
 									Under the guidance of Dr. Jiunn-Tzong Wu
 									(Research Fellow) in the Biodiversity Research Centre,
@@ -123,9 +123,9 @@ function Body() {
 							<div className='order-2 md:w-5/12 w-0'></div>
 
 							<div className='order-1 bg-yellow-400 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4'>
-								<h3 className='mb-3 font-bold text-gray-800 text-xl'>
+								<p className='mb-3 font-bold text-gray-800 text-xl'>
 									Books and Publications
-								</h3>
+								</p>
 								<p className='text-base font-semibold leading-snug text-gray-800 text-opacity-100'>
 									Co-Authored two volumes of book entitled “Freshwater Diatom flora
 									of Taiwan”. These two volumes of Book are recognized as First
@@ -147,9 +147,9 @@ function Body() {
 								</h1>
 							</div>
 							<div className='order-1 bg-gray-400 rounded-lg shadow-xl w-full md:w-5/12 px-6 py-4'>
-								<h3 className='mb-3 font-bold text-gray-800 text-xl'>
+								<p className='mb-3 font-bold text-gray-800 text-xl'>
 									MCC Journey, 2013 - Present
-								</h3>
+								</p>
 								<p className='text-base leading-snug font-semibold text-gray-900 text-opacity-100'>
 									Joined as Faculty in the Department of Botany Madras Christian College.
 									Ever since I joined the department, I have been teaching Undergraduate
