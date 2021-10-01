@@ -2,9 +2,9 @@ function Body() {
 	return (
 		<div className='max-w-4xl m-auto bg-primary rounded-lg'>
 			<div className='md:p-10 p-8'>
-				<h1 className='text-center text-3xl text-yellow-500 transform skew-y-0'>
-					Welcome to Our Algae Lab!
-				</h1>
+				<h2 className='text-center text-2xl italic text-yellow-500 font-bold '>
+					<span className=''>WELCOME TO OUR ALGAE LAB!</span>
+				</h2>
 				<br />
 				<div className='text-center'>
 					Peninsular India has a very long coastline and plenty of

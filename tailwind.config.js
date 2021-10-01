@@ -15,7 +15,7 @@ module.exports = {
 				secondary: '#6202A',
 			}),
 			backgroundImage: (theme) => ({
-				babu: "url('/Babu.png')",
+				babu: "url('/Babu.webp')",
 				home: "url('/4.jpg')",
 				gallery: "url('/cover.webp')",
 				research: "url('/cover.webp')",

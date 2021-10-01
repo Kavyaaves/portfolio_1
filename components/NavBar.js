@@ -87,6 +87,7 @@ function NavBar() {
 					<>
 						<br />
 						<button
+							aria-label="menu"
 							className='text-5xl border-none p-4 h-10 rounded-lg bg-primary cursor-pointer ml-6 focus:outline-none hover:bg-yellow-500'
 							onClick={(e) => {
 								e.preventDefault();
@@ -110,6 +111,7 @@ function NavBar() {
 				{isOpen && (
 					<nav className='absolute md:relative top-0 left-0 z-20 p-6 font-semibold w-full md:w-auto h-screen bg-primary'>
 						<button
+							aria-label="menu"
 							className='text-right text-3xl cursor-pointer'
 							onClick={(e) => {
 								e.preventDefault();

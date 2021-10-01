@@ -86,8 +86,9 @@ function Log2({ data }) {
                 </div>
 
             </div>
-            <br />
-
+            <p className="px-5 pt-5">* Classification as on October 2021 - Guiry M. D. &amp; Guiry G. M. 2021 - {' '}
+                <a href="http://www.algaebase.org" target="blank" className="hover:underline">AlgaeBase</a>
+            </p>
         </div >
     )
 }

@@ -28,7 +28,7 @@ function Scholars() {
 	return (
 		<div className='max-w-4xl md:p-10 p-5 min-h-auto m-auto bg-primary rounded-lg'>
 			{isVisible && (
-				<button onClick={scrollToTop} className="focus:outline-none fixed right-0 z-10 bottom-0 text-center flex rounded-full w-16 m-10 h-16 text-blue-700 bg-yellow-600 md:bg-primary md:text-yellow-500 items-center justify-center">
+				<button aria-label="scroll" onClick={scrollToTop} className="focus:outline-none fixed right-0 z-10 bottom-0 text-center flex rounded-full w-16 m-10 h-16 text-blue-700 bg-yellow-600 md:bg-primary md:text-yellow-500 items-center justify-center">
 					<div classname='inline-flex m-10'><svg xmlns="http://www.w3.org/2000/svg" fill="#FFBF00" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></div>
 				</button>
 			)}

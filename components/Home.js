@@ -54,7 +54,7 @@ export default function Home() {
 						</div><a target="blank" href="https://scholar.google.co.in/citations?user=m5JoTg8AAAAJ&hl=en">Google Scholar</a>
 					</div>
 					<div className='mt-6 pb-5 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between'>
-						<span className=''>*This website is a resource for identification of Freshwater and Marine Algae</span>
+						<span className=''>* This website is a resource for identification of Freshwater and Marine Algae</span>
 					</div>
 				</div>
 			</div>

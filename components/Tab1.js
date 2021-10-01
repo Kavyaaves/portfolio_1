@@ -22,13 +22,13 @@ function Tab1() {
                     </span>
                     <br />
                     <br />
-                    <div className='flex-grow flex justify-evenly w-full'>
-                        <button className='text-base text-gray-900 font-semibold hover:text-gray-300 bg-yellow-500 rounded-md p-2 px-4 hover:bg-transparent border-2 border-yellow-500 transform duration-400 ease-in-out '>
+                    <div className='flex-grow flex justify-evenly w-full mt-2'>
+                        <button aria-label="about" className='text-base text-gray-900 font-semibold hover:text-gray-300 bg-yellow-500 rounded-md p-2 px-4 hover:bg-transparent border-2 border-yellow-500 transform duration-400 ease-in-out '>
                             <p className=' leading-snug truncate-overflow '>
                                 <a href="/files/MOP Iyengar.pdf" target="blank">About</a>
                             </p>
                         </button>
-                        <button className='text-base text-gray-900 font-semibold hover:text-gray-300 bg-yellow-500 rounded-md p-2 hover:bg-transparent border-2 border-yellow-500 transform duration-400 ease-in-out '>
+                        <button aria-label="publications" className='text-base text-gray-900 font-semibold hover:text-gray-300 bg-yellow-500 rounded-md p-2 hover:bg-transparent border-2 border-yellow-500 transform duration-400 ease-in-out '>
                             <p className=' leading-snug truncate-overflow '>
                                 <a href="/student-corner/iyengarpublications" target="blank">Publications</a>
                             </p>
@@ -58,8 +58,8 @@ function Tab1() {
                         Indian Hydrobiology Journal
 
                     </span>
-                    <div className='flex-grow'>
-                        <button className='text-base text-gray-900 font-semibold hover:text-gray-300 bg-yellow-500 rounded-md p-2 px-4 hover:bg-transparent border-2 border-yellow-500 transform duration-400 ease-in-out '>
+                    <div className='flex-grow mt-2'>
+                        <button aria-label="about" className='text-base text-gray-900 font-semibold hover:text-gray-300 bg-yellow-500 rounded-md p-2 px-4 hover:bg-transparent border-2 border-yellow-500 transform duration-400 ease-in-out '>
                             <p className=' leading-snug truncate-overflow '>
                                 <a href="/files/Prof. V. Krishnamurthy – A Teacher Par Excellence.pdf" target="blank">About</a>
                             </p>
