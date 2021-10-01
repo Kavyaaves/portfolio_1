@@ -80,7 +80,7 @@ const Blog = ({ data }) => {
 
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
-                        <Image className="self-center" src={data.img1} layout="intrinsic" width={data.orientation1.split('x')[0] * 100} height={data.orientation1.split('x')[1] * 100} />
+                        <Image className="self-center" src={data.img1} layout="intrinsic" width={data.orientation1.split('x')[0] * 100} height={data.orientation1.split('x')[1] * 100} alt={data.name} />
                     </div>
                     <p>{parse(data.img1Caption)}</p>
                     <br />
@@ -144,7 +144,7 @@ const Blog = ({ data }) => {
                 data.img2 &&
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
-                        <Image className="self-center" src={data.img2} layout="intrinsic" width={data.orientation2.split('x')[0] * 100} height={data.orientation2.split('x')[1] * 100} />
+                        <Image className="self-center" src={data.img2} layout="intrinsic" alt={data?.name} width={data.orientation2.split('x')[0] * 100} height={data.orientation2.split('x')[1] * 100} />
                     </div>
                     <p className="text-center">{parse(data.img2Caption)}</p>
 
@@ -156,7 +156,7 @@ const Blog = ({ data }) => {
 
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
-                        <Image className="self-center" src={data.img3} layout="intrinsic" width={data.orientation3.split('x')[0] * 100} height={data.orientation3.split('x')[1] * 100} />
+                        <Image className="self-center" src={data.img3} alt={data?.name}  layout="intrinsic" width={data.orientation3.split('x')[0] * 100} height={data.orientation3.split('x')[1] * 100} />
                     </div>
                     <p className="text-center">{parse(data.img3Caption)}</p>
                     <br />
@@ -167,7 +167,7 @@ const Blog = ({ data }) => {
                 data.img4 &&
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
-                        <Image className="self-center" src={data.img4} layout="intrinsic" width={data.orientation4.split('x')[0] * 100} height={data.orientation4.split('x')[1] * 100} />
+                        <Image className="self-center" src={data.img4} alt={data?.name}  layout="intrinsic" width={data.orientation4.split('x')[0] * 100} height={data.orientation4.split('x')[1] * 100} />
                     </div>
                     <p className="text-center">{parse(data.img4Caption)}</p>
                     <br />
@@ -180,7 +180,7 @@ const Blog = ({ data }) => {
                 data.img5 &&
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
-                        <Image className="self-center" src={data.img5} layout="intrinsic" width={data.orientation5.split('x')[0] * 100} height={data.orientation5.split('x')[1] * 100} />
+                        <Image className="self-center" src={data.img5} alt={data?.name}  layout="intrinsic" width={data.orientation5.split('x')[0] * 100} height={data.orientation5.split('x')[1] * 100} />
                     </div>
                     <p>{parse(data.img5Caption)}</p>
                     <br />
@@ -190,7 +190,7 @@ const Blog = ({ data }) => {
                 data.img6 &&
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
-                        <Image className="self-center" src={data.img6} layout="intrinsic" width={data.orientation1.split('x')[0] * 100} height={data.orientation1.split('x')[1] * 100} />
+                        <Image className="self-center" src={data.img6} alt={data?.name}  layout="intrinsic" width={data.orientation1.split('x')[0] * 100} height={data.orientation1.split('x')[1] * 100} />
                     </div>
                     <p className="text-center">{parse(data.img6Caption)}</p>
                     <br />

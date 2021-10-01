@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Footer from '../components/Footer';
 import Research from '../components/Research';
 import NavBar from '../components/NavBar';
 
@@ -36,9 +35,7 @@ function research() {
 				</div>
 				<br />
 			</body>
-			<footer className=''>
-				<Footer />
-			</footer>
+
 		</div>
 	);
 }

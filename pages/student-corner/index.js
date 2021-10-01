@@ -1,7 +1,5 @@
 import Head from 'next/head';
-import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
-import StudentCorner from '../../components/StudentCorner';
 import Tabs from '../../components/Tabs';
 import prisma from '../../utils/db'
 
@@ -29,7 +27,7 @@ export default function studentCorner({ syllabus, notes }) {
                 <script src='https://unpkg.com/popper.js@1/dist/umd/popper.min.js'></script>
                 <script src='https://unpkg.com/tippy.js@4'></script>
             </Head>
-            <body className='bg-research bg-cover bg-fixed bg-no-repeat'>
+            <body className='bg-studentCorner bg-cover bg-fixed bg-no-repeat'>
                 <div>
                     <NavBar />
                 </div>
@@ -49,9 +47,7 @@ export default function studentCorner({ syllabus, notes }) {
                 </div>
                 <br />
             </body>
-            <footer className=''>
-                <Footer />
-            </footer>
+
         </div>
     );
 }

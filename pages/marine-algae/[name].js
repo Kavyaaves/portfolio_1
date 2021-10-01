@@ -3,17 +3,12 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image';
 import Log from '../../components/Log';
 import NavBar from '../../components/NavBar';
-import Footer from '../../components/Footer';
 import prisma from '../../utils/db';
 import Blog from '../../components/Blog';
 import { useRouter } from 'next/router';
 function marineAlgaeDetail({ data }) {
     const router = useRouter()
     const [isVisible, setIsVisible] = useState(false);
-    if (router.isFallback) {
-
-        <div>{console.log("laodijh")} Loading</div>
-    }
     return (
         <div className='w-screen h-screen overflow-x-hidden'>
             <Head>
@@ -38,7 +33,7 @@ function marineAlgaeDetail({ data }) {
                 <script src='https://unpkg.com/tippy.js@4'></script>
             </Head>
 
-            <body className='bg-falls bg-fixed bg-cover bg-center bg-no-repeat' >
+            <body className='bg-marine_single bg-fixed bg-cover bg-center bg-no-repeat' >
 
                 <NavBar />
                 <div className='p-2  pt-5 max-w-4xl relative mx-auto'>
@@ -53,9 +48,7 @@ function marineAlgaeDetail({ data }) {
                 <br />
             </body >
 
-            <footer>
-                <Footer />
-            </footer>
+
         </ div >
     );
 }

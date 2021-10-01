@@ -3,33 +3,17 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image';
 import Log from '../../components/Log';
 import NavBar from '../../components/NavBar';
-import Footer from '../../components/Footer';
 import prisma from '../../utils/db';
 import Blog from '../../components/Blog';
 import { useRouter } from 'next/router';
 function freshwaterAlgaeDetail({ data }) {
     const router = useRouter()
     const [isVisible, setIsVisible] = useState(false);
-    if (router.isFallback) {
-
-        <div>{console.log("laodijh")} Loading</div>
-    }
     return (
         <div className='w-screen h-screen overflow-x-hidden'>
             <Head>
-                <title>Bakthavachalam Babu - Marine Algae</title>
+                <title>Freshwater Algae - Bakthavachalam Babu</title>
                 <link rel='preconnect' href='https://fonts.gstatic.com' />
-                <link
-                    rel='stylesheet'
-                    type='text/css'
-                    charSet='UTF-8'
-                    href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
-                />
-                <link
-                    rel='stylesheet'
-                    type='text/css'
-                    href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
-                />
                 <link
                     href='https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap'
                     rel='stylesheet'
@@ -38,7 +22,7 @@ function freshwaterAlgaeDetail({ data }) {
                 <script src='https://unpkg.com/tippy.js@4'></script>
             </Head>
 
-            <body className='bg-falls bg-fixed bg-cover bg-center bg-no-repeat' >
+            <body className='bg-freshwater_single bg-fixed bg-cover bg-center bg-no-repeat' >
 
                 <NavBar />
                 <div className='p-2  pt-5 max-w-4xl relative mx-auto'>
@@ -51,10 +35,6 @@ function freshwaterAlgaeDetail({ data }) {
 
                 <br />
             </body >
-
-            <footer>
-                <Footer />
-            </footer>
         </ div >
     );
 }

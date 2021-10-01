@@ -16,7 +16,7 @@ function ImageGrid({ images, setSelectedImg }) {
                                 <figure class="relative cursor-pointer items-center" onClick={() => {
                                     setSelectedImg(img);
                                 }}>
-                                    <Image src={img.url} className="mx-auto" width={300} height={250} layout="intrinsic" />
+                                    <Image alt={img?.name} src={img.url} className="mx-auto" width={300} height={250} layout="intrinsic" />
                                     <figcaption className="text-center w-full absolute text-white px-4">{img.name}</figcaption>
                                 </figure>
                             </div>

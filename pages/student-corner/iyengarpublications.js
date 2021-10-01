@@ -1,10 +1,8 @@
 import Link from "next/link"
 import prisma from '../../utils/db'
 import Head from 'next/head';
-import Footer from '../../components/Footer';
 import NavBar from '../../components/NavBar';
 function IyengarPublications({ data }) {
-    console.log(data)
     return (
         < div className='' >
             <Head>

@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Footer from '../components/Footer';
 import Body from '../components/Body';
 import NavBar from '../components/NavBar';
 import Scholars from '../components/Scholars';
@@ -8,7 +7,7 @@ function scholars() {
 	return (
 		<div className=''>
 			<Head>
-				<title>Bakthavachalam Babu - Scholars</title>
+				<title>Scholars - Bakthavachalam Babu</title>
 				<link rel='preconnect' href='https://fonts.gstatic.com' />
 				<link
 					rel='stylesheet'
@@ -37,9 +36,7 @@ function scholars() {
 				</div>
 				<br />
 			</body>
-			<footer className=''>
-				<Footer />
-			</footer>
+
 		</div>
 	);
 }

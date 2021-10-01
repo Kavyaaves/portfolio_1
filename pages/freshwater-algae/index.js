@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image';
 import Log2 from '../../components/Log2';
 import NavBar from '../../components/NavBar';
-import Footer from '../../components/Footer';
 import prisma from '../../utils/db';
 
 function freshwaterAlgae({ freshwater }) {
@@ -71,9 +70,7 @@ function freshwaterAlgae({ freshwater }) {
                 <br />
             </body >
 
-            <footer>
-                <Footer />
-            </footer>
+
         </ div >
     );
 }

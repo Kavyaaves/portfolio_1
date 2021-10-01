@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image';
 import Log from '../../components/Log';
 import NavBar from '../../components/NavBar';
-import Footer from '../../components/Footer';
 import prisma from '../../utils/db';
 function marineAlgae({ marine }) {
 	const [isVisible, setIsVisible] = useState(false);
@@ -52,7 +51,7 @@ function marineAlgae({ marine }) {
 				<script src='https://unpkg.com/tippy.js@4'></script>
 			</Head>
 
-			<body className='bg-falls bg-fixed bg-cover bg-center bg-no-repeat' >
+			<body className='bg-marine bg-fixed bg-cover bg-center bg-no-repeat' >
 				<NavBar />
 				<div className='p-2  pt-5 max-w-4xl relative mx-auto'>
 					<div className='bg-primary relative rounded-lg p-10 w-full h-full'>
@@ -69,9 +68,7 @@ function marineAlgae({ marine }) {
 				<br />
 			</body >
 
-			<footer>
-				<Footer />
-			</footer>
+
 		</ div >
 	);
 }

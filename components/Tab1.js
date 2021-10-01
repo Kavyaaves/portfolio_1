@@ -14,20 +14,25 @@ function Tab1() {
                     />
                 </div>
                 <div className='flex flex-col flex-grow px-8 py-10 bg-color-333'>
-                    <a href="/files/MOP Iyengar.pdf" className="cursor-pointer hover:underline" target="blank">
-                        <h3 className='font-bold text-xl text-gray-200'>
-                            Prof. M.O.P. Iyengar (1886-1963)
-                        </h3>
-                    </a>
+                    <h3 className='font-bold text-xl text-gray-200'>
+                        Prof. M.O.P. Iyengar (1886-1963)
+                    </h3>
                     <span className='text-base lg:mb-4'>
                         Father of Indian Algology
                     </span>
                     <br />
                     <br />
-                    <div className='flex-grow'>
-                        <p className='text-base text-gray-100 leading-snug truncate-overflow hover:text-yellow-400'>
-                            <a href="/student-corner/iyengarpublications" >Publications</a>
-                        </p>
+                    <div className='flex-grow flex justify-evenly w-full'>
+                        <button className='text-base text-gray-900 font-semibold hover:text-gray-300 bg-yellow-500 rounded-md p-2 px-4 hover:bg-transparent border-2 border-yellow-500 transform duration-400 ease-in-out '>
+                            <p className=' leading-snug truncate-overflow '>
+                                <a href="/files/MOP Iyengar.pdf" target="blank">About</a>
+                            </p>
+                        </button>
+                        <button className='text-base text-gray-900 font-semibold hover:text-gray-300 bg-yellow-500 rounded-md p-2 hover:bg-transparent border-2 border-yellow-500 transform duration-400 ease-in-out '>
+                            <p className=' leading-snug truncate-overflow '>
+                                <a href="/student-corner/iyengarpublications" target="blank">Publications</a>
+                            </p>
+                        </button>
                     </div>
                 </div>
 
@@ -43,11 +48,9 @@ function Tab1() {
                     />
                 </div>
                 <div className='flex flex-col flex-grow px-8 py-10 bg-color-333'>
-                    <a href="/files/Prof. V. Krishnamurthy – A Teacher Par Excellence.pdf" className="cursor-pointer hover:underline" target="blank">
-                        <h3 className='font-bold text-xl text-gray-200'>
-                            Prof. V. Krishnamurthy
-                        </h3>
-                    </a>
+                    <h3 className='font-bold text-xl text-gray-200'>
+                        Prof. V. Krishnamurthy
+                    </h3>
 
                     <span className='text-base lg:mb-4'>
                         Founder – 	Krishnamurthy Institute of Algology (KIA, Chennai)
@@ -56,9 +59,11 @@ function Tab1() {
 
                     </span>
                     <div className='flex-grow'>
-                        <p className='text-base text-gray-100 leading-snug truncate-overflow hover:text-yellow-400'>
-                            <a href="" >Publications</a>
-                        </p>
+                        <button className='text-base text-gray-900 font-semibold hover:text-gray-300 bg-yellow-500 rounded-md p-2 px-4 hover:bg-transparent border-2 border-yellow-500 transform duration-400 ease-in-out '>
+                            <p className=' leading-snug truncate-overflow '>
+                                <a href="/files/Prof. V. Krishnamurthy – A Teacher Par Excellence.pdf" target="blank">About</a>
+                            </p>
+                        </button>
                     </div>
                 </div>
             </div>

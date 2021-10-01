@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Footer from '../components/Footer';
 import Publications from '../components/Publications';
 import NavBar from '../components/NavBar';
 
@@ -36,9 +35,7 @@ function members() {
 				</div>
 				<br />
 			</body>
-			<footer className=''>
-				<Footer />
-			</footer>
+
 		</div>
 	);
 }
