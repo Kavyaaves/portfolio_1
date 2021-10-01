@@ -32,25 +32,31 @@ function freshwaterAlgae({ freshwater }) {
     return (
         <div className='w-screen h-screen overflow-x-hidden'>
             <Head>
-                <title>Bakthavachalam Babu - Freshwater Algae</title>
-                <link rel='preconnect' href='https://fonts.gstatic.com' />
-                <link
-                    rel='stylesheet'
-                    type='text/css'
-                    charSet='UTF-8'
-                    href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
-                />
-                <link
-                    rel='stylesheet'
-                    type='text/css'
-                    href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
-                />
-                <link
-                    href='https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap'
-                    rel='stylesheet'
-                />
-                <script src='https://unpkg.com/popper.js@1/dist/umd/popper.min.js'></script>
-                <script src='https://unpkg.com/tippy.js@4'></script>
+                <html lang="en">
+                    <title>Freshwater Algae - Bakthavachalam Babu</title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <meta charSet="utf-8" />
+                    <meta name="description" content='Freshwater Algae log with description. Algae database - Marine and Freshwater Algae images with description and data'></meta>
+                    <meta property="og:title" content='Bakthavachalam Babu Portfolio and Algae Database' key="ogtitle" />
+                    <meta property="og:description" content='Freshwater Algae log with description. Algae database - Marine and Freshwater Algae images with description and data' key="ogdesc" />
+                    <meta name="robots" content="index, follow" />
+                    <link rel='preconnect' href='https://fonts.gstatic.com' />
+                    <link
+                        href='https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css'
+                        rel='stylesheet'
+                    />
+                    <link
+                        href='https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap'
+                        rel='stylesheet'
+                    />
+                    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+                    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+                    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+                    <link rel="manifest" href="favicon/site.webmanifest" />
+                    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+                    <meta name="msapplication-TileColor" content="#da532c" />
+                    <meta name="theme-color" content="#ffffff" />
+                </html>
             </Head>
 
             <body className='bg-falls bg-fixed bg-cover bg-center bg-no-repeat' >
