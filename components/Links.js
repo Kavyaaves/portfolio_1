@@ -28,18 +28,18 @@ function Links() {
 
 		<div className='max-w-4xl m-auto bg-primary rounded-lg p-5'>
 			{isVisible && (
-				<button onClick={scrollToTop} className="focus:outline-none fixed right-0 z-10 bottom-0 text-center flex rounded-full w-16 m-10 h-16 text-blue-700 bg-yellow-600 md:bg-primary md:text-yellow-500 items-center justify-center">
+				<button aria-label="scroll" onClick={scrollToTop} className="focus:outline-none fixed right-0 z-10 bottom-0 text-center flex rounded-full w-16 m-10 h-16 text-blue-700 bg-yellow-600 md:bg-primary md:text-yellow-500 items-center justify-center">
 					<div classname='inline-flex m-10'><svg xmlns="http://www.w3.org/2000/svg" fill="#FFBF00" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></div>
 				</button>
 			)}
 			<div className='md:grid md:grid-rows-1 md:grid-flow-col md:justify-between'>
-				<a
+				<a rel="noreferrer"
 					target='_blank'
 					href='https://www.psaalgae.org/'
 					className='p-5 flex items-center justify-center'>
 					<Image alt="PSAalgae" className="hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105 " src='/link1.jpg' width={370} height={140} />
 				</a>
-				<a
+				<a rel="noreferrer"
 					target='_blank'
 					href='https://www.algaebase.org/'
 					className='p-5 flex items-center justify-center'>
@@ -47,7 +47,7 @@ function Links() {
 				</a>
 			</div>
 			<div className='md:grid md:grid-rows-1 md:grid-flow-col justify-center'>
-				<a
+				<a rel="noreferrer"
 					target='_blank'
 					href='http://www.diatoms.org/'
 					className='p-5 flex items-center justify-center'>
@@ -55,7 +55,7 @@ function Links() {
 				</a>
 			</div>
 			<div className='md:grid md:grid-rows-1 md:grid-flow-col justify-center'>
-				<a
+				<a rel="noreferrer"
 					href='http://www.digicodes.info/'
 					target='_blank'
 					className='p-5 justify-center flex items-center'>
@@ -63,13 +63,13 @@ function Links() {
 				</a>
 			</div>
 			<div className='md:grid md:grid-rows-1 md:grid-flow-col md:justify-between'>
-				<a
+				<a rel="noreferrer"
 					target='_blank'
 					href='http://phycolab.yolasite.com/'
 					className='p-5 flex items-center justify-center'>
 					<Image alt="Phycolab" className="hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105" src='/Phycolab.PNG' width={350} height={140} />
 				</a>
-				<a
+				<a rel="noreferrer"
 					target='_blank'
 					href='http://cfb.unh.edu/phycokey/phycokey.htm'
 					className='p-5 flex items-center justify-center'>
@@ -77,7 +77,7 @@ function Links() {
 				</a>
 			</div>
 			<div className='md:grid md:grid-rows-1 md:grid-flow-col justify-center'>
-				<a
+				<a rel="noreferrer"
 					href='http://desmids.science4all.nl'
 					target='_blank'
 					className='p-5 justify-center flex items-center'>
@@ -89,13 +89,13 @@ function Links() {
 				</a>
 			</div>
 			<div className='md:grid md:grid-rows-1 md:grid-flow-col md:justify-between'>
-				<a
+				<a rel="noreferrer"
 					target='_blank'
 					href='https://websites.rbge.org.uk/ADIAC/db/Adiacgen.htm'
 					className='p-5 flex items-center justify-center'>
 					<Image alt="ADIAC" className="hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105" src='/ADIAC.jpg' width={350} height={140} />
 				</a>
-				<a
+				<a rel="noreferrer"
 					href='http://protist.i.hosei.ac.jp/Protist_menuE.html'
 					target='_blank'
 					className='p-5 justify-center flex items-center'>
@@ -107,7 +107,7 @@ function Links() {
 				</a>
 			</div>
 			<div className='md:grid md:grid-rows-1 md:grid-flow-col justify-center'>
-				<a
+				<a rel="noreferrer"
 					href='https://naturalhistory.museumwales.ac.uk/diatoms/Home.php'
 					target='_blank'
 					className='p-5 justify-center flex items-center'>
@@ -119,13 +119,13 @@ function Links() {
 				</a>
 			</div>
 			<div className='md:grid md:grid-rows-1 md:grid-flow-col justify-center'>
-				<a
+				<a rel="noreferrer"
 					href='http://nordicmicroalgae.org/'
 					target='_blank'
 					className='p-5 justify-center flex items-center'>
 					<Image alt="Nordic Microalgae" className="hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105" src='/Nordic.png' width={500} height={60} />
 				</a>
-				<a
+				<a rel="noreferrer"
 					href='http://symbiont.ansp.org/dntf/index.php'
 					target='_blank'
 					className='p-5 justify-center flex items-center'>
@@ -133,7 +133,7 @@ function Links() {
 				</a>
 			</div>
 			<div className='md:grid md:grid-rows-1 md:grid-flow-col justify-center'>
-				<a
+				<a rel="noreferrer"
 					href='http://southafrseaweeds.uct.ac.za'
 					target='_blank'
 					className='p-5 justify-center flex items-center'>
