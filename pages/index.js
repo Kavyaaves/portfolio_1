@@ -35,7 +35,6 @@ export default function Index() {
 					<meta property="og:title" content='Bakthavachalam Babu Portfolio and Algae Database' key="ogtitle" />
 					<meta property="og:description" content='Algae database - Marine and Freshwater Algae images with description and data' key="ogdesc" />
 					<meta name="robots" content="index, follow" />
-					<meta name="theme-color" />
 					<link rel='preconnect' href='https://fonts.gstatic.com' />
 					<link
 						href='https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css'
@@ -45,11 +44,13 @@ export default function Index() {
 						href='https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap'
 						rel='stylesheet'
 					/>
-					<link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png" />
-					<link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png" />
-					<link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png" />
-					<link rel="manifest" href="/favicon_io/site.webmanifest" />
-
+					<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+					<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+					<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+					<link rel="manifest" href="favicon/site.webmanifest" />
+					<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+					<meta name="msapplication-TileColor" content="#da532c" />
+					<meta name="theme-color" content="#ffffff" />
 					<title>Home - Bakthavachalam Babu</title>
 				</html>
 			</Head>

@@ -11,7 +11,7 @@ function NavBar() {
 				<nav
 					className={
 						router.pathname == '/'
-							? 'bg-primary max-w-4xl m-auto  rounded-t-none rounded-lg text-white'
+							? 'bg-black max-w-4xl m-auto opacity-95  rounded-t-none rounded-lg text-white'
 							: 'bg-primary max-w-4xl m-auto  rounded-t-none rounded-lg text-white'
 					}>
 					<ul className='hidden sm:flex flex-grow p-2 m-auto justify-evenly text-white text-sm lg:text-lg font-semibold '>
