@@ -37,7 +37,7 @@ export default function studentCorner({ syllabus, notes }) {
 
                     <div className=' text-center'>
                         <div className='max-w-4xl m-auto bg-primary rounded-lg'>
-                            <div className='p-10'>
+                            <div className='md:p-10'>
                                 <h2 className='text-center text-2xl italic text-yellow-500 font-bold '>
                                     <span className=''>STUDENT CORNER</span>
                                 </h2>

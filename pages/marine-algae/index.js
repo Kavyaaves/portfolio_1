@@ -53,7 +53,7 @@ function marineAlgae({ marine }) {
 
 			<body className='bg-marine bg-fixed bg-cover bg-center bg-no-repeat' >
 				<NavBar />
-				<div className='p-2  pt-5 max-w-4xl relative mx-auto'>
+				<div className='md:p-2  pt-5 max-w-4xl relative mx-auto'>
 					<div className='bg-primary relative rounded-lg p-10 w-full h-full'>
 						<Log data={marine} />
 					</div>

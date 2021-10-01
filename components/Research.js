@@ -1,7 +1,7 @@
 function Body() {
 	return (
 		<div className='max-w-4xl m-auto bg-primary rounded-lg'>
-			<div className='p-10'>
+			<div className='md:p-10 p-8'>
 				<h1 className='text-center text-3xl text-yellow-500 transform skew-y-0'>
 					Welcome to Our Algae Lab!
 				</h1>

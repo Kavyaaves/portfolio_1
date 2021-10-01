@@ -86,7 +86,7 @@ function Body() {
 								<h3 className='mb-3 font-bold text-gray-800 text-xl'>
 									Ph. D., January 2002
 								</h3>
-								<p className='text-base font-medium leading-snug text-gray-800 text-opacity-100'>
+								<p className='text-base font-semibold leading-snug text-gray-800 text-opacity-100'>
 									Ph. D. thesis entitled “Histochemical, Ultrasturctural and Biochemical studies on
 									<i>Sargassum wightii</i> Greve., <i>Turbinaria ornata</i> J.Ag. and <i>Cystoseira trinodis</i> (Forsskal)
 									C. Ag. <i>Fucales</i>, Phaeophyceae from the Gulf of Mannar region” made me acquire
