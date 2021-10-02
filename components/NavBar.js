@@ -19,7 +19,7 @@ function NavBar() {
 							className={
 								router.pathname == '/'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
-									: ''
+									: 'hover:text-gray-300'
 							}>
 							<Link href='/'>Home</Link>
 						</li>
@@ -27,7 +27,7 @@ function NavBar() {
 							className={
 								router.pathname == '/freshwater-algae'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
-									: ''
+									: 'hover:text-gray-300'
 							}>
 							<Link href='/freshwater-algae'>Freshwater Algae</Link>
 						</li>
@@ -35,7 +35,7 @@ function NavBar() {
 							className={
 								router.pathname == '/marine-algae'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
-									: ''
+									: 'hover:text-gray-300'
 							}>
 							<Link href='/marine-algae'>Marine Algae</Link>
 						</li>
@@ -43,7 +43,7 @@ function NavBar() {
 							className={
 								router.pathname == '/research'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
-									: ''
+									: 'hover:text-gray-300'
 							}>
 							<Link href='/research'>Research</Link>
 						</li>
@@ -51,7 +51,7 @@ function NavBar() {
 							className={
 								router.pathname == '/publications'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
-									: ''
+									: 'hover:text-gray-300'
 							}>
 							<Link href='/publications'>Publications</Link>
 						</li>
@@ -59,7 +59,7 @@ function NavBar() {
 							className={
 								router.pathname == '/scholars'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
-									: ''
+									: 'hover:text-gray-300'
 							}>
 							<Link href='/scholars'>Scholars</Link>
 						</li>
@@ -67,7 +67,7 @@ function NavBar() {
 							className={
 								router.pathname == '/student-corner'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
-									: ''
+									: 'hover:text-gray-300'
 							}>
 							<Link href='/student-corner'>Student Corner</Link>
 						</li>
@@ -75,7 +75,7 @@ function NavBar() {
 							className={
 								router.pathname == '/links'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
-									: ''
+									: 'hover:text-gray-300'
 							}>
 							<Link href='/links'>Links</Link>
 						</li>
