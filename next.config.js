@@ -8,4 +8,5 @@ module.exports = withPWA({
         skipWaiting: true,
     },
     compress: true,
+    webpack5: false,
 });
