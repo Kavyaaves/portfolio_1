@@ -1,4 +1,5 @@
 const withPWA = require("next-pwa");
+const TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = withPWA({
     pwa: {
