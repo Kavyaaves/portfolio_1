@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Body from '../components/Body';
 import NavBar from '../components/NavBar';
 import Scholars from '../components/Scholars';
 

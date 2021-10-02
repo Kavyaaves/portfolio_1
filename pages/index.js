@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Body from '../components/Body';
 import NavBar from '../components/NavBar';
 import Home from '../components/Home';
+
 export default function Index() {
 	const [isVisible, setIsVisible] = useState(false);
 	const scrollToTop = () => {

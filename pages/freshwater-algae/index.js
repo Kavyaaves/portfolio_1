@@ -5,7 +5,6 @@ import NavBar from '../../components/NavBar';
 import prisma from '../../utils/db';
 
 function freshwaterAlgae({ freshwater }) {
-
     const [isVisible, setIsVisible] = useState(false);
     const scrollToTop = () => {
         window.scrollTo({
@@ -13,7 +12,6 @@ function freshwaterAlgae({ freshwater }) {
             behavior: "smooth"
         });
     };
-
     useEffect(() => {
         // Button is displayed after scrolling for 500 pixels
         const toggleVisibility = () => {

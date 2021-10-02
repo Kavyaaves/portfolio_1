@@ -7,14 +7,14 @@ function marineAlgaeDetail({ data }) {
     return (
         <div className='w-screen h-screen overflow-x-hidden'>
             <Head>
-                <title>{data ? data.name : ''} - Marine Algae - Bakthavachalam Babu</title>
+                <title>{data ? data?.name : ''} - Marine Algae - Bakthavachalam Babu</title>
                 <html lang="en">
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta charSet="utf-8" />
                     <meta name="google" content="notranslate" />
-                    <meta name="description" content={`${data.name} alga details is specified here. Also information of hundreds of freshwater and marine algae are listed here. Algae database - Marine and Freshwater Algae images with description and data`}></meta>
+                    <meta name="description" content={`${data && data?.name} alga details is specified here. Also information of hundreds of freshwater and marine algae are listed here. Algae database - Marine and Freshwater Algae images with description and data`}></meta>
                     <meta property="og:title" content='Bakthavachalam Babu Portfolio and Algae Database' key="ogtitle" />
-                    <meta property="og:description" content={`${data.name} alga details is specified here. Also information of hundreds of freshwater and marine algae are listed here. Algae database - Marine and Freshwater Algae images with description and data`} key="ogdesc" />
+                    <meta property="og:description" content={`${data && data?.name} alga details is specified here. Also information of hundreds of freshwater and marine algae are listed here. Algae database - Marine and Freshwater Algae images with description and data`} key="ogdesc" />
                     <meta name="robots" content="index, follow" />
                     <link rel='preconnect' href='https://fonts.gstatic.com' />
                     <link

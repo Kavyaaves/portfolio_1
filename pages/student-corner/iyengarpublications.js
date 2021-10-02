@@ -8,7 +8,6 @@ function IyengarPublications({ data }) {
             <Head>
                 <title>MOP Iyengar's Publications - Bakthavachalam Babu</title>
                 <html lang="en">
-
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta charSet="utf-8" />
                     <meta name="description" content='Information and Publications of Father of Indian Alogology - MOP Iyengar are attached here. Algae database - Marine and Freshwater Algae images with description and data'></meta>

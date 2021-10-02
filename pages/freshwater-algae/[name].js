@@ -1,12 +1,9 @@
 import Head from 'next/head';
-import { useState, useEffect } from 'react'
 import NavBar from '../../components/NavBar';
 import prisma from '../../utils/db';
 import Blog from '../../components/Blog';
-import { useRouter } from 'next/router';
+
 function freshwaterAlgaeDetail({ data }) {
-    const router = useRouter()
-    const [isVisible, setIsVisible] = useState(false);
     return (
         <div className='w-screen h-screen overflow-x-hidden'>
             <Head>
@@ -15,9 +12,9 @@ function freshwaterAlgaeDetail({ data }) {
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta charSet="utf-8" />
                     <meta name="google" content="notranslate" />
-                    <meta name="description" content='Information of hundreds of freshwater and marine algae are listed here. Algae database - Marine and Freshwater Algae images with description and data'></meta>
+                    <meta name="description" content={`${data && data?.name} alga details is specified here. Also information of hundreds of freshwater and marine algae are listed here. Algae database - Marine and Freshwater Algae images with description and data`}></meta>
                     <meta property="og:title" content='Bakthavachalam Babu Portfolio and Algae Database' key="ogtitle" />
-                    <meta property="og:description" content='Information of hundreds of freshwater and marine algae are listed here. Algae database - Marine and Freshwater Algae images with description and data' key="ogdesc" />
+                    <meta property="og:description" content={`${data && data?.name} alga details is specified here. Also information of hundreds of freshwater and marine algae are listed here. Algae database - Marine and Freshwater Algae images with description and data`} key="ogdesc" />
                     <meta name="robots" content="index, follow" />
                     <link rel='preconnect' href='https://fonts.gstatic.com' />
                     <link
@@ -47,8 +44,6 @@ function freshwaterAlgaeDetail({ data }) {
                     </div>
                 </div>
                 <br />
-
-
                 <br />
             </body >
         </ div >

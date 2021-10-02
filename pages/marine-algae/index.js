@@ -22,11 +22,10 @@ function marineAlgae({ marine }) {
 				setIsVisible(false);
 			}
 		};
-
 		window.addEventListener("scroll", toggleVisibility);
-
 		return () => window.removeEventListener("scroll", toggleVisibility);
 	}, []);
+
 	return (
 		<div className='w-screen h-screen overflow-x-hidden'>
 			<Head>

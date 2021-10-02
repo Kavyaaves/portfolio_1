@@ -54,7 +54,6 @@ export default function studentCorner({ syllabus, notes }) {
                 </div>
                 <br />
             </body>
-
         </div>
     );
 }
