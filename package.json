@@ -1,5 +1,5 @@
 {
-  "name": "starter-tailwind",
+  "name": "bakthavachalam-babu",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,14 +10,12 @@
   },
   "dependencies": {
     "@prisma/client": "^2.29.1",
-    "framer-motion": "^4.1.17",
     "html-react-parser": "^1.2.8",
     "next": "10.2.0",
+    "next-pwa": "^5.3.1",
     "next-sitemap": "^1.6.168",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-responsive-carousel": "^3.2.18",
-    "react-slick": "^0.28.1"
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
