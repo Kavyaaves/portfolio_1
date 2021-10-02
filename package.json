@@ -22,5 +22,8 @@
     "postcss": "^8.2.14",
     "prisma": "^2.29.1",
     "tailwindcss": "^2.1.2"
-  }
+  },
+  "resolutions": {
+  "terser": "3.14.1"
+}
 }
