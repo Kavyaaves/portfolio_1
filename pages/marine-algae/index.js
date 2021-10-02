@@ -33,10 +33,12 @@ function marineAlgae({ marine }) {
 				<title>Marine Algae - Bakthavachalam Babu</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<meta charSet="utf-8" />
+				<meta name="google" content="notranslate" />
 				<meta name="description" content='Marine Algae log with description. Algae database - Marine and Freshwater Algae images with description and data'></meta>
 				<meta property="og:title" content='Bakthavachalam Babu Portfolio and Algae Database' key="ogtitle" />
 				<meta property="og:description" content='Marine Algae log with description. Algae database - Marine and Freshwater Algae images with description and data' key="ogdesc" />
 				<meta name="robots" content="index, follow" />
+
 				<link rel='preconnect' href='https://fonts.gstatic.com' />
 				<link
 					href='https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css'
@@ -55,7 +57,7 @@ function marineAlgae({ marine }) {
 				<meta name="theme-color" content="#ffffff" />
 			</Head>
 
-			<body className='bg-marine bg-fixed bg-cover bg-center bg-no-repeat' >
+			<body className='bg-marine bg-fixed bg-cover bg-center bg-no-repeat overflow-x-hidden' >
 				<NavBar />
 				<div className='md:p-2  p-5 max-w-4xl relative mx-auto'>
 					<div className='bg-primary relative rounded-lg p-10 w-full h-full'>

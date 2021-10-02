@@ -1,14 +1,10 @@
 import { useState } from 'react';
-import ImageGrid from './ImageGrid';
-import SlickSlider from './SlickSlider';
-import prisma from '../utils/db';
-import Log from './Log'
 import Tab1 from './Tab1';
 import Tab2 from './Tab2';
 import Tab3 from './Tab3';
+
 const Tabs = ({ syllabus, notes }) => {
 	const [openTab, setOpenTab] = useState(1);
-
 	return (
 		<>
 			<div className='flex flex-wrap md:p-5 min-h-screen'>
@@ -24,11 +20,13 @@ const Tabs = ({ syllabus, notes }) => {
 										? 'text-gray-900 rounded-t-lg bg-yellow-500'
 										: 'text-yellow-500')
 								}
+								role='tab'
 								onClick={(e) => {
 									e.preventDefault();
 									setOpenTab(1);
 								}}
 								data-toggle='tab'
+								aria-label="Tab1"
 								href='#link1'
 								role='tablist'>
 								Indian Algologists
@@ -42,10 +40,12 @@ const Tabs = ({ syllabus, notes }) => {
 										? 'text-gray-900 rounded-t-lg font-semibold bg-yellow-500'
 										: 'text-yellow-500 ')
 								}
+								role='tab'
 								onClick={(e) => {
 									e.preventDefault();
 									setOpenTab(2);
 								}}
+								aria-label="Tab2"
 								data-toggle='tab'
 								href='#link2'
 								role='tablist'>
@@ -60,12 +60,14 @@ const Tabs = ({ syllabus, notes }) => {
 										? 'text-gray-800 bg-yellow-500'
 										: 'text-yellow-500 bg-primary')
 								}
+								role='tab'
 								onClick={(e) => {
 									e.preventDefault();
 									setOpenTab(3);
 								}}
 								data-toggle='tab'
 								href='#link3'
+								aria-label="Tab3"
 								role='tablist'>
 								Notes
 							</a>
@@ -74,8 +76,10 @@ const Tabs = ({ syllabus, notes }) => {
 					<br />
 					<div className='relative flex  flex-col min-w-0 break-words w-full mb-6 rounded'>
 						<div className='px-4 py-5 md:p-0 flex-auto'>
-							<div className='tab-contab-space'>
+							<div className='tab-contab-space' role="tablist">
 								<div
+									role="tab"
+									aria-selected="true" aria-controls="tab-1-pane" active
 									className={
 										openTab === 1 ? 'block' : 'hidden'
 									}
@@ -83,6 +87,8 @@ const Tabs = ({ syllabus, notes }) => {
 									<Tab1 />
 								</div>
 								<div
+									role="tab"
+									aria-selected="false"
 									className={
 										openTab === 2 ? 'block' : 'hidden'
 									}
@@ -93,6 +99,8 @@ const Tabs = ({ syllabus, notes }) => {
 									className={
 										openTab === 3 ? 'block' : 'hidden'
 									}
+									aria-selected="false"
+									role="tab"
 									id='link3'>
 									<Tab3 notes={notes} />
 								</div>

@@ -1,9 +1,7 @@
 import Head from 'next/head';
-import { useState } from 'react'
 import NavBar from '../../components/NavBar';
 import prisma from '../../utils/db';
 import Blog from '../../components/Blog';
-import { useRouter } from 'next/router';
 
 function marineAlgaeDetail({ data }) {
     return (

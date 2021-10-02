@@ -6,7 +6,7 @@ function members() {
 	return (
 		<div className=''>
 			<Head>
-				<title>Pubmications - Bakthavachalam Babu</title>
+				<title>Publications - Bakthavachalam Babu</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<meta charSet="utf-8" />
 				<meta name="description" content='Publications of Dr. B. Babu includes books and papers published. Algae database - Marine and Freshwater Algae images with description and data'></meta>

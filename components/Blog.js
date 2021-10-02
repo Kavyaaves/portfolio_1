@@ -21,19 +21,19 @@ const Blog = ({ data }) => {
                     </thead>
                     <tbody className="w-full">
                         <tr>
-                            <td className=" font-bold text-lg">Division&nbsp;&nbsp;&nbsp;</td>
+                            <td className=" font-bold text-lg">Division&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                             <td className="text-left">{parse(data?.division)}</td>
                         </tr>
                         <tr>
-                            <td className=" font-bold text-lg">Class&nbsp;&nbsp;&nbsp;</td>
+                            <td className=" font-bold text-lg">Class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                             <td>{data?.class}</td>
                         </tr>
                         <tr>
-                            <td className=" font-bold text-lg">Order&nbsp;&nbsp;&nbsp;</td>
+                            <td className=" font-bold text-lg">Order&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                             <td>{data?.order}</td>
                         </tr>
                         <tr>
-                            <td className=" font-bold text-lg">Family&nbsp;&nbsp;&nbsp;</td>
+                            <td className=" font-bold text-lg">Family&nbsp;&nbsp;&nbsp;&nbsp;</td>
                             <td>{data?.family}</td>
                         </tr>
 
@@ -42,7 +42,7 @@ const Blog = ({ data }) => {
                                 <td className="font-bold text-lg">Basionym&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 <td className="">{parse(data.basionym)}</td>
                             </tr>}
-                        {data.synonym != "" && data.synonym.length > 100 &&
+                        {data.synonym != "" && data.synonym.length <= 100 &&
                             <tr className="w-full">
                                 <td valign="top" className="font-bold w-1/2 align-top inline-block text-lg">Synonym</td>
                                 <td className="w-1/2">{parse(data.synonym)}</td>
@@ -68,11 +68,11 @@ const Blog = ({ data }) => {
                 </div> */}
 
             </div>
-            {/* {data.synonym != "" && data.synonym.length >= 100 &&
+            {data.synonym != "" && data.synonym.length >= 100 &&
                 <div className="block w-full">
                     <span valign="top" className="font-bold align-top inline-block text-lg w-1/2">Synonym</span>
                     <span className="clear-none inline-block">{parse(data.synonym)}</span>
-                </div>} */}
+                </div>}
             <br />
 
             {
@@ -156,7 +156,7 @@ const Blog = ({ data }) => {
 
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
-                        <Image className="self-center" src={data.img3} alt={data?.name}  layout="intrinsic" width={data.orientation3.split('x')[0] * 100} height={data.orientation3.split('x')[1] * 100} />
+                        <Image className="self-center" src={data.img3} alt={data?.name} layout="intrinsic" width={data.orientation3.split('x')[0] * 100} height={data.orientation3.split('x')[1] * 100} />
                     </div>
                     <p className="text-center">{parse(data.img3Caption)}</p>
                     <br />
@@ -167,7 +167,7 @@ const Blog = ({ data }) => {
                 data.img4 &&
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
-                        <Image className="self-center" src={data.img4} alt={data?.name}  layout="intrinsic" width={data.orientation4.split('x')[0] * 100} height={data.orientation4.split('x')[1] * 100} />
+                        <Image className="self-center" src={data.img4} alt={data?.name} layout="intrinsic" width={data.orientation4.split('x')[0] * 100} height={data.orientation4.split('x')[1] * 100} />
                     </div>
                     <p className="text-center">{parse(data.img4Caption)}</p>
                     <br />
@@ -180,7 +180,7 @@ const Blog = ({ data }) => {
                 data.img5 &&
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
-                        <Image className="self-center" src={data.img5} alt={data?.name}  layout="intrinsic" width={data.orientation5.split('x')[0] * 100} height={data.orientation5.split('x')[1] * 100} />
+                        <Image className="self-center" src={data.img5} alt={data?.name} layout="intrinsic" width={data.orientation5.split('x')[0] * 100} height={data.orientation5.split('x')[1] * 100} />
                     </div>
                     <p>{parse(data.img5Caption)}</p>
                     <br />
@@ -190,7 +190,7 @@ const Blog = ({ data }) => {
                 data.img6 &&
                 <>
                     <div className="w-full items-center justify-evenly flex p-5">
-                        <Image className="self-center" src={data.img6} alt={data?.name}  layout="intrinsic" width={data.orientation1.split('x')[0] * 100} height={data.orientation1.split('x')[1] * 100} />
+                        <Image className="self-center" src={data.img6} alt={data?.name} layout="intrinsic" width={data.orientation1.split('x')[0] * 100} height={data.orientation1.split('x')[1] * 100} />
                     </div>
                     <p className="text-center">{parse(data.img6Caption)}</p>
                     <br />

@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react'
-import Image from 'next/image';
 import Log2 from '../../components/Log2';
 import NavBar from '../../components/NavBar';
 import prisma from '../../utils/db';
@@ -48,6 +47,7 @@ function freshwaterAlgae({ freshwater }) {
                     href='https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap'
                     rel='stylesheet'
                 />
+                <meta name="google" content="notranslate" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
                 <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
@@ -57,7 +57,7 @@ function freshwaterAlgae({ freshwater }) {
                 <meta name="theme-color" content="#ffffff" />
             </Head>
 
-            <body className='bg-falls bg-fixed bg-cover bg-center bg-no-repeat' >
+            <body className='bg-falls bg-fixed bg-cover bg-center bg-no-repeat overflow-x-hidden' >
                 <NavBar />
                 <div className='md:p-2 p-5 max-w-4xl relative mx-auto'>
                     <div className='bg-primary relative rounded-lg p-10 w-full h-full'>
