@@ -37,7 +37,7 @@ const Blog = ({ data }) => {
                             <td>{data?.family}</td>
                         </tr>
 
-                        {data.basionym != "" &&
+                        {data.basionym != "" && data.basionym.length <= 100 &&
                             <tr >
                                 <td className="font-bold text-lg">Basionym&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 <td className="">{parse(data.basionym)}</td>
@@ -49,25 +49,13 @@ const Blog = ({ data }) => {
                             </tr>}
                     </tbody>
                 </table>
-                {/* <div className="flex text-left max-w-xl">
-                    <p className=" font-bold text-lg">Division</p>
-                    <p className="text-left">{parse(data?.division)}</p>
-                </div>
-
-                <div className="text-left flex">
-                    <p className=" font-bold text-lg w-10">Class</p>
-                    <p>{data?.class}</p>
-                </div>
-                <div className="text-left flex">
-                    <p className=" font-bold text-lg w-10">Order</p>
-                    <p>{data?.order}</p>
-                </div>
-                <div className="text-left flex">
-                    <p className=" font-bold text-lg w-10">Family</p>
-                    <p>{data?.family}</p>
-                </div> */}
-
             </div>
+            {data.basionym != "" && data.basionym.length >= 100 &&
+                <div className="block w-full">
+                    <span valign="top" className="font-bold align-top inline-block text-lg w-1/2">Basionym</span>
+                    <span className="clear-none inline-block">{parse(data.basionym)}</span>
+                </div>}
+
             {data.synonym != "" && data.synonym.length >= 100 &&
                 <div className="block w-full">
                     <span valign="top" className="font-bold align-top inline-block text-lg w-1/2">Synonym</span>

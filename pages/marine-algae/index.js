@@ -27,7 +27,7 @@ function marineAlgae({ marine }) {
 	}, []);
 
 	return (
-		<div className='w-screen h-screen overflow-x-hidden'>
+		<div>
 			<Head>
 				<title>Marine Algae - Bakthavachalam Babu</title>
 				<html lang="en">
@@ -59,10 +59,10 @@ function marineAlgae({ marine }) {
 				</html>
 			</Head>
 
-			<body className='bg-marine bg-fixed bg-cover bg-center bg-no-repeat overflow-x-hidden' >
+			<body className='bg-marine bg-fixed bg-cover bg-center bg-no-repeat' >
 				<NavBar />
-				<div className='md:p-2  p-5 max-w-4xl relative mx-auto'>
-					<div className='bg-primary relative rounded-lg p-10 w-full h-full'>
+				<div className='p-5'>
+					<div className='bg-primary rounded-lg p-10 w-full h-full  max-w-4xl relative mx-auto'>
 						<Log data={marine} />
 					</div>
 				</div>
@@ -72,11 +72,9 @@ function marineAlgae({ marine }) {
 						<div classname='inline-flex m-10'><svg xmlns="http://www.w3.org/2000/svg" fill="#FFBF00" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></div>
 					</button>
 				)}
-
-				<br />
-			</body >
-		</ div >
-	);
+			</body>
+		</div>
+	)
 }
 
 export default marineAlgae;

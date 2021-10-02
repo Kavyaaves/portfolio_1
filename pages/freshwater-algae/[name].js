@@ -5,7 +5,7 @@ import Blog from '../../components/Blog';
 
 function freshwaterAlgaeDetail({ data }) {
     return (
-        <div className='w-screen h-screen overflow-x-hidden'>
+        <div>
             <Head>
                 <title>{data ? data.name : ''} - Freshwater Algae - Bakthavachalam Babu</title>
                 <html lang="en">
@@ -36,17 +36,15 @@ function freshwaterAlgaeDetail({ data }) {
             </Head>
 
             <body className='bg-freshwater_single bg-fixed bg-cover bg-center bg-no-repeat' >
-
                 <NavBar />
-                <div className='p-2  pt-5 max-w-4xl relative mx-auto'>
-                    <div className='bg-primary relative rounded-lg p-10 w-full'>
+                <div className='p-5'>
+                    <div className='bg-primary rounded-lg p-10 w-full max-w-4xl relative mx-auto'>
                         {data ? <Blog data={data} /> : ""}
                     </div>
                 </div>
                 <br />
-                <br />
             </body >
-        </ div >
+        </div>
     );
 }
 

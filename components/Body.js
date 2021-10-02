@@ -163,7 +163,7 @@ function Body() {
 				</div>
 			</div>
 		</div>
-	);
+	)
 }
 
 export default Body;

@@ -43,7 +43,6 @@ function members() {
 				</div>
 				<br />
 			</body>
-
 		</div>
 	);
 }

@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Head />
 			{loading && <Loading />}
-			<Component {...pageProps} className="z-10" />;
+			<Component {...pageProps} className="z-10 overflow-hidden" />
 		</>)
 }
 

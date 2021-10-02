@@ -43,7 +43,6 @@ function scholars() {
 				</div>
 				<br />
 			</body>
-
 		</div>
 	);
 }

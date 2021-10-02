@@ -27,7 +27,7 @@ function freshwaterAlgae({ freshwater }) {
         return () => window.removeEventListener("scroll", toggleVisibility);
     }, []);
     return (
-        <div className='w-screen h-screen overflow-hidden'>
+        <div>
             <Head>
                 <title>Freshwater Algae - Bakthavachalam Babu</title>
                 <html lang="en">
@@ -60,8 +60,8 @@ function freshwaterAlgae({ freshwater }) {
 
             <body className='bg-falls bg-fixed bg-cover bg-center bg-no-repeat overflow-x-hidden' >
                 <NavBar />
-                <div className='md:p-2 p-5 max-w-4xl relative mx-auto'>
-                    <div className='bg-primary relative rounded-lg p-10 w-full h-full'>
+                <div className='p-5'>
+                    <div className='bg-primary relative rounded-lg p-10 h-full  max-w-4xl mx-auto'>
                         <Log2 data={freshwater} />
                     </div>
                 </div>
@@ -71,20 +71,15 @@ function freshwaterAlgae({ freshwater }) {
                         <div classname='inline-flex m-10'><svg xmlns="http://www.w3.org/2000/svg" fill="#FFBF00" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></div>
                     </button>
                 )}
-
-                <br />
             </body >
-
-
-        </ div >
-    );
+        </div>
+    )
 }
 
 export default freshwaterAlgae;
 
 
 export const getStaticProps = async () => {
-
     const charophyta = await prisma.freshwater.findMany({ where: { "division": 'Charophyta' }, orderBy: { "name": "asc" } });
     const chlorophyta = await prisma.freshwater.findMany({ where: { "division": 'Chlorophyta' }, orderBy: { "name": "asc" } });
     const glaucophyta = await prisma.freshwater.findMany({ where: { "division": 'Glaucophyta' }, orderBy: { "name": "asc" } });

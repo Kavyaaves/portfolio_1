@@ -43,7 +43,6 @@ function research() {
 				</div>
 				<br />
 			</body>
-
 		</div>
 	);
 }

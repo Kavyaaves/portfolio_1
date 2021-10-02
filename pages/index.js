@@ -70,9 +70,7 @@ export default function Index() {
 				<div className='p-5'>
 					<Body />
 				</div>
-				<br />
 			</body>
-
 		</>
-	);
+	)
 }
