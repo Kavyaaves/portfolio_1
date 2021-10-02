@@ -6,7 +6,6 @@ function IyengarPublications({ data }) {
     return (
         < div className='' >
             <Head>
-                <html lang="en">
                     <title>MOP Iyengar's Publications - Bakthavachalam Babu</title>
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta charSet="utf-8" />
@@ -30,7 +29,6 @@ function IyengarPublications({ data }) {
                     <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
                     <meta name="msapplication-TileColor" content="#da532c" />
                     <meta name="theme-color" content="#ffffff" />
-                </html>
             </Head>
             <body className='bg-research bg-cover bg-fixed bg-no-repeat'>
                 <div>

@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar';
 
 function members() {
 	return (
-		<div className=''>
+		<>
 			<Head>
 				<title>Links - Bakthavachalam Babu</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,8 +39,7 @@ function members() {
 				</div>
 				<br />
 			</body>
-
-		</div>
+		</>
 	);
 }
 
