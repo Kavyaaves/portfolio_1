@@ -14,6 +14,7 @@ function freshwaterAlgaeDetail({ data }) {
                 <html lang="en">
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta charSet="utf-8" />
+                    <meta name="google" content="notranslate" />
                     <meta name="description" content='Information of hundreds of freshwater and marine algae are listed here. Algae database - Marine and Freshwater Algae images with description and data'></meta>
                     <meta property="og:title" content='Bakthavachalam Babu Portfolio and Algae Database' key="ogtitle" />
                     <meta property="og:description" content='Information of hundreds of freshwater and marine algae are listed here. Algae database - Marine and Freshwater Algae images with description and data' key="ogdesc" />

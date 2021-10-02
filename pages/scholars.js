@@ -7,7 +7,9 @@ function scholars() {
 	return (
 		<div className=''>
 			<Head>
-					<title>Scholars - Bakthavachalam Babu</title>
+				<title>Scholars - Bakthavachalam Babu</title>
+				<html lang="en">
+
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<meta charSet="utf-8" />
 					<meta name="description" content='Scholars who completed their project under the guidance of Dr. B. Babu are listed here. Algae database - Marine and Freshwater Algae images with description and data'></meta>
@@ -23,6 +25,7 @@ function scholars() {
 						href='https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap'
 						rel='stylesheet'
 					/>
+					<meta name="google" content="notranslate" />
 					<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
 					<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
 					<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
@@ -30,6 +33,7 @@ function scholars() {
 					<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
 					<meta name="msapplication-TileColor" content="#da532c" />
 					<meta name="theme-color" content="#ffffff" />
+				</html>
 			</Head>
 			<body className='bg-species bg-center bg-cover bg-fixed bg-no-repeat bg-opacity-0'>
 				<div>

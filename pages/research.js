@@ -6,7 +6,9 @@ function research() {
 	return (
 		<div className=''>
 			<Head>
-					<title>Research - Bakthavachalam Babu</title>
+				<title>Research - Bakthavachalam Babu</title>
+				<html lang="en">
+
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<meta charSet="utf-8" />
 					<meta name="description" content='Ongoing researches in the lab of Dr. B. Babu are briefed in here. Algae database - Marine and Freshwater Algae images with description and data'></meta>
@@ -22,6 +24,7 @@ function research() {
 						href='https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap'
 						rel='stylesheet'
 					/>
+					<meta name="google" content="notranslate" />
 					<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
 					<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
 					<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
@@ -29,6 +32,7 @@ function research() {
 					<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
 					<meta name="msapplication-TileColor" content="#da532c" />
 					<meta name="theme-color" content="#ffffff" />
+				</html>
 			</Head>
 			<body className='bg-andaman bg-cover bg-fixed bg-no-repeat'>
 				<div>

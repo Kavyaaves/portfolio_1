@@ -6,7 +6,9 @@ function IyengarPublications({ data }) {
     return (
         < div className='' >
             <Head>
-                    <title>MOP Iyengar's Publications - Bakthavachalam Babu</title>
+                <title>MOP Iyengar's Publications - Bakthavachalam Babu</title>
+                <html lang="en">
+
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta charSet="utf-8" />
                     <meta name="description" content='Information and Publications of Father of Indian Alogology - MOP Iyengar are attached here. Algae database - Marine and Freshwater Algae images with description and data'></meta>
@@ -22,6 +24,7 @@ function IyengarPublications({ data }) {
                         href='https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap'
                         rel='stylesheet'
                     />
+                    <meta name="google" content="notranslate" />
                     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
                     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
                     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
@@ -29,6 +32,7 @@ function IyengarPublications({ data }) {
                     <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
                     <meta name="msapplication-TileColor" content="#da532c" />
                     <meta name="theme-color" content="#ffffff" />
+                </html>
             </Head>
             <body className='bg-research bg-cover bg-fixed bg-no-repeat'>
                 <div>
