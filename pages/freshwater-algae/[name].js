@@ -10,8 +10,8 @@ function freshwaterAlgaeDetail({ data }) {
     return (
         <div className='w-screen h-screen overflow-x-hidden'>
             <Head>
+                <title>{data ? data.name : ''} - Freshwater Algae - Bakthavachalam Babu</title>
                 <html lang="en">
-                    <title>{data.name} - Freshwater Algae - Bakthavachalam Babu</title>
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta charSet="utf-8" />
                     <meta name="description" content='Information of hundreds of freshwater and marine algae are listed here. Algae database - Marine and Freshwater Algae images with description and data'></meta>

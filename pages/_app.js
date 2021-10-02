@@ -4,7 +4,6 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
-				<title>Bakthavachalam Babu</title>
 			</Head>
 			<Component {...pageProps} />;
 		</>)

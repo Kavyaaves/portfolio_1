@@ -29,7 +29,7 @@ function freshwaterAlgae({ freshwater }) {
         return () => window.removeEventListener("scroll", toggleVisibility);
     }, []);
     return (
-        <div className='w-screen h-screen overflow-x-hidden'>
+        <div className='w-screen h-screen overflow-hidden'>
             <Head>
                 <title>Freshwater Algae - Bakthavachalam Babu</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
