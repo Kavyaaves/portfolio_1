@@ -43,7 +43,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Vasantha Kumar.JPG'
+							src='/scholars/Vasantha Kumar.JPG'
 							alt='Vasantha Kumar'
 						/>
 					</div>
@@ -72,7 +72,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Krithica.L.jpeg'
+							src='/scholars/Krithica.L.jpeg'
 							alt='Krithica'
 						/>
 					</div>
@@ -97,7 +97,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Kokila.jpg'
+							src='/scholars/Kokila.jpg'
 							alt='Kokila'
 						/>
 					</div>
@@ -126,7 +126,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Grace.JPG'
+							src='/scholars/Grace.JPG'
 							alt='Grace'
 						/>
 					</div>
@@ -152,7 +152,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Hannah1.jpg'
+							src='/scholars/Hannah1.jpg'
 							alt='Hannah'
 						/>
 					</div>
@@ -180,7 +180,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Nandhini.jpg'
+							src='/scholars/Nandhini.jpg'
 							alt='Nandhini'
 						/>
 					</div>
@@ -207,7 +207,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Arokia Monisha .jpg'
+							src='/scholars/Arokia Monisha .jpg'
 							alt='Arokia Monisha'
 						/>
 					</div>
@@ -235,7 +235,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Sonsuri.jpg'
+							src='/scholars/Sonsuri.jpg'
 							alt='Sonsuri Rongpi'
 						/>
 					</div>
@@ -266,7 +266,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Asmin.jpg'
+							src='/scholars/Asmin.jpg'
 							alt='Asmin Bibi'
 						/>
 					</div>
@@ -294,7 +294,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Sasi.jpg'
+							src='/scholars/Sasi.jpg'
 							alt='Sasi Kumar'
 						/>
 					</div>
@@ -316,7 +316,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Krithica.L.jpeg'
+							src='/scholars/Krithica.L.jpeg'
 							alt='Krithica'
 						/>
 						<div className='md:hidden flex items-center ml-10 justify-center'>
@@ -324,7 +324,7 @@ function Scholars() {
 								className=' rounded-lg'
 								width={200}
 								height={300}
-								src='/Kokila.jpg'
+								src='/scholars/Kokila.jpg'
 								alt='Kokila'
 							/>
 						</div>
@@ -351,7 +351,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Kokila.jpg'
+							src='/scholars/Kokila.jpg'
 							alt='Kokila'
 						/>
 					</div>
@@ -362,7 +362,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Hungthing K Y S.jpg'
+							src='/scholars/Hungthing K Y S.jpg'
 							alt='Hungthing'
 						/>
 					</div>
@@ -392,21 +392,21 @@ function Scholars() {
 							className='rounded-lg'
 							width={200}
 							height={300}
-							src='/Aiswarya.jpg'
+							src='/scholars/Aiswarya.jpg'
 							alt='Hungthing'
 						/>
 						<Image
 							className='rounded-lg'
 							width={200}
 							height={300}
-							src='/Nancy.jpg'
+							src='/scholars/Nancy.jpg'
 							alt='A Quiet Place movie poster'
 						/>
 						<Image
 							className='rounded-lg'
 							width={200}
 							height={300}
-							src='/Sankesh.jpg'
+							src='/scholars/Sankesh.jpg'
 							alt='Sankesh'
 						/>
 					</div>
@@ -436,7 +436,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Manikandan.jpg'
+							src='/scholars/Manikandan.jpg'
 							alt='Manikandan'
 						/>
 						<div className='md:hidden flex items-center ml-10 justify-center'>
@@ -444,7 +444,7 @@ function Scholars() {
 								className='rounded-lg'
 								width={200}
 								height={300}
-								src='/Pratima Gurung.jpg'
+								src='/scholars/Pratima Gurung.jpg'
 								alt='Pratima'
 							/>
 						</div>
@@ -469,7 +469,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Pratima Gurung.jpg'
+							src='/scholars/Pratima Gurung.jpg'
 							alt='Pratima'
 						/>
 					</div>
@@ -480,7 +480,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/S. Pauline Gifty.jpg'
+							src='/scholars/S. Pauline Gifty.jpg'
 							alt='Pauline Gifty'
 						/>
 					</div>
@@ -507,7 +507,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Smitha.jpg'
+							src='/scholars/Smitha.jpg'
 							alt='A Quiet Place movie poster'
 						/>
 					</div>
@@ -536,21 +536,21 @@ function Scholars() {
 							className='rounded-lg'
 							width={200}
 							height={300}
-							src='/Karthika.jpg'
+							src='/scholars/Karthika.jpg'
 							alt='Karthika'
 						/>
 						<Image
 							className='rounded-lg'
 							width={200}
 							height={300}
-							src='/Sandhya.jpg'
+							src='/scholars/Sandhya.jpg'
 							alt='Sandhya'
 						/>
 						<Image
 							className='rounded-lg'
 							width={200}
 							height={300}
-							src='/SARANYA.jpg'
+							src='/scholars/SARANYA.jpg'
 							alt='Saranya'
 						/>
 					</div>
@@ -583,7 +583,7 @@ function Scholars() {
 							className='rounded-lg md:rounded-none'
 							width={200}
 							height={300}
-							src='/Amal.jpg'
+							src='/scholars/Amal.jpg'
 							alt='Mr. Amudham Radha Amal Raj'
 						/>
 					</div>
