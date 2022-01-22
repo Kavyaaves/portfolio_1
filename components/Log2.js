@@ -39,6 +39,19 @@ function Log2({ data }) {
             <br />
             <div className="w-full md:flex flex-direction-row pl-8 ">
                 <div className="md:w-full">
+                    <p className="text-lg text-yellow-500 p-5 pl-0 font-bold">EUGLENOPHYCOTA</p>
+                    {data.euglenophycota.map((d, i) => {
+                        return (
+                            <ul key={i} className="pr-8">
+                                <li className="text-base text-white  list-disc w-full">
+                                    <Link href={"/freshwater-algae/" + d.name} scroll={true} shallow={true} >
+                                        <span className="hover:underline cursor-pointer"><i>{d.name}</i></span></Link>
+                                </li>
+                            </ul>
+                        )
+                    })}
+                </div>
+                <div className="md:w-full">
                     <p className="text-lg text-yellow-500 p-5 pl-0 font-bold">RHODOPHYTA</p>
                     {data.rhodophyta.map((d, i) => {
                         return (
@@ -51,9 +64,12 @@ function Log2({ data }) {
                         )
                     })}
                 </div>
+
+            </div>
+            <br />
+            <div className="w-full md:flex flex-direction-row pl-8 ">
                 <div className="md:w-full">
                     <div className="md:min-w-full">
-
                         <p className="text-lg text-yellow-500 p-5 pl-0 font-bold">OCHROPHYTA</p>
                         {data.ochrophyta.map((d, i) => {
                             return (
@@ -66,11 +82,7 @@ function Log2({ data }) {
                             )
                         })}
                     </div>
-
                 </div>
-            </div>
-            <br />
-            <div className="w-full md:flex flex-direction-row pl-8 ">
                 <div className="md:w-full">
                     <p className="text-lg text-yellow-500 p-5 pl-0 font-bold">GLAUCOPHYTA</p>
                     {data.glaucophyta.map((d, i) => {

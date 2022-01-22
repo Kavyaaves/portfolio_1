@@ -20,22 +20,26 @@ const Blog = ({ data }) => {
                         </tr>
                     </thead>
                     <tbody className="w-full">
-                        <tr>
-                            <td className=" font-bold text-lg">Division&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td className="text-left">{parse(data?.division)}</td>
-                        </tr>
-                        <tr>
-                            <td className=" font-bold text-lg">Class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td>{data?.class}</td>
-                        </tr>
-                        <tr>
-                            <td className=" font-bold text-lg">Order&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                            <td>{data?.order}</td>
-                        </tr>
-                        <tr>
+                        {data?.division &&
+                            <tr>
+                                <td className=" font-bold text-lg">Division&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td className="text-left">{parse(data?.division)}</td>
+                            </tr>}
+                        {data?.class &&
+                            <tr>
+                                <td className=" font-bold text-lg">Class&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>{data?.class}</td>
+                            </tr>}
+                        {data?.order &&
+                            <tr>
+                                <td className=" font-bold text-lg">Order&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                <td>{data?.order}</td>
+                            </tr>
+                        }
+                        {data?.family && <tr>
                             <td className=" font-bold text-lg">Family&nbsp;&nbsp;&nbsp;&nbsp;</td>
                             <td>{data?.family}</td>
-                        </tr>
+                        </tr>}
 
                         {data.basionym != "" && data.basionym.length <= 100 &&
                             <tr >
