@@ -82,9 +82,10 @@ export const getStaticProps = async () => {
     const charophyta = await prisma.freshwater.findMany({ where: { "division": 'Charophyta' }, orderBy: { "name": "asc" } });
     const chlorophyta = await prisma.freshwater.findMany({ where: { "division": 'Chlorophyta' }, orderBy: { "name": "asc" } });
     const euglenophycota = await prisma.freshwater.findMany({ where: { "division": 'Euglenophycota' }, orderBy: { "name": "asc" } });
+    const euglenophyta = await prisma.freshwater.findMany({ where: { "division": 'Euglenophyta' }, orderBy: { "name": "asc" } });
     const glaucophyta = await prisma.freshwater.findMany({ where: { "division": 'Glaucophyta' }, orderBy: { "name": "asc" } });
     const ochrophyta = await prisma.freshwater.findMany({ where: { "division": 'Ochrophyta' }, orderBy: { "name": "asc" } });
     const rhodophyta = await prisma.freshwater.findMany({ where: { "division": 'Rhodophyta' }, orderBy: { "name": "asc" } });
 
-    return { props: { freshwater: { charophyta, chlorophyta, glaucophyta, ochrophyta, rhodophyta, euglenophycota } } };
+    return { props: { freshwater: { charophyta, euglenophyta, chlorophyta, glaucophyta, ochrophyta, rhodophyta, euglenophycota } } };
 };

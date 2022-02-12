@@ -52,8 +52,8 @@ function Log2({ data }) {
                     })}
                 </div>
                 <div className="md:w-full">
-                    <p className="text-lg text-yellow-500 p-5 pl-0 font-bold">RHODOPHYTA</p>
-                    {data.rhodophyta.map((d, i) => {
+                    <p className="text-lg text-yellow-500 p-5 pl-0 font-bold">EUGLENOPHYTA</p>
+                    {data.euglenophyta.map((d, i) => {
                         return (
                             <ul key={i} className="pr-8">
                                 <li className="text-base text-white  list-disc w-full">
@@ -64,7 +64,6 @@ function Log2({ data }) {
                         )
                     })}
                 </div>
-
             </div>
             <br />
             <div className="w-full md:flex flex-direction-row pl-8 ">
@@ -98,6 +97,25 @@ function Log2({ data }) {
                 </div>
 
             </div>
+            <br />
+            <div className="w-full md:flex flex-direction-row pl-8 ">
+                <div className="md:w-full">
+                    <div className="md:min-w-full">
+                        <p className="text-lg text-yellow-500 p-5 pl-0 font-bold">RHODOPHYTA</p>
+                        {data.rhodophyta.map((d, i) => {
+                            return (
+                                <ul key={i} className="pr-8">
+                                    <li className="text-base text-white  list-disc w-full">
+                                        <Link href={"/freshwater-algae/" + d.name} scroll={true} shallow={true} >
+                                            <span className="hover:underline cursor-pointer"><i>{d.name}</i></span></Link>
+                                    </li>
+                                </ul>
+                            )
+                        })}
+                    </div>
+                </div>
+            </div>
+            <br />
             <p className="px-5 pt-5">* Classification as on October 2021 - Guiry M. D. &amp; Guiry G. M. 2021 - {' '}
                 <a href="http://www.algaebase.org" target="blank" className="hover:underline">AlgaeBase</a>
             </p>
