@@ -40,7 +40,7 @@ const index = ({ data }) => {
                 <div className='p-5'>
                     <div className='bg-primary rounded-lg p-10 w-full max-w-4xl min-h-screen relative mx-auto'>
                         {/* <div className="w-full md:flex flex-direction-row pl-8 flex items-center justify-center"> */}
-                        <div className="md:w-full px-8 items-center justify-center">
+                        {data && <div className="md:w-full px-8 items-center justify-center">
                             <p className="text-lg text-yellow-500 text-center p-5 pl-0 font-bold uppercase">{data[0]?.division}</p>
                             {data.map((d, i) => {
                                 return (
@@ -53,7 +53,7 @@ const index = ({ data }) => {
                                 )
                             })}
                             {/* </div> */}
-                        </div>
+                        </div>}
                     </div>
                 </div>
                 <br />
