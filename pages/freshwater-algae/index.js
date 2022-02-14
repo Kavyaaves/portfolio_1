@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react'
+import Category1 from '../../components/Category1';
 import Log2 from '../../components/Log2';
 import NavBar from '../../components/NavBar';
 import prisma from '../../utils/db';
@@ -60,8 +61,8 @@ function freshwaterAlgae({ freshwater }) {
             <body className='bg-falls bg-fixed bg-cover bg-center bg-no-repeat overflow-x-hidden' >
                 <NavBar />
                 <div className='p-5'>
-                    <div className='bg-primary relative rounded-lg p-10 h-full  max-w-4xl mx-auto'>
-                        <Log2 data={freshwater} />
+                    <div className='bg-primary relative rounded-lg p-10 min-h-screen  max-w-4xl mx-auto'>
+                        <Category1 data={freshwater} />
                     </div>
                 </div>
                 <br />
@@ -81,11 +82,10 @@ export default freshwaterAlgae;
 export const getStaticProps = async () => {
     const charophyta = await prisma.freshwater.findMany({ where: { "division": 'Charophyta' }, orderBy: { "name": "asc" } });
     const chlorophyta = await prisma.freshwater.findMany({ where: { "division": 'Chlorophyta' }, orderBy: { "name": "asc" } });
-    const euglenophycota = await prisma.freshwater.findMany({ where: { "division": 'Euglenophycota' }, orderBy: { "name": "asc" } });
     const euglenophyta = await prisma.freshwater.findMany({ where: { "division": 'Euglenophyta' }, orderBy: { "name": "asc" } });
     const glaucophyta = await prisma.freshwater.findMany({ where: { "division": 'Glaucophyta' }, orderBy: { "name": "asc" } });
     const ochrophyta = await prisma.freshwater.findMany({ where: { "division": 'Ochrophyta' }, orderBy: { "name": "asc" } });
     const rhodophyta = await prisma.freshwater.findMany({ where: { "division": 'Rhodophyta' }, orderBy: { "name": "asc" } });
 
-    return { props: { freshwater: { charophyta, euglenophyta, chlorophyta, glaucophyta, ochrophyta, rhodophyta, euglenophycota } } };
+    return { props: { freshwater: { charophyta, euglenophyta, chlorophyta, glaucophyta, ochrophyta, rhodophyta } } };
 };

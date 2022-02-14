@@ -25,7 +25,7 @@ function NavBar() {
 						</li>
 						<li
 							className={
-								router.pathname == '/freshwater-algae'
+								router.pathname.startsWith('/freshwater-algae')
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
 									: 'hover:text-gray-300'
 							}>
@@ -33,7 +33,7 @@ function NavBar() {
 						</li>
 						<li
 							className={
-								router.pathname == '/marine-algae'
+								router.pathname.startsWith('/marine-algae')
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
 									: 'hover:text-gray-300'
 							}>
@@ -131,7 +131,7 @@ function NavBar() {
 							</li>
 							<li
 								className={
-									router.pathname == '/freshwater-algae'
+									router.pathname.startsWith('/freshwater-algae')
 										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 										: 'p-2'
 								}>
@@ -139,7 +139,7 @@ function NavBar() {
 							</li>
 							<li
 								className={
-									router.pathname == '/marine-algae'
+									router.pathname.startsWith('/marine-algae')
 										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 										: 'p-2'
 								}>

@@ -1,9 +1,10 @@
 import Head from 'next/head';
-import NavBar from '../../components/NavBar';
-import prisma from '../../utils/db';
-import Blog from '../../components/Blog';
+import { useState, useEffect } from 'react'
+import NavBar from '../../../components/NavBar';
+import prisma from '../../../utils/db';
+import Link from 'next/link';
 
-function freshwaterAlgaeDetail({ data }) {
+const index = ({ data }) => {
     return (
         <div>
             <Head>
@@ -37,35 +38,48 @@ function freshwaterAlgaeDetail({ data }) {
             <body className='bg-freshwater_single bg-fixed bg-cover bg-center bg-no-repeat' >
                 <NavBar />
                 <div className='p-5'>
-                    <div className='bg-primary rounded-lg p-10 w-full max-w-4xl relative mx-auto'>
-                        {data ? <Blog data={data} /> : ""}
+                    <div className='bg-primary rounded-lg p-10 w-full max-w-4xl min-h-screen relative mx-auto'>
+                        {/* <div className="w-full md:flex flex-direction-row pl-8 flex items-center justify-center"> */}
+                        <div className="md:w-full px-8 items-center justify-center">
+                            <p className="text-lg text-yellow-500 text-center p-5 pl-0 font-bold uppercase">{data[0]?.division}</p>
+                            {data.map((d, i) => {
+                                return (
+                                    <ul key={i} className="pr-8 list-disc">
+                                        <li className="text-base text-white  items-center justify-center w-full">
+                                            <Link href={"/freshwater-algae/" + d.division + "/" + d.name} >
+                                                <span className="hover:underline cursor-pointer"><i>{d.name}</i></span></Link>
+                                        </li>
+                                    </ul>
+                                )
+                            })}
+                            {/* </div> */}
+                        </div>
                     </div>
                 </div>
                 <br />
             </body >
         </div>
-    );
+    )
 }
 
-export default freshwaterAlgaeDetail;
-
+export default index
 export async function getStaticProps(ctx) {
-    const data = await prisma.freshwater.findMany({ where: { "name": ctx.params.name } });
+    const data = await prisma.freshwater?.findMany({ where: { "division": ctx.params.category } });
 
     return {
-        props: { data: data[0] || null }
+        props: { data: data || [] }
     };
 }
 export async function getStaticPaths() {
-    const data = await prisma.freshwater.findMany();
-    let paths = data.map(post => ({
+    const data = await prisma.freshwater?.findMany();
+    let paths = data?.map(post => ({
         params: {
-            name:
-                post.name
+            category:
+                post.division
         }
     }))
     return {
-        paths,
+        paths: paths || [],
         fallback: true,
     };
 }
