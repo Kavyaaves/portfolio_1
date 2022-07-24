@@ -8,8 +8,8 @@ const index = ({ data }) => {
     return (
         <div>
             <Head>
-                <title>{data ? data.name : ''} - Freshwater Algae - Bakthavachalam Babu</title>
-                <html lang="en">
+                <title>{data ? data.name : ''}Freshwater Algae - Bakthavachalam Babu</title>
+                {/* <html lang="en"> */}
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta charSet="utf-8" />
                     <meta name="google" content="notranslate" />
@@ -32,7 +32,7 @@ const index = ({ data }) => {
                     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5" />
                     <meta name="msapplication-TileColor" content="#da532c" />
                     <meta name="theme-color" content="#ffffff" />
-                </html>
+                {/* </html> */}
             </Head>
 
             <body className='bg-freshwater_single bg-fixed bg-cover bg-center bg-no-repeat' >
@@ -64,7 +64,7 @@ const index = ({ data }) => {
 
 export default index
 export async function getStaticProps(ctx) {
-    const data = await prisma.freshwater?.findMany({ where: { "division": ctx.params.category } });
+    const data = await prisma.freshwater?.findMany({ where: { "division": ctx.params.category }, orderBy: { "name": "asc" }  });
 
     return {
         props: { data: data || [] }

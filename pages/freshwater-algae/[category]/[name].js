@@ -5,10 +5,9 @@ import Blog from '../../../components/Blog';
 
 function freshwaterAlgaeDetail({ data }) {
     return (
-        <div>
+        <>
             <Head>
-                <title>{data ? data.name : ''} - Freshwater Algae - Bakthavachalam Babu</title>
-                <html lang="en">
+                <title>{data ? data.name : ''}Freshwater Algae - Bakthavachalam Babu</title>
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta charSet="utf-8" />
                     <meta name="google" content="notranslate" />
@@ -31,7 +30,6 @@ function freshwaterAlgaeDetail({ data }) {
                     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5" />
                     <meta name="msapplication-TileColor" content="#da532c" />
                     <meta name="theme-color" content="#ffffff" />
-                </html>
             </Head>
 
             <body className='bg-freshwater_single bg-fixed bg-cover bg-center bg-no-repeat' >
@@ -43,15 +41,14 @@ function freshwaterAlgaeDetail({ data }) {
                 </div>
                 <br />
             </body >
-        </div>
+        </>
     );
 }
 
 export default freshwaterAlgaeDetail;
 
 export async function getStaticProps(ctx) {
-    console.log(ctx)
-    const data = await prisma.freshwater.findMany({ where: { "name": ctx.params.name.toString() } });
+    const data = await prisma.freshwater.findMany({ where: { "name": ctx.params.name.toString() }, orderBy: { "name": "asc" }  });
 
     return {
         props: { data: data[0] || null }

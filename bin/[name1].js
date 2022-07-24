@@ -7,7 +7,7 @@ function freshwaterAlgaeDetail({ data }) {
     return (
         <div>
             <Head>
-                <title>{data ? data.name : ''} - Freshwater Algae - Bakthavachalam Babu</title>
+                <title>{data ? data.name : ''}Freshwater Algae - Bakthavachalam Babu</title>
                 <html lang="en">
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta charSet="utf-8" />

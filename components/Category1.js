@@ -2,7 +2,6 @@ import Link from "next/link"
 import { useRouter } from 'next/router'
 
 const Category1 = ({ data }) => {
-
     return (
         <div>
             <h2 className='text-center text-2xl min-h-2xl  italic text-yellow-500 font-bold '>

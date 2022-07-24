@@ -49,7 +49,7 @@ function marineAlgaeDetail({ data }) {
 export default marineAlgaeDetail;
 
 export async function getStaticProps(ctx) {
-    const data = await prisma.marine.findMany({ where: { "name": ctx.params.name } });
+    const data = await prisma.marine.findMany({ where: { "name": ctx.params.name }, orderBy: { "name": "asc" }  });
 
     return {
         props: { data: data[0] || null }
