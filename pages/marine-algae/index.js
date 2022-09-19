@@ -30,7 +30,7 @@ function marineAlgae({ marine }) {
 		<div>
 			<Head>
 				<title>Marine Algae - Bakthavachalam Babu</title>
-				<html lang="en">
+				{/* <html lang="en"> */}
 
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
 					<meta charSet="utf-8" />
@@ -55,7 +55,7 @@ function marineAlgae({ marine }) {
 					<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5" />
 					<meta name="msapplication-TileColor" content="#da532c" />
 					<meta name="theme-color" content="#ffffff" />
-				</html>
+				{/* </html> */}
 			</Head>
 
 			<body className='bg-marine bg-fixed bg-cover bg-center bg-no-repeat' >

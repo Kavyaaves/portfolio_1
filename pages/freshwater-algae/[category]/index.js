@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { useState, useEffect } from 'react'
 import NavBar from '../../../components/NavBar';
 import prisma from '../../../utils/db';
 import Link from 'next/link';
