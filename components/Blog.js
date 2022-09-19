@@ -189,6 +189,21 @@ const Blog = ({ data }) => {
                 </>
             }
 
+            {
+                data.additionalImages &&
+                <>
+                    {data.additionalImages?.split(",").map((img, i) => (
+                        <div key={i}>
+                            <div className="w-full items-center justify-evenly flex p-5">
+                                <Image className="self-center" src={img.split("&")[0]} alt={"AdditionalImage"+i} layout="intrinsic" width={img.split("&")[1].split("x")[0]*100} height={img?.split("&")[1]?.split("x")[1]*100}/>
+                            </div>
+                            <br />
+                        </div>
+                    ))}
+                    
+                </>
+            }
+
         </div >
     )
 }

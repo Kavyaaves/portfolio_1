@@ -1,4 +1,4 @@
 module.exports = {
-    siteUrl: 'https://bakthavachalam-babu.vercel.app',
+    siteUrl: 'https://bakthavachalam-babu.com',
     generateRobotsTxt: true,
 }

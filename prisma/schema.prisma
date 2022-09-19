@@ -64,7 +64,7 @@ model Marine {
   img4Caption  String
   img5Caption  String
   img6Caption  String @default("")
-
+  additionalImages      String @default("")
 }
 
 model Freshwater {
@@ -100,4 +100,5 @@ model Freshwater {
   img3Caption  String
   img4Caption  String
   img5Caption  String
+  additionalImages      String @default("")
 }
