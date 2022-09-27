@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useState, useEffect } from 'react'
-import Log from '../../components/Log';
+import Link from "next/link"
 import NavBar from '../../components/NavBar';
 import prisma from '../../utils/db';
 
@@ -25,7 +25,11 @@ function marineAlgae({ marine }) {
 		window.addEventListener("scroll", toggleVisibility);
 		return () => window.removeEventListener("scroll", toggleVisibility);
 	}, []);
-
+    const arrayData = [
+        { name: "Red Algae", division: "Rhodophyta" },
+        { name: "Brown Algae", division: "Ochrophyta" },
+        { name: "Green Algae", division: "Chlorophyta" }
+    ]
 	return (
 		<div>
 			<Head>
@@ -62,7 +66,28 @@ function marineAlgae({ marine }) {
 				<NavBar />
 				<div className='p-5'>
 					<div className='bg-primary rounded-lg p-10 w-full h-full  max-w-4xl relative mx-auto'>
-						<Log data={marine} />
+						<h2 className='text-center text-2xl italic text-yellow-500 font-bold '>
+                <span className=''>MARINE ALGAE</span>
+            </h2>
+            <div className="w-full md:flex pl-8">
+                {arrayData?.map((list, i) => (
+                    <div className="md:w-1/3 ">
+                        <p className="text-lg text-yellow-500 p-5 pl-0 font-semibold">{list?.name}</p>
+                        {marine.filter((m)=>m.division===list.division)?.map((d, i) => {
+                            return (
+                                <ul key={i}>
+                                    <li className="text-base text-white list-disc p-1 md:p-0">
+                                        <Link href={"/marine-algae/" + d.name}  >
+                                            <span className="hover:underline cursor-pointer"><i>{d.name}</i></span></Link>
+                                    </li>
+                                </ul>
+                            )
+                        })}
+                    </div>))}
+            </div>
+            <p className="px-5 pt-5">* Classification as on October 2021 - Guiry M. D. &amp; Guiry G. M. 2021 - {' '}
+                <a href="http://www.algaebase.org" target="blank" className="hover:underline">AlgaeBase</a>
+            </p>
 					</div>
 				</div>
 				<br />
