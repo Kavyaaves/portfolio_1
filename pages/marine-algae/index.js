@@ -62,7 +62,7 @@ function marineAlgae({ marine }) {
 				{/* </html> */}
 			</Head>
 
-			<body className='bg-marine bg-fixed bg-cover bg-center bg-no-repeat' >
+			<div className='bg-marine bg-fixed bg-cover bg-center bg-no-repeat' >
 				<NavBar />
 				<div className='p-5'>
 					<div className='bg-primary rounded-lg p-10 w-full h-full  max-w-4xl relative mx-auto'>
@@ -71,7 +71,7 @@ function marineAlgae({ marine }) {
             </h2>
             <div className="w-full md:flex pl-8">
                 {arrayData?.map((list, i) => (
-                    <div className="md:w-1/3 ">
+                    <div className="md:w-1/3 " key={i}>
                         <p className="text-lg text-yellow-500 p-5 pl-0 font-semibold">{list?.name}</p>
                         {marine.filter((m)=>m.division===list.division)?.map((d, i) => {
                             return (
@@ -96,7 +96,7 @@ function marineAlgae({ marine }) {
 						<div classname='inline-flex m-10'><svg xmlns="http://www.w3.org/2000/svg" fill="#FFBF00" width="24" height="24" viewBox="0 0 24 24"><path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z" /></svg></div>
 					</button>
 				)}
-			</body>
+			</div>
 		</div>
 	)
 }

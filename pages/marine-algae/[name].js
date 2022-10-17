@@ -8,7 +8,6 @@ function marineAlgaeDetail({ data }) {
         <div>
             <Head>
                 <title>{data ? data?.name : ''} - Marine Algae - Bakthavachalam Babu</title>
-                <html lang="en">
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta charSet="utf-8" />
                     <meta name="google" content="notranslate" />
@@ -31,17 +30,16 @@ function marineAlgaeDetail({ data }) {
                     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5" />
                     <meta name="msapplication-TileColor" content="#da532c" />
                     <meta name="theme-color" content="#ffffff" />
-                </html>
             </Head>
 
-            <body className='bg-marine_single bg-fixed bg-cover bg-center bg-no-repeat' >
+            <div className='bg-marine_single bg-fixed bg-cover bg-center bg-no-repeat' >
                 <NavBar />
                 <div className='p-5'>
                     <div className='bg-primary relative rounded-lg p-10 w-full max-w-4xl mx-auto'>
                         {data ? <Blog data={data} /> : ""}
                     </div>
                 </div>
-            </body >
+            </div >
         </ div >
     );
 }
