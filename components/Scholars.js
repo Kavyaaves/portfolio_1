@@ -186,7 +186,7 @@ function Scholars() {
 					</div>
 					<div className='flex flex-col flex-grow px-8 py-10 bg-color-333'>
 						<h3 className='font-bold text-xl text-gray-200'>
-							Ms. Nandhini, K.
+							Ms. Nandhini K.
 						</h3>
 						<span className='text-base lg:mb-4'>M. Sc.</span>
 						<span className='text-base lg:mb-4'>
