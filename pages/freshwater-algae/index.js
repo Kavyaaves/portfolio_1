@@ -4,16 +4,9 @@ import NavBar from "../../components/NavBar";
 import prisma from "../../utils/db";
 import Link from "next/link";
 import { useRouter } from "next/router";
-function freshwaterAlgae({ freshwater }) {
+function freshwaterAlgae() {
 	const [isVisible, setIsVisible] = useState(false);
-	const {
-		charophyta,
-		euglenophyta,
-		chlorophyta,
-		glaucophyta,
-		ochrophyta,
-		rhodophyta,
-	} = freshwater;
+
 
 	const scrollToTop = () => {
 		window.scrollTo({
@@ -37,32 +30,26 @@ function freshwaterAlgae({ freshwater }) {
 	}, []);
 	const arrayData = [
 		{
-			data: charophyta,
 			imgSrc: "/algae/Netrium naegelii/001-7x5.webp",
 			name: "Charophyta",
 		},
 		{
-			data: chlorophyta,
 			imgSrc: "/algae/Pediastrum duplex/001-7x5.webp",
 			name: "Chlorophyta",
 		},
 		{
-			data: euglenophyta,
 			imgSrc: "/algae/Lepocinclis oxyuris/001-7x5.webp",
 			name: "Euglenophyta",
 		},
 		{
-			data: glaucophyta,
 			imgSrc: "/algae/Glaucocystis nostochinearum/001-7x5.webp",
 			name: "Glaucophyta",
         },
         {
-            data: ochrophyta,
             imgSrc: "/algae/Centritractus belonophorus/001-7x5.webp",
             name: "Ochrophyta",
         },
 		{
-			data: rhodophyta,
 			imgSrc: "/algae/Compsopogon caeruleus/002-7x5.webp",
 			name: "Rhodophyta",
 		},
@@ -152,8 +139,7 @@ function freshwaterAlgae({ freshwater }) {
 						 <div className="absolute bottom-0 pb-6">
                            <p className="">* Classification as on October 2021 - Guiry M. D. &amp; Guiry G. M. 2021 - {' '}
                 <a href="http://www.algaebase.org" target="blank" className="hover:underline">AlgaeBase</a>
-            </p>
-                            
+            </p>         
                       </div>
 					</div>
 				</div>
@@ -181,43 +167,3 @@ function freshwaterAlgae({ freshwater }) {
 }
 
 export default freshwaterAlgae;
-
-export const getStaticProps = async () => {
-	const charophyta = await prisma.freshwater.findMany({
-		where: { division: "Charophyta" },
-		orderBy: { name: "asc" },
-	});
-	const chlorophyta = await prisma.freshwater.findMany({
-		where: { division: "Chlorophyta" },
-		orderBy: { name: "asc" },
-	});
-	const euglenophyta = await prisma.freshwater.findMany({
-		where: { division: "Euglenophyta" },
-		orderBy: { name: "asc" },
-	});
-	const glaucophyta = await prisma.freshwater.findMany({
-		where: { division: "Glaucophyta" },
-		orderBy: { name: "asc" },
-	});
-	const ochrophyta = await prisma.freshwater.findMany({
-		where: { division: "Ochrophyta" },
-		orderBy: { name: "asc" },
-	});
-	const rhodophyta = await prisma.freshwater.findMany({
-		where: { division: "Rhodophyta" },
-		orderBy: { name: "asc" },
-	});
-
-	return {
-		props: {
-			freshwater: {
-				charophyta,
-				euglenophyta,
-				chlorophyta,
-				glaucophyta,
-				ochrophyta,
-				rhodophyta,
-			},
-		},
-	};
-};
