@@ -6,7 +6,8 @@ import useSWR from "swr";
 const Blog = ({ data }) => {
 	const [images, setImages] = useState([]);
 	const fetcher = (url) => fetch(url).then((res) => res.json());
-    let im = useSWR("/api/filespec/?name=" + data.name, fetcher);
+	let im = useSWR("/api/filespec/?name=" + data.name, fetcher);
+	
 	useEffect(() => {
         setImages(im.data);
     }, [im.data?.length]);

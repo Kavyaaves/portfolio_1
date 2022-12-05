@@ -1,12 +1,11 @@
 import Head from "next/head";
 import { useState, useEffect } from "react";
 import NavBar from "../../components/NavBar";
-import prisma from "../../utils/db";
 import Link from "next/link";
-import { useRouter } from "next/router";
-function freshwaterAlgae() {
-	const [isVisible, setIsVisible] = useState(false);
 
+function freshwaterAlgae() {
+
+	const [isVisible, setIsVisible] = useState(false);
 
 	const scrollToTop = () => {
 		window.scrollTo({
@@ -14,8 +13,8 @@ function freshwaterAlgae() {
 			behavior: "smooth",
 		});
 	};
+
 	useEffect(() => {
-		// Button is displayed after scrolling for 500 pixels
 		const toggleVisibility = () => {
 			if (window.pageYOffset > 500) {
 				setIsVisible(true);
@@ -28,6 +27,7 @@ function freshwaterAlgae() {
 
 		return () => window.removeEventListener("scroll", toggleVisibility);
 	}, []);
+
 	const arrayData = [
 		{
 			imgSrc: "/algae/Netrium naegelii/001-7x5.webp",
@@ -54,6 +54,7 @@ function freshwaterAlgae() {
 			name: "Rhodophyta",
 		},
 	];
+	
 	return (
 		<div>
 			<Head>
