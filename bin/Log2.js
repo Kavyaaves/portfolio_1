@@ -12,7 +12,7 @@ function Log2({ data }) {
                     {data.charophyta.map((d, i) => {
                         return (
                             <ul key={i} className="pr-8">
-                                <li className="text-base text-white  list-disc w-full">
+                                <li className="text-base text-white  list-decimal w-full">
                                     <Link href={"/freshwater-algae/" + d.name} >
                                         <span className="hover:underline cursor-pointer"><i>{d.name}</i></span></Link>
                                 </li>
@@ -26,7 +26,7 @@ function Log2({ data }) {
                     {data.chlorophyta.map((d, i) => {
                         return (
                             <ul key={i}>
-                                <li className="text-base text-white  list-disc">
+                                <li className="text-base text-white  list-decimal">
                                     <Link href={"/freshwater-algae/" + d.name} scroll={true} shallow={true} >
                                         <span className="hover:underline cursor-pointer text-right"><i>{d.name}</i></span></Link>
                                 </li>
@@ -44,7 +44,7 @@ function Log2({ data }) {
                     {data.euglenophyta.map((d, i) => {
                         return (
                             <ul key={i} className="pr-8">
-                                <li className="text-base text-white  list-disc w-full">
+                                <li className="text-base text-white  list-decimal w-full">
                                     <Link href={"/freshwater-algae/" + d.name} scroll={true} shallow={true} >
                                         <span className="hover:underline cursor-pointer"><i>{d.name}</i></span></Link>
                                 </li>
@@ -58,7 +58,7 @@ function Log2({ data }) {
                         {data.rhodophyta.map((d, i) => {
                             return (
                                 <ul key={i} className="pr-8">
-                                    <li className="text-base text-white  list-disc w-full">
+                                    <li className="text-base text-white  list-decimal w-full">
                                         <Link href={"/freshwater-algae/" + d.name} scroll={true} shallow={true} >
                                             <span className="hover:underline cursor-pointer"><i>{d.name}</i></span></Link>
                                     </li>
@@ -76,7 +76,7 @@ function Log2({ data }) {
                         {data.ochrophyta.map((d, i) => {
                             return (
                                 <ul key={i}>
-                                    <li className="text-base text-white  list-disc">
+                                    <li className="text-base text-white  list-decimal">
                                         <Link href={"/freshwater-algae/" + d.name} scroll={true} shallow={true} >
                                             <span className="hover:underline cursor-pointer text-right"><i>{d.name}</i></span></Link>
                                     </li>
@@ -90,7 +90,7 @@ function Log2({ data }) {
                     {data.glaucophyta.map((d, i) => {
                         return (
                             <ul key={i} className="pr-8">
-                                <li className="text-base text-white  list-disc w-full">
+                                <li className="text-base text-white  list-decimal w-full">
                                     <Link href={"/freshwater-algae/" + d.name} scroll={true} shallow={true} >
                                         <span className="hover:underline cursor-pointer"><i>{d.name}</i></span></Link>
                                 </li>

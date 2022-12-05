@@ -38,32 +38,32 @@ function freshwaterAlgae({ freshwater }) {
 	const arrayData = [
 		{
 			data: charophyta,
-			imgSrc: "/charophyta/Netrium naegelii.jpg",
+			imgSrc: "/algae/Netrium naegelii/001-7x5.webp",
 			name: "Charophyta",
 		},
 		{
 			data: chlorophyta,
-			imgSrc: "/chlorophyta/Pediastrum duplex  01   IMG_0015.JPG",
+			imgSrc: "/algae/Pediastrum duplex/001-7x5.webp",
 			name: "Chlorophyta",
 		},
 		{
 			data: euglenophyta,
-			imgSrc: "/euglenophyta/Lepocinclis oxyuris.webp",
+			imgSrc: "/algae/Lepocinclis oxyuris/001-7x5.webp",
 			name: "Euglenophyta",
 		},
 		{
 			data: glaucophyta,
-			imgSrc: "/glaucophyta/01 Glaucocystis nostochinearum  V 06  IMG_0034.JPG",
+			imgSrc: "/algae/Glaucocystis nostochinearum/001-7x5.webp",
 			name: "Glaucophyta",
         },
         {
             data: ochrophyta,
-            imgSrc: "/ochrophyta/03 Centritractus belonophorus  V 02 IMG_0042.JPG",
+            imgSrc: "/algae/Centritractus belonophorus/001-7x5.webp",
             name: "Ochrophyta",
         },
 		{
 			data: rhodophyta,
-			imgSrc: "/rhodophyta/Compsopogon caeruleus 02.jpg",
+			imgSrc: "/algae/Compsopogon caeruleus/002-7x5.webp",
 			name: "Rhodophyta",
 		},
 	];
@@ -149,6 +149,12 @@ function freshwaterAlgae({ freshwater }) {
 								</Link>
 							))}
 						</div>
+						 <div className="absolute bottom-0 pb-6">
+                           <p className="">* Classification as on October 2021 - Guiry M. D. &amp; Guiry G. M. 2021 - {' '}
+                <a href="http://www.algaebase.org" target="blank" className="hover:underline">AlgaeBase</a>
+            </p>
+                            
+                      </div>
 					</div>
 				</div>
 				<br />

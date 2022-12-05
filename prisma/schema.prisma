@@ -33,17 +33,8 @@ model Marine {
   name         String
   title        String
   desc         String
-  img1         String
-  img2         String
-  img3         String
-  img4         String
-  img5         String
-  img6         String @default("")
   para1        String
   para2        String
-  para3        String
-  para4        String
-  para5        String
   division     String
   class        String
   order        String
@@ -52,19 +43,8 @@ model Marine {
   synonym      String @default("")
   ecology      String @default("")
   distribution String @default("")
-  orientation1 String @default("5x7")
-  orientation2 String @default("5x7")
-  orientation3 String @default("5x7")
-  orientation4 String @default("5x7")
-  orientation5 String @default("5x7")
-  orientation6 String @default("5x7")
   img1Caption  String
-  img2Caption  String
-  img3Caption  String
-  img4Caption  String
-  img5Caption  String
-  img6Caption  String @default("")
-  additionalImages      String @default("")
+  imgCaption   String @default("")
 }
 
 model Freshwater {
@@ -72,16 +52,8 @@ model Freshwater {
   name         String
   title        String
   desc         String
-  img1         String
-  img2         String
-  img3         String
-  img4         String
-  img5         String
   para1        String
   para2        String
-  para3        String
-  para4        String
-  para5        String
   division     String
   class        String
   order        String
@@ -90,15 +62,6 @@ model Freshwater {
   synonym      String @default("")
   ecology      String @default("")
   distribution String @default("")
-  orientation1 String @default("5x7")
-  orientation2 String @default("5x7")
-  orientation3 String @default("5x7")
-  orientation4 String @default("5x7")
-  orientation5 String @default("5x7")
   img1Caption  String
-  img2Caption  String
-  img3Caption  String
-  img4Caption  String
-  img5Caption  String
-  additionalImages      String @default("")
+  imgCaption   String @default("")
 }
