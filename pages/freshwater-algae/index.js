@@ -120,8 +120,9 @@ function freshwaterAlgae() {
 						</h2>
 						<br />
 						<div className='container grid md:grid-cols-3 grid-cols-1 gap-4 mx-auto'>
-							{arrayData?.map((group) => (
+							{arrayData?.map((group,i) => (
 								<Link
+									key={i}
 									href={`/freshwater-algae/` + group?.name}
 									data={group.data}
 									className='w-full h-full rounded-lg cursor-pointer'>
