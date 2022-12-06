@@ -72,23 +72,22 @@ const index = ({ data }) => {
 				<NavBar />
 				<div className='p-5'>
 					<div className='bg-primary rounded-lg p-10 w-full max-w-4xl min-h-screen relative mx-auto'>
-						{/* <div className="w-full md:flex flex-direction-row pl-8 flex items-center justify-center"> */}
 						{data && (
 							<div className='md:w-full px-8 items-center justify-center'>
 								<p className='text-lg text-yellow-500 text-center p-5 pl-0 font-bold uppercase'>
 									{data[0]?.division}
 								</p>
 
-								<div className='md:flex text-overflow justify-between'>
-									<ul className=' list-disc'>
-										{data.filter(((filterHalf,i) =>i<= data?.length /2)).map((d, i) => {
+								<div className='md:flex text-overflow justify-between p-4'>
+									<ul className=' list-decimal'>
+										{data.map((d, i) => {
 											return (
-												<li className='text-base text-white  items-center justify-center w-full'>
+												<li key={i} className='text-base text-white  items-center justify-center w-full'>
 													<Link
 														href={
 															"/freshwater-algae/" + d.division + "/" + d.name
 														}>
-														<span className='hover:underline cursor-pointer'>
+														<span className='ml-3 hover:underline cursor-pointer'>
 															<i>{d.name}</i>
 														</span>
 													</Link>
@@ -96,22 +95,7 @@ const index = ({ data }) => {
 											);
 										})}
 									</ul>
-									<ul className=' list-disc'>
-										{data.filter(((filterHalf,i) =>i> data?.length /2)).map((d, i) => {
-											return (
-												<li className='text-base text-white  items-center justify-center w-full text-ellipsis'>
-													<Link
-														href={
-															"/freshwater-algae/" + d.division + "/" + d.name
-														}>
-														<span className='hover:underline cursor-pointer'>
-															<i>{d.name}</i>
-														</span>
-													</Link>
-												</li>
-											);
-										})}
-									</ul>
+									
 								</div>
 							</div>
 						)}
@@ -124,6 +108,7 @@ const index = ({ data }) => {
 };
 
 export default index;
+
 export async function getStaticProps(ctx) {
 	const data = await prisma.freshwater?.findMany({
 		where: { division: ctx.params.category },
@@ -138,7 +123,7 @@ export async function getStaticPaths() {
 	const data = await prisma.freshwater?.findMany();
 	let paths = data?.map((post) => ({
 		params: {
-			category: post.division,
+			category: post.division.toString(),
 		},
 	}));
 	return {
