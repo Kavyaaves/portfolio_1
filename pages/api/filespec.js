@@ -6,6 +6,5 @@ export default (req, res) => {
 	const dir = path.resolve("./public/algae/" + dirPath);
 	const filenames = fs.readdirSync(dir);
 	res.statusCode = 200;
-	console.log("in server"+filenames)
     res.json(filenames);
 };

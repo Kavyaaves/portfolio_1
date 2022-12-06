@@ -6,7 +6,8 @@ import useSWR from "swr";
 const Blog = ({ data }) => {
 	const [images, setImages] = useState([]);
 	const fetcher = (url) => fetch(url).then((res) => res.json());
-    let im = useSWR("/api/filespec/?name=" + data.name, fetcher);
+	let im = useSWR("/api/filespec/?name=" + data.name, fetcher);
+	
 	useEffect(() => {
         setImages(im.data);
     }, [im.data?.length]);
@@ -31,7 +32,7 @@ const Blog = ({ data }) => {
 								<td className=' font-bold text-lg'>
 									Division&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								</td>
-								<td className='text-left'>{parse(data?.division)}</td>
+								<td className='text-left'>{data?.division}</td>
 							</tr>
 						)}
 						{data?.class && (
@@ -142,24 +143,6 @@ const Blog = ({ data }) => {
 			{data.para2 !== "" && (
 				<>
 					<p>{data.para2}</p>
-					<br />
-				</>
-			)}
-			{data.para3 !== "" && (
-				<>
-					<p>{parse(data.para3)}</p>
-					<br />
-				</>
-			)}
-			{data.para4 !== "" && (
-				<>
-					<p>{data.para4}</p>
-					<br />
-				</>
-			)}
-			{data.para5 !== "" && (
-				<>
-					<p>{data.para5}</p>
 					<br />
 				</>
 			)}

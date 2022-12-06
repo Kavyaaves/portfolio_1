@@ -59,9 +59,9 @@ export async function getStaticPaths() {
     let paths = data.map(post => ({
         params: {
             name:
-                post.name,
+                post.name.toString(),
             category:
-                post.division
+                post.division.toString()
         }
     }))
     return {

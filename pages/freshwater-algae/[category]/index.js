@@ -82,7 +82,7 @@ const index = ({ data }) => {
 									<ul className=' list-decimal'>
 										{data.map((d, i) => {
 											return (
-												<li className='text-base text-white  items-center justify-center w-full'>
+												<li key={i} className='text-base text-white  items-center justify-center w-full'>
 													<Link
 														href={
 															"/freshwater-algae/" + d.division + "/" + d.name
@@ -108,6 +108,7 @@ const index = ({ data }) => {
 };
 
 export default index;
+
 export async function getStaticProps(ctx) {
 	const data = await prisma.freshwater?.findMany({
 		where: { division: ctx.params.category },
@@ -122,7 +123,7 @@ export async function getStaticPaths() {
 	const data = await prisma.freshwater?.findMany();
 	let paths = data?.map((post) => ({
 		params: {
-			category: post.division,
+			category: post.division.toString(),
 		},
 	}));
 	return {
