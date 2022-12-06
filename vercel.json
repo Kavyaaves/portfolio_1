@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "pages/api/filespec.js": {
+      "excludeFiles": "public/**/*"
+    }
+  }
+}
