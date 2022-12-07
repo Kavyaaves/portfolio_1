@@ -30,27 +30,27 @@ function freshwaterAlgae() {
 
 	const arrayData = [
 		{
-			imgSrc: "/algae/Netrium naegelii/001-7x5.webp",
+			imgSrc: "algae/Netrium naegelii/001-7X5.webp",
 			name: "Charophyta",
 		},
 		{
-			imgSrc: "/algae/Pediastrum duplex/001-7x5.webp",
+			imgSrc: "algae/Pediastrum duplex/001-7x5.webp",
 			name: "Chlorophyta",
 		},
 		{
-			imgSrc: "/algae/Lepocinclis oxyuris/001-7x5.webp",
+			imgSrc: "algae/Lepocinclis oxyuris/001-7X5.webp",
 			name: "Euglenophyta",
 		},
 		{
-			imgSrc: "/algae/Glaucocystis nostochinearum/001-7x5.webp",
+			imgSrc: "algae/Glaucocystis nostochinearum/001-7x5.webp",
 			name: "Glaucophyta",
         },
         {
-            imgSrc: "/algae/Centritractus belonophorus/001-7x5.webp",
+            imgSrc: "algae/Centritractus belonophorus/001-7X5.webp",
             name: "Ochrophyta",
         },
 		{
-			imgSrc: "/algae/Compsopogon caeruleus/002-7x5.webp",
+			imgSrc: "algae/Compsopogon caeruleus/002-7X5.webp",
 			name: "Rhodophyta",
 		},
 	];
@@ -128,7 +128,7 @@ function freshwaterAlgae() {
 									className='w-full h-full rounded-lg cursor-pointer'>
 									<div className='flex flex-wrap m-auto relative  items-center  justify-center cursor-pointer overflow-hidden'>
 										<img
-											src={group?.imgSrc}
+											src={process.env.BUCKET_URL+group?.imgSrc}
 											className='object-cover w-full h-full overflow-hidden hover:opacity-70 opacity-50 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-110 '
 										/>
 										<div className=' text-lg text-white font-bold text-center absolute'>

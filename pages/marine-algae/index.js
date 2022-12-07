@@ -4,6 +4,7 @@ import NavBar from "../../components/NavBar";
 import prisma from "../../utils/db";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 function marineAlgae() {
 	const [isVisible, setIsVisible] = useState(false);
@@ -31,19 +32,17 @@ function marineAlgae() {
 	const arrayData = [
         {
             division: "Rhodophyta",
-			// data: data?.filter(d => d.division === "Rhodophyta"),
-			imgSrc: "/algae/Bryocladia thwaitesii/007-7x5.webp",
+			imgSrc: "algae/Bryocladia thwaitesii/007-7x5.webp",
 			name: "Red Algae",
 		},
         {
             division: "Ochrophyta",
-			// data: data?.filter(d => d.division === "Ochrophyta"),
-			imgSrc: "/algae/Turbinaria conoides/002-7x5.webp",
+			imgSrc: "algae/Turbinaria conoides/002-7x5.webp",
 			name: "Brown Algae",
 		},
         {
             division: "Chlorophyta",
-			imgSrc: "/algae/Codium%20geppiorum/003-7x5.webp",
+			imgSrc: "algae/Codium%20geppiorum/003-7x5.webp",
 			name: "Green Algae",
 		},
 		
@@ -120,7 +119,7 @@ function marineAlgae() {
 									className='w-full h-full rounded-lg cursor-pointer'>
 									<div className='flex flex-wrap m-auto relative  items-center  justify-center cursor-pointer overflow-hidden'>
 										<img
-											src={group?.imgSrc}
+											src={process.env.BUCKET_URL+group?.imgSrc}
 											className='object-cover w-full h-full overflow-hidden hover:opacity-70 opacity-50 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-110 '
 										/>
 										<div className=' text-lg text-white font-bold text-center absolute'>

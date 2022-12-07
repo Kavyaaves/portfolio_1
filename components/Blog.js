@@ -4,14 +4,16 @@ import parse from "html-react-parser";
 import useSWR from "swr";
 
 const Blog = ({ data }) => {
+	
 	const [images, setImages] = useState([]);
+	
 	const fetcher = (url) => fetch(url).then((res) => res.json());
 	let im = useSWR("/api/filespec/?name=" + data.name, fetcher);
 	
 	useEffect(() => {
-        setImages(im.data);
-    }, [im.data?.length]);
-    
+	setImages(im?.data)
+	}, [im])
+
 	return (
 		<div className='md:p-5 select-none'>
 			<h2 className='text-center text-2xl text-yellow-500 font-bold '>
@@ -110,8 +112,9 @@ const Blog = ({ data }) => {
 				<>
 					<div className='w-full items-center justify-evenly flex p-5'>
 						<Image
+							priority
 							className='self-center'
-							src={"/algae/" + data.name + "/" + images[0]}
+							src={process.env.BUCKET_ALGAE_URL + data.name +"/"+ images[0]}
 							layout='intrinsic'
 							width={
 								images[0]?.split("-")[1]?.toLowerCase()?.split("x")[0] * 100
@@ -155,21 +158,22 @@ const Blog = ({ data }) => {
 					<br />
 				</>
 			)}
-
 			{data.distribution && (
 				<div className=''>
 					<p className='font-bold text-lg'>Distribution in India </p>
 					<p>{parse(data.distribution)}</p>
 				</div>
 			)}
+			
 			{images
 				?.filter((i) => !i.includes("001"))
 				?.map((img, i) => (
 					<div key={i}>
 						<div className='w-full items-center justify-evenly flex p-5'>
 							<Image
+							    priority
 								className='self-center'
-								src={"/algae/" + data.name + "/" + img}
+								src={process.env.BUCKET_ALGAE_URL + data.name + "/"+img}
 								layout='intrinsic'
 								width={(img?.toLowerCase()?.split("-")[1]?.split("x")[0]) * 100}
 								height={
