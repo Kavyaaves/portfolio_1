@@ -24,6 +24,5 @@ export default async (req, res) => {
 	    Prefix:"algae/" + req.query.name,
 	}));
 	const fileNames = response.Contents?.map((res) => res.Key.replace("algae/" + req.query.name + "/", ""));
-	console.log(fileNames, "server")
 	res.status(200).json(fileNames);
 }
