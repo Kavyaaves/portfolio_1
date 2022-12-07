@@ -114,7 +114,7 @@ const Blog = ({ data }) => {
 						<Image
 							priority
 							className='self-center'
-							src={process.env.BUCKET_ALGAE_URL + data.name +"/"+ images[0]}
+							src={process.env.NEXT_PUBLIC_BUCKET_ALGAE_URL + data.name +"/"+ images[0]}
 							layout='intrinsic'
 							width={
 								images[0]?.split("-")[1]?.toLowerCase()?.split("x")[0] * 100
@@ -164,7 +164,7 @@ const Blog = ({ data }) => {
 					<p>{parse(data.distribution)}</p>
 				</div>
 			)}
-			
+
 			{images
 				?.filter((i) => !i.includes("001"))
 				?.map((img, i) => (
@@ -173,7 +173,7 @@ const Blog = ({ data }) => {
 							<Image
 							    priority
 								className='self-center'
-								src={process.env.BUCKET_ALGAE_URL + data.name + "/"+img}
+								src={process.env.NEXT_PUBLIC_BUCKET_ALGAE_URL + data.name + "/"+img}
 								layout='intrinsic'
 								width={(img?.toLowerCase()?.split("-")[1]?.split("x")[0]) * 100}
 								height={

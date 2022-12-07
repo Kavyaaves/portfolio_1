@@ -52,7 +52,7 @@ function Links() {
 					<Image
 						alt='PSAalgae'
 						className='hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105 '
-						passHref={true} src={process.env.BUCKET_LINKS_URL + 'link1.jpg'}
+						passHref={true} src={process.env.NEXT_PUBLIC_BUCKET_LINKS_URL + 'link1.jpg'}
 						width={370}
 						height={140}
 					/>
@@ -65,7 +65,7 @@ function Links() {
 					<Image
 						alt='AlgaeBase'
 						className='hover:opacity-90 opacity-100 transition duration-700 ease-in-out hover:-translate-y-1 hover:scale-105 transform'
-						passHref={true} src={process.env.BUCKET_LINKS_URL + 'link2.jpg'}
+						passHref={true} src={process.env.NEXT_PUBLIC_BUCKET_LINKS_URL + 'link2.jpg'}
 						width={350}
 						height={140}
 					/>
@@ -80,7 +80,7 @@ function Links() {
 					<Image
 						alt='Diatoms'
 						className='hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105'
-						passHref={true} src={process.env.BUCKET_LINKS_URL + 'link3.png'}
+						passHref={true} src={process.env.NEXT_PUBLIC_BUCKET_LINKS_URL + 'link3.png'}
 						width={900}
 						height={200}
 					/>
@@ -95,7 +95,7 @@ function Links() {
 					<Image
 						alt='Digicodes'
 						className='hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105'
-						passHref={true} src={process.env.BUCKET_LINKS_URL + 'link4.png'}
+						passHref={true} src={process.env.NEXT_PUBLIC_BUCKET_LINKS_URL + 'link4.png'}
 						width={1200}
 						height={140}
 					/>
@@ -110,7 +110,7 @@ function Links() {
 					<Image
 						alt='Phycolab'
 						className='hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105'
-						passHref={true} src={process.env.BUCKET_LINKS_URL + 'Phycolab.PNG'}
+						passHref={true} src={process.env.NEXT_PUBLIC_BUCKET_LINKS_URL + 'Phycolab.PNG'}
 						width={350}
 						height={140}
 					/>
@@ -123,7 +123,7 @@ function Links() {
 					<Image
 						alt='Phycokey'
 						className='hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105'
-						passHref={true} src={process.env.BUCKET_LINKS_URL + 'Phycokey.PNG'}
+						passHref={true} src={process.env.NEXT_PUBLIC_BUCKET_LINKS_URL + 'Phycokey.PNG'}
 						width={350}
 						height={140}
 					/>
@@ -138,7 +138,7 @@ function Links() {
 					<Image
 						alt='Desmids of Drenthe'
 						className='hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105'
-						passHref={true} src={process.env.BUCKET_LINKS_URL + 'Desmids of Drenthe.png'}
+						passHref={true} src={process.env.NEXT_PUBLIC_BUCKET_LINKS_URL + 'Desmids of Drenthe.png'}
 						width={900}
 						height={140}
 					/>
@@ -153,7 +153,7 @@ function Links() {
 					<Image
 						alt='ADIAC'
 						className='hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105'
-						passHref={true} src={process.env.BUCKET_LINKS_URL + 'ADIAC.jpg'}
+						passHref={true} src={process.env.NEXT_PUBLIC_BUCKET_LINKS_URL + 'ADIAC.jpg'}
 						width={350}
 						height={140}
 					/>
@@ -166,7 +166,7 @@ function Links() {
 					<Image
 						alt='Protist Information Server'
 						className='hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105'
-						passHref={true} src={process.env.BUCKET_LINKS_URL + 'Protist Information server.jpg'}
+						passHref={true} src={process.env.NEXT_PUBLIC_BUCKET_LINKS_URL + 'Protist Information server.jpg'}
 						width={300}
 						height={140}
 					/>
@@ -181,7 +181,7 @@ function Links() {
 					<Image
 						alt='Diatom Flora of Britain'
 						className='hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105'
-						passHref={true} src={process.env.BUCKET_LINKS_URL + 'Diatom flora of Britain.PNG'}
+						passHref={true} src={process.env.NEXT_PUBLIC_BUCKET_LINKS_URL + 'Diatom flora of Britain.PNG'}
 						width={900}
 						height={300}
 					/>
@@ -196,7 +196,7 @@ function Links() {
 					<Image
 						alt='Nordic Microalgae'
 						className='hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105'
-						passHref={true} src={process.env.BUCKET_LINKS_URL + 'Nordic.png'}
+						passHref={true} src={process.env.NEXT_PUBLIC_BUCKET_LINKS_URL + 'Nordic.png'}
 						width={500}
 						height={60}
 					/>
@@ -209,7 +209,7 @@ function Links() {
 					<Image
 						alt='Symbiont Diatom'
 						className='hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105'
-						passHref={true} src={process.env.BUCKET_LINKS_URL + 'Diatom New.PNG'}
+						passHref={true} src={process.env.NEXT_PUBLIC_BUCKET_LINKS_URL + 'Diatom New.PNG'}
 						width={500}
 						height={60}
 					/>
@@ -224,7 +224,7 @@ function Links() {
 					<Image
 						alt='Seaweed of South Africa'
 						className='hover:opacity-90 opacity-100 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-105'
-						passHref={true} src={process.env.BUCKET_LINKS_URL + 'Seaweed South africa.PNG'}
+						passHref={true} src={process.env.NEXT_PUBLIC_BUCKET_LINKS_URL + 'Seaweed South africa.PNG'}
 						width={900}
 						height={300}
 					/>

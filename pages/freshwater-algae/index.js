@@ -128,7 +128,7 @@ function freshwaterAlgae() {
 									className='w-full h-full rounded-lg cursor-pointer'>
 									<div className='flex flex-wrap m-auto relative  items-center  justify-center cursor-pointer overflow-hidden'>
 										<img
-											src={process.env.BUCKET_URL+group?.imgSrc}
+											src={process.env.NEXT_PUBLIC_BUCKET_URL+group?.imgSrc}
 											className='object-cover w-full h-full overflow-hidden hover:opacity-70 opacity-50 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-110 '
 										/>
 										<div className=' text-lg text-white font-bold text-center absolute'>

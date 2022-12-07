@@ -14,8 +14,8 @@ export default async (req, res) => {
   const s3Client = new S3Client({
     region: "ap-south-1",
     credentials: {
-      accessKeyId: process.env.ACCESS_KEY,
-      secretAccessKey: process.env.SECRET_KEY,
+      accessKeyId: process.env.NEXT_PUBLIC_ACCESS_KEY,
+      secretAccessKey: process.env.NEXT_PUBLIC_SECRET_KEY,
     },
   });
 	const response = await s3Client.send(new ListObjectsCommand({
