@@ -21,7 +21,7 @@ export default async (req, res) => {
 	const response = await s3Client.send(new ListObjectsCommand({
 		client: s3Client,
 		Bucket: "babu-portfolio",
-	    Prefix:"algae/" + req.query.name,
+	    Prefix:"algae/" + req.query.name+"/",
 	}));
 	const fileNames = response.Contents?.map((res) => res.Key.replace("algae/" + req.query.name + "/", ""));
 	res.status(200).json(fileNames);

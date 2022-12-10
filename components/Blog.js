@@ -111,11 +111,9 @@ const Blog = ({ data }) => {
 			{images && images[0]?.includes("001") && (
 				<>
 					<div className='w-full items-center justify-evenly flex p-5'>
-						<Image
-							priority
-							className='self-center'
-							src={process.env.NEXT_PUBLIC_BUCKET_ALGAE_URL + data.name +"/"+ images[0]}
-							layout='intrinsic'
+						<img src={process.env.NEXT_PUBLIC_BUCKET_ALGAE_URL + data.name + "/" + images[0]} 
+							alt={data?.name}
+							className="self-center" 
 							width={
 								images[0]?.split("-")[1]?.toLowerCase()?.split("x")[0] * 100
 							}
@@ -126,7 +124,6 @@ const Blog = ({ data }) => {
 									?.split("x")[1]
 									?.replace(".webp","") * 100
 							}
-							alt={data.name}
 						/>
 					</div>
 					<p>
@@ -170,11 +167,9 @@ const Blog = ({ data }) => {
 				?.map((img, i) => (
 					<div key={i}>
 						<div className='w-full items-center justify-evenly flex p-5'>
-							<Image
-							    priority
+							<img
 								className='self-center'
 								src={process.env.NEXT_PUBLIC_BUCKET_ALGAE_URL + data.name + "/"+img}
-								layout='intrinsic'
 								width={(img?.toLowerCase()?.split("-")[1]?.split("x")[0]) * 100}
 								height={
 									(img
