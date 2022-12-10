@@ -10,14 +10,14 @@ function NavBar() {
 			<div className='w-full top-2'>
 				<nav
 					className={
-						router.pathname == '/'
+						router?.pathname == '/'
 							? 'bg-black max-w-4xl m-auto opacity-95  rounded-t-none rounded-lg text-white'
 							: 'bg-primary max-w-4xl m-auto  rounded-t-none rounded-lg text-white'
 					}>
 					<ul className='hidden sm:flex flex-grow p-2 m-auto justify-evenly text-white text-sm lg:text-lg font-semibold '>
 						<li
 							className={
-								router.pathname == '/'
+								router?.pathname == '/'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
 									: 'hover:text-gray-300'
 							}>
@@ -25,7 +25,7 @@ function NavBar() {
 						</li>
 						<li
 							className={
-								router.pathname.startsWith('/freshwater-algae')
+								router?.pathname.startsWith('/freshwater-algae')
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
 									: 'hover:text-gray-300'
 							}>
@@ -33,7 +33,7 @@ function NavBar() {
 						</li>
 						<li
 							className={
-								router.pathname.startsWith('/marine-algae')
+								router?.pathname.startsWith('/marine-algae')
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
 									: 'hover:text-gray-300'
 							}>
@@ -41,7 +41,7 @@ function NavBar() {
 						</li>
 						<li
 							className={
-								router.pathname == '/research'
+								router?.pathname == '/research'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
 									: 'hover:text-gray-300'
 							}>
@@ -49,7 +49,7 @@ function NavBar() {
 						</li>
 						<li
 							className={
-								router.pathname == '/publications'
+								router?.pathname == '/publications'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
 									: 'hover:text-gray-300'
 							}>
@@ -57,7 +57,7 @@ function NavBar() {
 						</li>
 						<li
 							className={
-								router.pathname == '/scholars'
+								router?.pathname == '/scholars'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
 									: 'hover:text-gray-300'
 							}>
@@ -65,7 +65,7 @@ function NavBar() {
 						</li>
 						<li
 							className={
-								router.pathname == '/student-corner'
+								router?.pathname == '/student-corner'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
 									: 'hover:text-gray-300'
 							}>
@@ -73,7 +73,7 @@ function NavBar() {
 						</li>
 						<li
 							className={
-								router.pathname == '/links'
+								router?.pathname == '/links'
 									? 'border-solid border-yellow-400 border-b-2 text-yellow-400'
 									: 'hover:text-gray-300'
 							}>
@@ -123,7 +123,7 @@ function NavBar() {
 						<ul className='sm:flex flex-grow m-auto text-center m-top-auto text-lg lg:text-xl font-light'>
 							<li
 								className={
-									router.pathname == '/'
+									router?.pathname == '/'
 										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 										: 'p-2'
 								}>
@@ -131,7 +131,7 @@ function NavBar() {
 							</li>
 							<li
 								className={
-									router.pathname.startsWith('/freshwater-algae')
+									router?.pathname.startsWith('/freshwater-algae')
 										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 										: 'p-2'
 								}>
@@ -139,7 +139,7 @@ function NavBar() {
 							</li>
 							<li
 								className={
-									router.pathname.startsWith('/marine-algae')
+									router?.pathname.startsWith('/marine-algae')
 										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 										: 'p-2'
 								}>
@@ -147,7 +147,7 @@ function NavBar() {
 							</li>
 							<li
 								className={
-									router.pathname == '/research'
+									router?.pathname == '/research'
 										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 										: 'p-2'
 								}>
@@ -155,7 +155,7 @@ function NavBar() {
 							</li>
 							<li
 								className={
-									router.pathname == '/publications'
+									router?.pathname == '/publications'
 										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 										: 'p-2'
 								}>
@@ -163,7 +163,7 @@ function NavBar() {
 							</li>
 							<li
 								className={
-									router.pathname == '/scholars'
+									router?.pathname == '/scholars'
 										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 										: 'p-2'
 								}>
@@ -171,7 +171,7 @@ function NavBar() {
 							</li>
 							<li
 								className={
-									router.pathname == '/student-corner'
+									router?.pathname == '/student-corner'
 										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 										: 'p-2'
 								}>
@@ -181,7 +181,7 @@ function NavBar() {
 							</li>
 							<li
 								className={
-									router.pathname == '/links'
+									router?.pathname == '/links'
 										? 'border-solid border-yellow-400 border-b-2 text-yellow-400 p-2'
 										: 'p-2'
 								}>

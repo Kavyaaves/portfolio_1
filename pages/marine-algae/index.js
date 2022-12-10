@@ -8,7 +8,7 @@ import Image from "next/image";
 
 function marineAlgae() {
 	const [isVisible, setIsVisible] = useState(false);
-    // const { data } = marine;
+	// const { data } = marine;
 	const scrollToTop = () => {
 		window.scrollTo({
 			top: 0,
@@ -30,22 +30,25 @@ function marineAlgae() {
 		return () => window.removeEventListener("scroll", toggleVisibility);
 	}, []);
 	const arrayData = [
-        {
-            division: "Rhodophyta",
-			imgSrc: "algae/Bryocladia thwaitesii/007-7x5.webp",
+		{
+			division: "Rhodophyta",
+			imgSrc: "/banners/red.png",
+			// imgSrc: "algae/Bryocladia thwaitesii/007-7x5.webp",
 			name: "Red Algae",
 		},
-        {
-            division: "Ochrophyta",
-			imgSrc: "algae/Turbinaria conoides/002-7x5.webp",
+		{
+			division: "Ochrophyta",
+			imgSrc: "/banners/brown.png",
+
+			// imgSrc: "algae/Turbinaria conoides/002-7x5.webp",
 			name: "Brown Algae",
 		},
-        {
-            division: "Chlorophyta",
-			imgSrc: "algae/Codium%20geppiorum/003-7x5.webp",
+		{
+			imgSrc: "/banners/green.png",
+			division: "Chlorophyta",
+			// imgSrc: "algae/Codium%20geppiorum/003-7x5.webp",
 			name: "Green Algae",
 		},
-		
 	];
 	return (
 		<div>
@@ -111,32 +114,58 @@ function marineAlgae() {
 							<span className=''>MARINE ALGAE</span>
 						</h2>
 						<br />
-						<div className='container grid md:grid-cols-3 grid-cols-1 gap-4 mx-auto'>
-							{arrayData?.map((group) => (
-								<Link
-									href={`/marine-algae/` + group?.division}
-									data={group.data}
-									className='w-full h-full rounded-lg cursor-pointer'>
-									<div className='flex flex-wrap m-auto relative  items-center  justify-center cursor-pointer overflow-hidden'>
-										<img
-											src={process.env.NEXT_PUBLIC_BUCKET_URL+group?.imgSrc}
-											className='object-cover w-full h-full overflow-hidden hover:opacity-70 opacity-50 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-110 '
-										/>
-										<div className=' text-lg text-white font-bold text-center absolute'>
-											{group?.name}
+						<div className='container grid grid-cols-1 gap-4 mx-auto align'>
+							{arrayData?.map((group, i) => (
+								<div key={i}>
+									<Link
+										href={`/marine-algae/` + group?.division}
+										data={group.data}
+										className='w-full h-full rounded-lg cursor-pointer'>
+										<div className='flex flex-wrap m-auto relative  items-center  justify-center cursor-pointer overflow-hidden'>
+											<img
+												src={group?.imgSrc}
+												className='object-cover w-full h-full overflow-hidden hover:opacity-70 opacity-50 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-110 '
+											/>
+											<div className='md:text-xl text-lg text-white font-bold text-center absolute'>
+												{group?.name}
+											</div>
 										</div>
-									</div>
-								</Link>
+									</Link>
+
+									{/* <Link
+										href={`/marine-algae/` + group?.division}
+										data={group.data}
+										className='w-full h-full rounded-lg cursor-pointer'>
+										<div className='flex flex-wrap m-auto relative  items-center  justify-center cursor-pointer overflow-hidden'>
+											<img
+												src={process.env.NEXT_PUBLIC_BUCKET_URL + group?.imgSrc}
+												className='object-cover w-full h-full overflow-hidden hover:opacity-70 opacity-50 transition transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-110 '
+											/>
+											<div className=' text-lg text-white font-bold text-center absolute'>
+												{group?.name}
+											</div>
+										</div>
+									</Link> */}
+								</div>
 							))}
-                        </div>
-                        <div className="absolute bottom-0 pb-6">
-                           <p className="">* Classification as on October 2021 - Guiry M. D. &amp; Guiry G. M. 2021 - {' '}
-                <a href="http://www.algaebase.org" target="blank" className="hover:underline">AlgaeBase</a>
-            </p>
-                            
-                      </div>
-                    </div>
-                  
+							<br />
+							<br />
+							<br />
+
+							<div className='relative py-6 '>
+								<p className=''>
+									* Classification as on October 2021 - Guiry M. D. &amp; Guiry
+									G. M. 2021 -{" "}
+									<a
+										href='http://www.algaebase.org'
+										target='blank'
+										className='hover:underline'>
+										AlgaeBase
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<br />
 				{isVisible && (
@@ -155,10 +184,8 @@ function marineAlgae() {
 							</svg>
 						</div>
 					</button>
-                )}
-                 
-            </body>
-           
+				)}
+			</body>
 		</div>
 	);
 }

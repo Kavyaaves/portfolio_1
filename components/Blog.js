@@ -4,15 +4,14 @@ import parse from "html-react-parser";
 import useSWR from "swr";
 
 const Blog = ({ data }) => {
-	
 	const [images, setImages] = useState([]);
-	
+
 	const fetcher = (url) => fetch(url).then((res) => res.json());
 	let im = useSWR("/api/filespec/?name=" + data.name, fetcher);
-	
+
 	useEffect(() => {
-	setImages(im?.data)
-	}, [im])
+		setImages(im?.data);
+	}, [im]);
 
 	return (
 		<div className='md:p-5 select-none'>
@@ -106,14 +105,19 @@ const Blog = ({ data }) => {
 					<span className='clear-none inline-block'>{parse(data.synonym)}</span>
 				</div>
 			)}
-			<br />
 
 			{images && images[0]?.includes("001") && (
 				<>
 					<div className='w-full items-center justify-evenly flex p-5'>
-						<img src={process.env.NEXT_PUBLIC_BUCKET_ALGAE_URL + data.name + "/" + images[0]} 
+						<img
+							src={
+								process.env.NEXT_PUBLIC_BUCKET_ALGAE_URL +
+								data.name +
+								"/" +
+								images[0]
+							}
 							alt={data?.name}
-							className="self-center" 
+							className='self-center'
 							width={
 								images[0]?.split("-")[1]?.toLowerCase()?.split("x")[0] * 100
 							}
@@ -122,7 +126,7 @@ const Blog = ({ data }) => {
 									?.split("-")[1]
 									?.toLowerCase()
 									?.split("x")[1]
-									?.replace(".webp","") * 100
+									?.replace(".webp", "") * 100
 							}
 						/>
 					</div>
@@ -131,24 +135,23 @@ const Blog = ({ data }) => {
 							? data.img1Caption.split("~001" + "=")[1]?.split("~")[0]
 							: ""}
 					</p>
-					<br />
 				</>
 			)}
 			{data.para1 !== "" && (
 				<>
-					<p>{data.para1}</p>
-					<br />
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;{data.para1}</p>
 				</>
 			)}
 			{data.para2 !== "" && (
 				<>
-					<p>{data.para2}</p>
 					<br />
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;{data.para2}</p>
 				</>
 			)}
 			{data.ecology != "" && (
 				<>
 					<div className=''>
+						<br />
 						<p className=' font-bold text-lg'>Ecology</p>
 						<p>{parse(data.ecology)}</p>
 					</div>
@@ -169,20 +172,24 @@ const Blog = ({ data }) => {
 						<div className='w-full items-center justify-evenly flex p-5'>
 							<img
 								className='self-center'
-								src={process.env.NEXT_PUBLIC_BUCKET_ALGAE_URL + data.name + "/"+img}
-								width={(img?.toLowerCase()?.split("-")[1]?.split("x")[0]) * 100}
+								src={
+									process.env.NEXT_PUBLIC_BUCKET_ALGAE_URL +
+									data.name +
+									"/" +
+									img
+								}
+								width={img?.toLowerCase()?.split("-")[1]?.split("x")[0] * 100}
 								height={
-									(img
+									img
 										?.toLowerCase()
 										?.split("-")[1]
-                                        ?.split("x")[1]
-                                        ?.replace(".webp","")
-                                    )* 100
+										?.split("x")[1]
+										?.replace(".webp", "") * 100
 								}
 								alt={data.name}
 							/>
 						</div>
-						<p className="text-center">
+						<p className='text-center'>
 							{data?.img1Caption?.includes(img?.substring(0, 3))
 								? data.img1Caption
 										.split("~" + img?.substring(0, 3) + "=")[1]

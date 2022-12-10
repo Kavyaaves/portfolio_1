@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
 
 	useEffect(() => {
 		const handleStart = (url) => {
-			url !== router.pathname ? setLoading(true) : setLoading(false);
+			url !== router?.pathname ? setLoading(true) : setLoading(false);
 		};
 		const handleComplete = (url) => setLoading(false);
 
