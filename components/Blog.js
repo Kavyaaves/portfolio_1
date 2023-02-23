@@ -139,6 +139,7 @@ const Blog = ({ data }) => {
 			)}
 			{data.para1 !== "" && (
 				<>
+					<br />
 					<p>&nbsp;&nbsp;&nbsp;&nbsp;{data.para1}</p>
 				</>
 			)}
@@ -155,11 +156,11 @@ const Blog = ({ data }) => {
 						<p className=' font-bold text-lg'>Ecology</p>
 						<p>{parse(data.ecology)}</p>
 					</div>
-					<br />
 				</>
 			)}
 			{data.distribution && (
 				<div className=''>
+					<br />
 					<p className='font-bold text-lg'>Distribution in India </p>
 					<p>{parse(data.distribution)}</p>
 				</div>
