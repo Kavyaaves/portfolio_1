@@ -12,7 +12,7 @@
   "dependencies": {
     "4": "^0.0.0",
     "@aws-sdk/client-s3": "^3.224.0",
-    "@prisma/client": "^2.29.1",
+    "@prisma/client": "^5.15.0-dev.41",
     "html-react-parser": "^1.2.8",
     "next": "10.2.0",
     "next-pwa": "^5.3.1",
@@ -24,7 +24,7 @@
   "devDependencies": {
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.14",
-    "prisma": "^2.29.1",
+    "prisma": "^5.15.0-dev.41",
     "tailwindcss": "^2.1.2"
   },
   "resolutions": {
