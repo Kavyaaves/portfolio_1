@@ -1,3 +1,14 @@
+Steps to deploy:
+
+Run "npx prisma studio" and add data
+Run "npm run dev" to run the website and validate data you have entered
+For images, upload to "https://ap-south-1.console.aws.amazon.com/s3/buckets/babu-portfolio?prefix=algae/&region=ap-south-1&bucketType=general" Folder name "Algae name/001-7x5.webp"
+After data is entered, go to 3rd tab in left most panel. 
+Changes will be shown for dev.db. Click the + icon in the file.
+Type some message regarding your data
+And click commit (blue) button
+Then commit button will change to Sync changes. Click again.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
