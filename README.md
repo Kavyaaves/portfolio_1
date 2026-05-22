@@ -1,8 +1,8 @@
 Steps to deploy:
 
 Run "npx prisma studio" and add data
-Run "npm run dev" to run the website and validate data you have entered
 For images, upload to "https://ap-south-1.console.aws.amazon.com/s3/buckets/babu-portfolio?prefix=algae/&region=ap-south-1&bucketType=general" Folder name "Algae name/001-7x5.webp"
+Run "npm run dev" to run the website and validate data you have entered
 After data is entered, go to 3rd tab in left most panel. 
 Changes will be shown for dev.db. Click the + icon in the file.
 Type some message regarding your data
